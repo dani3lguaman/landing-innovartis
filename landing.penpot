@@ -1,0 +1,3978 @@
+{
+  "version": "2.8",
+  "children": [
+    {
+      "type": "frame",
+      "id": "bi8Au",
+      "x": 0,
+      "y": 0,
+      "name": "Frame",
+      "clip": true,
+      "width": 800,
+      "height": 600,
+      "fill": "#FFFFFF",
+      "layout": "none"
+    },
+    {
+      "type": "frame",
+      "id": "V5LQn",
+      "x": 0,
+      "y": 0,
+      "name": "Innovartis Landing",
+      "width": 1440,
+      "fill": "#0D1F30",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "Ll9Xe",
+          "name": "Header",
+          "width": "fill_container",
+          "height": 72,
+          "fill": "rgba(13,31,48,0.95)",
+          "padding": [
+            0,
+            80
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "Qat3K",
+              "name": "logoZone",
+              "height": "fill_container",
+              "gap": 12,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "mBjU7",
+                  "name": "logoMark",
+                  "width": 36,
+                  "height": 36,
+                  "fill": "#E8621A",
+                  "cornerRadius": 6,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "MpoKG",
+                      "name": "logoMarkText",
+                      "fill": "#FFFFFF",
+                      "content": "IA",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "700"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "aDDBM",
+                  "name": "logoBrand",
+                  "layout": "vertical",
+                  "gap": 2,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "9YHBC",
+                      "name": "logoName",
+                      "fill": "#FFFFFF",
+                      "content": "INNOVARTIS",
+                      "fontFamily": "Inter",
+                      "fontSize": 18,
+                      "fontWeight": "700",
+                      "letterSpacing": 2
+                    },
+                    {
+                      "type": "text",
+                      "id": "KIYOH",
+                      "name": "logoSub",
+                      "fill": "#666666",
+                      "content": "Agencia de Marketing · Quito",
+                      "fontFamily": "Inter",
+                      "fontSize": 9,
+                      "letterSpacing": 1
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "ZKlOX",
+              "name": "navLinks",
+              "height": "fill_container",
+              "gap": 32,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "cDd2z",
+                  "name": "navL1",
+                  "fill": "#AAAAAA",
+                  "content": "Servicios",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "text",
+                  "id": "pxG25",
+                  "name": "navL2",
+                  "fill": "#AAAAAA",
+                  "content": "Planes",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "text",
+                  "id": "jTAZv",
+                  "name": "navTest",
+                  "fill": "#AAAAAA",
+                  "content": "Testimonios",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "text",
+                  "id": "RGuEh",
+                  "name": "navL3",
+                  "fill": "#AAAAAA",
+                  "content": "Contacto",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "AxxDt",
+              "name": "navCta",
+              "height": "fill_container",
+              "gap": 12,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "g1iVr",
+                  "name": "waBtn",
+                  "fill": "#25D366",
+                  "cornerRadius": 6,
+                  "gap": 8,
+                  "padding": [
+                    10,
+                    20
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "xFJ7i",
+                      "name": "waBtnText",
+                      "fill": "#FFFFFF",
+                      "content": "WhatsApp",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "700"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "PzZWD",
+                  "name": "ctaBtn",
+                  "fill": "#E8621A",
+                  "cornerRadius": 6,
+                  "padding": [
+                    10,
+                    22
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "9iE19",
+                      "name": "ctaBtnText",
+                      "fill": "#FFFFFF",
+                      "content": "Ver Planes →",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "700"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "p6wsx",
+          "name": "Hero",
+          "width": "fill_container",
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "enabled": true,
+            "rotation": 180,
+            "size": {
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#0D1F30",
+                "position": 0
+              },
+              {
+                "color": "#162C42",
+                "position": 1
+              }
+            ]
+          },
+          "layout": "vertical",
+          "padding": [
+            100,
+            140,
+            80,
+            140
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "whzBR",
+              "name": "heroBgOverlay",
+              "width": "fill_container",
+              "height": "fill_container",
+              "fill": {
+                "type": "gradient",
+                "gradientType": "radial",
+                "enabled": true,
+                "rotation": 0,
+                "size": {
+                  "width": 0.8,
+                  "height": 0.6
+                },
+                "colors": [
+                  {
+                    "color": "rgba(232,98,26,0.12)",
+                    "position": 0
+                  },
+                  {
+                    "color": "rgba(10,10,10,0)",
+                    "position": 1
+                  }
+                ],
+                "center": {
+                  "y": 0
+                }
+              }
+            },
+            {
+              "type": "frame",
+              "id": "loWJa",
+              "name": "heroBadge",
+              "fill": "rgba(232,98,26,0.12)",
+              "cornerRadius": 50,
+              "stroke": {
+                "thickness": 1,
+                "fill": "rgba(232,98,26,0.3)"
+              },
+              "gap": 8,
+              "padding": [
+                6,
+                16
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "UAfrW",
+                  "name": "heroBadgeText",
+                  "fill": "#E8621A",
+                  "content": "📍 Quito, Ecuador · Especialistas B2B",
+                  "fontFamily": "Inter",
+                  "fontSize": 11,
+                  "fontWeight": "600",
+                  "letterSpacing": 2
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "0hlHG",
+              "name": "heroH1Wrap",
+              "width": "fill_container",
+              "layout": "vertical",
+              "padding": [
+                24,
+                0,
+                0,
+                0
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "1Bqi8",
+                  "name": "heroH1Line1",
+                  "fill": "#FFFFFF",
+                  "content": "Más Clientes.",
+                  "fontFamily": "Inter",
+                  "fontSize": 80,
+                  "fontWeight": "900",
+                  "letterSpacing": -3
+                },
+                {
+                  "type": "text",
+                  "id": "MSgUi",
+                  "name": "heroH1Line2",
+                  "fill": "#E8621A",
+                  "content": "Más Ingresos.",
+                  "fontFamily": "Inter",
+                  "fontSize": 80,
+                  "fontWeight": "900",
+                  "letterSpacing": -3
+                },
+                {
+                  "type": "text",
+                  "id": "44PkB",
+                  "name": "heroH1Line3",
+                  "opacity": 0.25,
+                  "fill": "#FFFFFF",
+                  "content": "Menos Esfuerzo.",
+                  "fontFamily": "Inter",
+                  "fontSize": 80,
+                  "fontWeight": "900",
+                  "letterSpacing": -3
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "R71lp",
+              "name": "heroSub",
+              "fill": "#9AAABB",
+              "textGrowth": "fixed-width",
+              "width": 580,
+              "content": "Estrategia, producción y campañas pagadas (Meta Ads + TikTok Ads) para empresas que quieren crecer. También diseñamos tu sitio web.",
+              "lineHeight": 1.7,
+              "fontFamily": "Inter",
+              "fontSize": 18,
+              "fontWeight": "500"
+            },
+            {
+              "type": "frame",
+              "id": "f7mbI",
+              "name": "heroActions",
+              "gap": 14,
+              "padding": [
+                36,
+                0,
+                0,
+                0
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "KYRZf",
+                  "name": "heroCta1",
+                  "fill": "#E8621A",
+                  "cornerRadius": 8,
+                  "gap": 8,
+                  "padding": [
+                    16,
+                    32
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "ZzE59",
+                      "name": "heroCta1Txt",
+                      "fill": "#FFFFFF",
+                      "content": "Ver planes y precios →",
+                      "fontFamily": "Inter",
+                      "fontSize": 15,
+                      "fontWeight": "800"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "O8mvH",
+                  "name": "heroCta2",
+                  "fill": "transparent",
+                  "cornerRadius": 8,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "rgba(255,255,255,0.15)"
+                  },
+                  "padding": [
+                    15,
+                    28
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "ybxkE",
+                      "name": "heroCta2Txt",
+                      "fill": "rgba(255,255,255,0.65)",
+                      "content": "Agendar llamada gratis",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "500"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "du2wU",
+              "name": "heroStats",
+              "width": "fill_container",
+              "gap": 48,
+              "padding": [
+                56,
+                0,
+                0,
+                0
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "lphkp",
+                  "name": "stat1",
+                  "layout": "vertical",
+                  "gap": 4,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "CapBd",
+                      "name": "stat1Num",
+                      "fill": "#E8621A",
+                      "content": "Meta + TikTok",
+                      "fontFamily": "Inter",
+                      "fontSize": 22,
+                      "fontWeight": "900"
+                    },
+                    {
+                      "type": "text",
+                      "id": "VowvX",
+                      "name": "stat1Lbl",
+                      "fill": "#666666",
+                      "content": "Campañas pagadas",
+                      "fontFamily": "Inter",
+                      "fontSize": 11,
+                      "fontWeight": "500",
+                      "letterSpacing": 1
+                    }
+                  ]
+                },
+                {
+                  "type": "rectangle",
+                  "id": "YSFGP",
+                  "name": "divLine1",
+                  "fill": "rgba(255,255,255,0.1)",
+                  "width": 1,
+                  "height": 40
+                },
+                {
+                  "type": "frame",
+                  "id": "HFSkg",
+                  "name": "stat2",
+                  "layout": "vertical",
+                  "gap": 4,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "xu14f",
+                      "name": "stat2Num",
+                      "fill": "#E8621A",
+                      "content": "100%",
+                      "fontFamily": "Inter",
+                      "fontSize": 22,
+                      "fontWeight": "900"
+                    },
+                    {
+                      "type": "text",
+                      "id": "QSMcE",
+                      "name": "stat2Lbl",
+                      "fill": "#666666",
+                      "content": "Enfoque en ventas",
+                      "fontFamily": "Inter",
+                      "fontSize": 11,
+                      "fontWeight": "500",
+                      "letterSpacing": 1
+                    }
+                  ]
+                },
+                {
+                  "type": "rectangle",
+                  "id": "ZpBWj",
+                  "name": "divLine2",
+                  "fill": "rgba(255,255,255,0.1)",
+                  "width": 1,
+                  "height": 40
+                },
+                {
+                  "type": "frame",
+                  "id": "enS14",
+                  "name": "stat3",
+                  "layout": "vertical",
+                  "gap": 4,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "rbQWL",
+                      "name": "stat3Num",
+                      "fill": "#E8621A",
+                      "content": "Web + Ads",
+                      "fontFamily": "Inter",
+                      "fontSize": 22,
+                      "fontWeight": "900"
+                    },
+                    {
+                      "type": "text",
+                      "id": "THsac",
+                      "name": "stat3Lbl",
+                      "fill": "#666666",
+                      "content": "Solución integral",
+                      "fontFamily": "Inter",
+                      "fontSize": 11,
+                      "fontWeight": "500",
+                      "letterSpacing": 1
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "2M52y",
+          "name": "Strip",
+          "width": "fill_container",
+          "height": 52,
+          "fill": "#E8621A",
+          "gap": 32,
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "G2PBN",
+              "name": "stripT1",
+              "fill": "#FFFFFF",
+              "content": "🎥 Grabamos",
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "800"
+            },
+            {
+              "type": "text",
+              "id": "zIQUs",
+              "name": "stripD1",
+              "fill": "rgba(255,255,255,0.5)",
+              "content": "·",
+              "fontFamily": "Inter",
+              "fontSize": 14
+            },
+            {
+              "type": "text",
+              "id": "mV2Vl",
+              "name": "stripT2",
+              "fill": "#FFFFFF",
+              "content": "📲 Gestionamos",
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "800"
+            },
+            {
+              "type": "text",
+              "id": "1xzJW",
+              "name": "stripD2",
+              "fill": "rgba(255,255,255,0.5)",
+              "content": "·",
+              "fontFamily": "Inter",
+              "fontSize": 14
+            },
+            {
+              "type": "text",
+              "id": "3SyF1",
+              "name": "stripT3",
+              "fill": "#FFFFFF",
+              "content": "📊 Generamos clientes reales",
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "800"
+            },
+            {
+              "type": "text",
+              "id": "FrOiA",
+              "name": "stripD3",
+              "fill": "rgba(255,255,255,0.5)",
+              "content": "·",
+              "fontFamily": "Inter",
+              "fontSize": 14
+            },
+            {
+              "type": "text",
+              "id": "TN5wL",
+              "name": "stripT4",
+              "fill": "#FFFFFF",
+              "content": "🌐 Diseñamos tu web",
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "800"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "IpSw4",
+          "name": "WhoWeServe",
+          "width": "fill_container",
+          "fill": "#0F2236",
+          "layout": "vertical",
+          "gap": 44,
+          "padding": [
+            80,
+            120
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "4SKnJ",
+              "name": "whoHead",
+              "width": "fill_container",
+              "justifyContent": "space_between",
+              "alignItems": "end",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "9kgeX",
+                  "name": "whoHeadLeft",
+                  "layout": "vertical",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "TrkqI",
+                      "name": "whoLabel",
+                      "fill": "#E8621A",
+                      "content": "¿PARA QUIÉN TRABAJAMOS?",
+                      "fontFamily": "Inter",
+                      "fontSize": 11,
+                      "fontWeight": "700",
+                      "letterSpacing": 3
+                    },
+                    {
+                      "type": "text",
+                      "id": "X3kEX",
+                      "name": "whoTitle",
+                      "fill": "#FFFFFF",
+                      "textGrowth": "fixed-width",
+                      "width": 500,
+                      "content": "Negocios que invierten\npara crecer",
+                      "lineHeight": 1.05,
+                      "fontFamily": "Inter",
+                      "fontSize": 46,
+                      "fontWeight": "900",
+                      "letterSpacing": -1.5
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "G3LCh",
+                  "name": "whoNote",
+                  "width": 340,
+                  "fill": "rgba(232,98,26,0.08)",
+                  "cornerRadius": 10,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "rgba(232,98,26,0.2)"
+                  },
+                  "padding": [
+                    16,
+                    20
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "BJZRe",
+                      "name": "whoNoteText",
+                      "fill": "#7A8FA0",
+                      "textGrowth": "fixed-width",
+                      "width": 300,
+                      "content": "Trabajamos con empresas que entienden que la publicidad bien segmentada es inversión, no gasto.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "500"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "l6oAe",
+              "name": "whoGrid",
+              "width": "fill_container",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "PRjMu",
+                  "name": "wc1",
+                  "fill": "rgba(255,255,255,0.04)",
+                  "cornerRadius": 10,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "rgba(255,255,255,0.08)"
+                  },
+                  "gap": 12,
+                  "padding": [
+                    16,
+                    20
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "IbQ5S",
+                      "name": "wc1Em",
+                      "content": "🦷",
+                      "fontFamily": "Inter",
+                      "fontSize": 20,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "fkzXm",
+                      "name": "wc1Txt",
+                      "fill": "#CCCCCC",
+                      "content": "Clínicas y dentistas",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "600"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "4GpNz",
+                  "name": "wc2",
+                  "fill": "rgba(255,255,255,0.04)",
+                  "cornerRadius": 10,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "rgba(255,255,255,0.08)"
+                  },
+                  "gap": 12,
+                  "padding": [
+                    16,
+                    20
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "0b7MJ",
+                      "name": "wc2Em",
+                      "content": "🏗️",
+                      "fontFamily": "Inter",
+                      "fontSize": 20,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "pq4jw",
+                      "name": "wc2Txt",
+                      "fill": "#CCCCCC",
+                      "content": "Arquitectos e ingenieros",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "600"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "gcO87",
+                  "name": "wc3",
+                  "fill": "rgba(255,255,255,0.04)",
+                  "cornerRadius": 10,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "rgba(255,255,255,0.08)"
+                  },
+                  "gap": 12,
+                  "padding": [
+                    16,
+                    20
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "zvoaJ",
+                      "name": "wc3Em",
+                      "content": "🧠",
+                      "fontFamily": "Inter",
+                      "fontSize": 20,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "taRPn",
+                      "name": "wc3Txt",
+                      "fill": "#CCCCCC",
+                      "content": "Psicólogos y coaches",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "600"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "eCfUl",
+                  "name": "wc4",
+                  "fill": "rgba(255,255,255,0.04)",
+                  "cornerRadius": 10,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "rgba(255,255,255,0.08)"
+                  },
+                  "gap": 12,
+                  "padding": [
+                    16,
+                    20
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "wkL5f",
+                      "name": "wc4Em",
+                      "content": "💪",
+                      "fontFamily": "Inter",
+                      "fontSize": 20,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "gc6wX",
+                      "name": "wc4Txt",
+                      "fill": "#CCCCCC",
+                      "content": "Gimnasios y fitness",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "600"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "TZizz",
+                  "name": "wc5",
+                  "fill": "rgba(255,255,255,0.04)",
+                  "cornerRadius": 10,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "rgba(255,255,255,0.08)"
+                  },
+                  "gap": 12,
+                  "padding": [
+                    16,
+                    20
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "6Jx4q",
+                      "name": "wc5Em",
+                      "content": "🛍️",
+                      "fontFamily": "Inter",
+                      "fontSize": 20,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "0BoJe",
+                      "name": "wc5Txt",
+                      "fill": "#CCCCCC",
+                      "content": "Tiendas y e-commerce",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "600"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "owvAZ",
+                  "name": "wc6",
+                  "fill": "rgba(255,255,255,0.04)",
+                  "cornerRadius": 10,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "rgba(255,255,255,0.08)"
+                  },
+                  "gap": 12,
+                  "padding": [
+                    16,
+                    20
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "eF9Bl",
+                      "name": "wc6Em",
+                      "content": "💇",
+                      "fontFamily": "Inter",
+                      "fontSize": 20,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "rSWqo",
+                      "name": "wc6Txt",
+                      "fill": "#CCCCCC",
+                      "content": "Salones de belleza",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "600"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "yGaAO",
+                  "name": "wc7",
+                  "fill": "rgba(255,255,255,0.04)",
+                  "cornerRadius": 10,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "rgba(255,255,255,0.08)"
+                  },
+                  "gap": 12,
+                  "padding": [
+                    16,
+                    20
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Cusu5",
+                      "name": "wc7Em",
+                      "content": "🏪",
+                      "fontFamily": "Inter",
+                      "fontSize": 20,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "mI7Ew",
+                      "name": "wc7Txt",
+                      "fill": "#CCCCCC",
+                      "content": "Negocios mayoristas",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "600"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "RHGcA",
+                  "name": "wc8",
+                  "fill": "rgba(255,255,255,0.04)",
+                  "cornerRadius": 10,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "rgba(255,255,255,0.08)"
+                  },
+                  "gap": 12,
+                  "padding": [
+                    16,
+                    20
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "FA29u",
+                      "name": "wc8Em",
+                      "content": "🚀",
+                      "fontFamily": "Inter",
+                      "fontSize": 20,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "9s8cs",
+                      "name": "wc8Txt",
+                      "fill": "#CCCCCC",
+                      "content": "Emprendedores que escalan",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "600"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "UzY7n",
+          "name": "Services",
+          "width": "fill_container",
+          "fill": "#0D1F30",
+          "layout": "vertical",
+          "gap": 52,
+          "padding": [
+            90,
+            120
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "wHbr4",
+              "name": "svcHead",
+              "layout": "vertical",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "qa43K",
+                  "name": "svcLabel",
+                  "fill": "#E8621A",
+                  "content": "LO QUE HACEMOS",
+                  "fontFamily": "Inter",
+                  "fontSize": 11,
+                  "fontWeight": "700",
+                  "letterSpacing": 3
+                },
+                {
+                  "type": "text",
+                  "id": "oSOk9",
+                  "name": "svcTitle",
+                  "fill": "#FFFFFF",
+                  "content": "Agencia integral de principio a fin",
+                  "fontFamily": "Inter",
+                  "fontSize": 46,
+                  "fontWeight": "900",
+                  "letterSpacing": -1.5
+                },
+                {
+                  "type": "text",
+                  "id": "hIOsh",
+                  "name": "svcDesc",
+                  "fill": "#7A8FA0",
+                  "textGrowth": "fixed-width",
+                  "width": 520,
+                  "content": "Cubrimos todo el proceso para que tú solo te enfoques en atender los clientes que te conseguimos.",
+                  "lineHeight": 1.7,
+                  "fontFamily": "Inter",
+                  "fontSize": 17,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "IL64i",
+              "name": "svcGrid",
+              "width": "fill_container",
+              "gap": 20,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "BYfXv",
+                  "name": "svc1",
+                  "width": "fill_container",
+                  "fill": "rgba(232,98,26,0.08)",
+                  "cornerRadius": 14,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "rgba(232,98,26,0.22)"
+                  },
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": [
+                    32,
+                    28
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "982eo",
+                      "name": "svc1Icon",
+                      "content": "🧠",
+                      "fontFamily": "Inter",
+                      "fontSize": 32,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "GG3oN",
+                      "name": "svc1Title",
+                      "fill": "#FFFFFF",
+                      "content": "Estrategia",
+                      "fontFamily": "Inter",
+                      "fontSize": 22,
+                      "fontWeight": "900"
+                    },
+                    {
+                      "type": "text",
+                      "id": "zg3RP",
+                      "name": "svc1Desc",
+                      "fill": "#7A8FA0",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Plan de contenido, guiones para reels, segmentación de audiencias y enfoque total en conversión.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "4XT1n",
+                  "name": "svc2",
+                  "width": "fill_container",
+                  "fill": "rgba(26,58,92,0.5)",
+                  "cornerRadius": 14,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "rgba(26,58,92,0.8)"
+                  },
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": [
+                    32,
+                    28
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "JBGkO",
+                      "name": "svc2Icon",
+                      "content": "🎥",
+                      "fontFamily": "Inter",
+                      "fontSize": 32,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "Ou6RC",
+                      "name": "svc2Title",
+                      "fill": "#FFFFFF",
+                      "content": "Producción",
+                      "fontFamily": "Inter",
+                      "fontSize": 22,
+                      "fontWeight": "900"
+                    },
+                    {
+                      "type": "text",
+                      "id": "DRRYC",
+                      "name": "svc2Desc",
+                      "fill": "#7A8FA0",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Grabación profesional de reels, fotografías comerciales, videos promocionales y diseño gráfico de alto impacto.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "HOkvc",
+                  "name": "svc3",
+                  "width": "fill_container",
+                  "fill": "rgba(15,55,35,0.3)",
+                  "cornerRadius": 14,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "rgba(25,100,55,0.2)"
+                  },
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": [
+                    32,
+                    28
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Hf1bw",
+                      "name": "svc3Icon",
+                      "content": "📈",
+                      "fontFamily": "Inter",
+                      "fontSize": 32,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "di9tK",
+                      "name": "svc3Title",
+                      "fill": "#FFFFFF",
+                      "content": "Distribución",
+                      "fontFamily": "Inter",
+                      "fontSize": 22,
+                      "fontWeight": "900"
+                    },
+                    {
+                      "type": "text",
+                      "id": "PiQ1W",
+                      "name": "svc3Desc",
+                      "fill": "#7A8FA0",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Campañas Meta Ads y TikTok Ads, manejo de redes sociales, optimización de presupuesto y reportes reales.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "500"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "RBwdy",
+          "name": "WebService",
+          "width": "fill_container",
+          "fill": "#0F2236",
+          "gap": 80,
+          "padding": [
+            90,
+            120
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "famnv",
+              "name": "webLeft",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "b16qh",
+                  "name": "webLabel",
+                  "fill": "#E8621A",
+                  "content": "NUEVO SERVICIO",
+                  "fontFamily": "Inter",
+                  "fontSize": 11,
+                  "fontWeight": "700",
+                  "letterSpacing": 3
+                },
+                {
+                  "type": "text",
+                  "id": "TegZt",
+                  "name": "webTitle",
+                  "fill": "#FFFFFF",
+                  "textGrowth": "fixed-width",
+                  "width": 480,
+                  "content": "Diseñamos tu sitio web que convierte visitas en clientes",
+                  "lineHeight": 1.1,
+                  "fontFamily": "Inter",
+                  "fontSize": 40,
+                  "fontWeight": "900",
+                  "letterSpacing": -1
+                },
+                {
+                  "type": "text",
+                  "id": "iW0g3",
+                  "name": "webDesc",
+                  "fill": "#7A8FA0",
+                  "textGrowth": "fixed-width",
+                  "width": 460,
+                  "content": "Landing pages, sitios corporativos y e-commerce diseñados con foco en conversión. Tu web como herramienta de ventas activa.",
+                  "lineHeight": 1.7,
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "frame",
+                  "id": "P8mOA",
+                  "name": "webFeats",
+                  "layout": "vertical",
+                  "gap": 12,
+                  "padding": [
+                    8,
+                    0,
+                    0,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "HGZWT",
+                      "name": "wf1",
+                      "gap": 10,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "2Qz3R",
+                          "name": "wf1Icon",
+                          "fill": "#E8621A",
+                          "content": "✓",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "900"
+                        },
+                        {
+                          "type": "text",
+                          "id": "6GUdy",
+                          "name": "wf1Txt",
+                          "fill": "#CCCCCC",
+                          "content": "Landing pages de alto rendimiento",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "1tzML",
+                      "name": "wf2",
+                      "gap": 10,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "hxKkf",
+                          "name": "wf2Icon",
+                          "fill": "#E8621A",
+                          "content": "✓",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "900"
+                        },
+                        {
+                          "type": "text",
+                          "id": "TgqgX",
+                          "name": "wf2Txt",
+                          "fill": "#CCCCCC",
+                          "content": "Sitios corporativos B2B",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "ZSo3x",
+                      "name": "wf3",
+                      "gap": 10,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "vrBVQ",
+                          "name": "wf3Icon",
+                          "fill": "#E8621A",
+                          "content": "✓",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "900"
+                        },
+                        {
+                          "type": "text",
+                          "id": "xuGLb",
+                          "name": "wf3Txt",
+                          "fill": "#CCCCCC",
+                          "content": "Integración con WhatsApp y formularios",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "KLogs",
+                      "name": "wf4",
+                      "gap": 10,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "7zsER",
+                          "name": "wf4Icon",
+                          "fill": "#E8621A",
+                          "content": "✓",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "900"
+                        },
+                        {
+                          "type": "text",
+                          "id": "NnFQI",
+                          "name": "wf4Txt",
+                          "fill": "#CCCCCC",
+                          "content": "SEO básico incluido",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Hsx4k",
+              "name": "webImgFrame",
+              "metadata": {
+                "type": "unsplash",
+                "username": "jakubzerdzicki",
+                "link": "https://unsplash.com/@jakubzerdzicki",
+                "author": "Jakub Żerdzicki"
+              },
+              "width": 480,
+              "height": 380,
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "https://images.unsplash.com/photo-1719938073286-437141b562e9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzE2OTE3MjB8&ixlib=rb-4.1.0&q=80&w=1080",
+                "mode": "fill"
+              },
+              "cornerRadius": 16,
+              "stroke": {
+                "thickness": 1,
+                "fill": "rgba(232,98,26,0.2)"
+              }
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "zk04p",
+          "name": "Plans",
+          "width": "fill_container",
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "enabled": true,
+            "rotation": 180,
+            "size": {
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#0D1F30",
+                "position": 0
+              },
+              {
+                "color": "#0A1828",
+                "position": 1
+              }
+            ]
+          },
+          "layout": "vertical",
+          "gap": 52,
+          "padding": [
+            90,
+            120
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "cYDLy",
+              "name": "plansHead",
+              "layout": "vertical",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "wwrOE",
+                  "name": "plansLabel",
+                  "fill": "#E8621A",
+                  "content": "PLANES Y PRECIOS 2026",
+                  "fontFamily": "Inter",
+                  "fontSize": 11,
+                  "fontWeight": "700",
+                  "letterSpacing": 3
+                },
+                {
+                  "type": "text",
+                  "id": "afHDq",
+                  "name": "plansTitle",
+                  "fill": "#FFFFFF",
+                  "content": "Elige tu plan de crecimiento",
+                  "fontFamily": "Inter",
+                  "fontSize": 46,
+                  "fontWeight": "900",
+                  "letterSpacing": -1.5
+                },
+                {
+                  "type": "text",
+                  "id": "I16N7",
+                  "name": "plansDesc",
+                  "fill": "#7A8FA0",
+                  "textGrowth": "fixed-width",
+                  "width": 520,
+                  "content": "Estrategia + Producción + Distribución en cada plan. La pauta publicitaria no está incluida.",
+                  "lineHeight": 1.6,
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "iNzAg",
+              "name": "plansGrid",
+              "width": "fill_container",
+              "gap": 20,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "QVWVB",
+                  "name": "plan1",
+                  "width": "fill_container",
+                  "fill": "rgba(255,255,255,0.04)",
+                  "cornerRadius": 18,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "rgba(255,255,255,0.08)"
+                  },
+                  "layout": "vertical",
+                  "padding": [
+                    32,
+                    26
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "pPlYN",
+                      "name": "p1tier",
+                      "fill": "#666666",
+                      "content": "NIVEL 01",
+                      "fontFamily": "Inter",
+                      "fontSize": 10,
+                      "fontWeight": "700",
+                      "letterSpacing": 3
+                    },
+                    {
+                      "type": "text",
+                      "id": "29NhL",
+                      "name": "p1name",
+                      "fill": "#FFFFFF",
+                      "content": "Plan Básico",
+                      "fontFamily": "Inter",
+                      "fontSize": 24,
+                      "fontWeight": "900"
+                    },
+                    {
+                      "type": "text",
+                      "id": "03Luh",
+                      "name": "p1focus",
+                      "fill": "#666666",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Presencia digital profesional.",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "p1UWh",
+                      "name": "p1Price",
+                      "gap": 2,
+                      "padding": [
+                        0,
+                        0,
+                        4,
+                        0
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "FE3Db",
+                          "name": "p1Sym",
+                          "fill": "#E8621A",
+                          "content": "$",
+                          "fontFamily": "Inter",
+                          "fontSize": 20,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "lIE2m",
+                          "name": "p1Val",
+                          "fill": "#FFFFFF",
+                          "content": "130",
+                          "fontFamily": "Inter",
+                          "fontSize": 52,
+                          "fontWeight": "900"
+                        },
+                        {
+                          "type": "text",
+                          "id": "JIaQl",
+                          "name": "p1Per",
+                          "fill": "#666666",
+                          "content": "/mes",
+                          "fontFamily": "Inter",
+                          "fontSize": 13
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "zoomG",
+                      "name": "p1Disc",
+                      "fill": "#E8621A",
+                      "content": "Descuento especial disponible -$30*",
+                      "fontFamily": "Inter",
+                      "fontSize": 11,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "1NuA3",
+                      "name": "p1Div",
+                      "fill": "rgba(255,255,255,0.08)",
+                      "width": "fill_container",
+                      "height": 1
+                    },
+                    {
+                      "type": "frame",
+                      "id": "jadCy",
+                      "name": "p1Feats",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 10,
+                      "padding": [
+                        18,
+                        0,
+                        24,
+                        0
+                      ],
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "64EZ0",
+                          "name": "pf1a",
+                          "width": "fill_container",
+                          "gap": 9,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "SIYj0",
+                              "name": "pf1aIcon",
+                              "fill": "#E8621A",
+                              "content": "✓",
+                              "fontFamily": "Inter",
+                              "fontSize": 11,
+                              "fontWeight": "900"
+                            },
+                            {
+                              "type": "frame",
+                              "id": "CbXDD",
+                              "name": "txtBlock1a",
+                              "width": "fill_container",
+                              "layout": "vertical",
+                              "gap": 2,
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "SSn2j",
+                                  "name": "pf1aTxt",
+                                  "fill": "rgba(255,255,255,0.8)",
+                                  "content": "2 artes estáticos",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 13,
+                                  "fontWeight": "500"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "fvQ1I",
+                                  "name": "p1aDesc",
+                                  "fill": "rgba(255,255,255,0.4)",
+                                  "textGrowth": "fixed-width",
+                                  "width": "fill_container",
+                                  "content": "Diseño digital estático para publicaciones",
+                                  "lineHeight": 1.4,
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "EbpAn",
+                          "name": "pf1b",
+                          "width": "fill_container",
+                          "gap": 9,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "QwsQ9",
+                              "name": "pf1bIcon",
+                              "fill": "#E8621A",
+                              "content": "✓",
+                              "fontFamily": "Inter",
+                              "fontSize": 11,
+                              "fontWeight": "900"
+                            },
+                            {
+                              "type": "frame",
+                              "id": "0Pe0W",
+                              "name": "txtBlock1b",
+                              "width": "fill_container",
+                              "layout": "vertical",
+                              "gap": 2,
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "xUlbU",
+                                  "name": "pf1bTxt",
+                                  "fill": "rgba(255,255,255,0.8)",
+                                  "content": "1 carrusel",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 13,
+                                  "fontWeight": "500"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "H2S1n",
+                                  "name": "p1bDesc",
+                                  "fill": "rgba(255,255,255,0.4)",
+                                  "textGrowth": "fixed-width",
+                                  "width": "fill_container",
+                                  "content": "Secuencia de imágenes con narrativa",
+                                  "lineHeight": 1.4,
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "G1TxC",
+                          "name": "pf1c",
+                          "width": "fill_container",
+                          "gap": 9,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "fTriw",
+                              "name": "pf1cIcon",
+                              "fill": "#E8621A",
+                              "content": "✓",
+                              "fontFamily": "Inter",
+                              "fontSize": 11,
+                              "fontWeight": "900"
+                            },
+                            {
+                              "type": "frame",
+                              "id": "WBoQx",
+                              "name": "txtBlock1c",
+                              "width": "fill_container",
+                              "layout": "vertical",
+                              "gap": 2,
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "hS5No",
+                                  "name": "pf1cTxt",
+                                  "fill": "rgba(255,255,255,0.8)",
+                                  "content": "2 videos cortos publicitarios",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 13,
+                                  "fontWeight": "500"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "dpZK0",
+                                  "name": "p1cDesc",
+                                  "fill": "rgba(255,255,255,0.4)",
+                                  "textGrowth": "fixed-width",
+                                  "width": "fill_container",
+                                  "content": "Reels cortos editados para Instagram/Facebook",
+                                  "lineHeight": 1.4,
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "kIrFs",
+                          "name": "pf1d",
+                          "width": "fill_container",
+                          "gap": 9,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "dmnu2",
+                              "name": "pf1dIcon",
+                              "fill": "#E8621A",
+                              "content": "✓",
+                              "fontFamily": "Inter",
+                              "fontSize": 11,
+                              "fontWeight": "900"
+                            },
+                            {
+                              "type": "frame",
+                              "id": "dWFey",
+                              "name": "txtBlock1d",
+                              "width": "fill_container",
+                              "layout": "vertical",
+                              "gap": 2,
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "Oxeo6",
+                                  "name": "pf1dTxt",
+                                  "fill": "rgba(255,255,255,0.8)",
+                                  "content": "Instagram y Facebook",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 13,
+                                  "fontWeight": "500"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "zFpUx",
+                                  "name": "p1dDesc",
+                                  "fill": "rgba(255,255,255,0.4)",
+                                  "textGrowth": "fixed-width",
+                                  "width": "fill_container",
+                                  "content": "Publicación en ambas plataformas Meta",
+                                  "lineHeight": 1.4,
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "dqhFf",
+                          "name": "pf1e",
+                          "width": "fill_container",
+                          "gap": 9,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "CPKS1",
+                              "name": "pf1eIcon",
+                              "fill": "#333333",
+                              "content": "—",
+                              "fontFamily": "Inter",
+                              "fontSize": 11,
+                              "fontWeight": "900"
+                            },
+                            {
+                              "type": "frame",
+                              "id": "6H2ni",
+                              "name": "txtBlock1e",
+                              "width": "fill_container",
+                              "layout": "vertical",
+                              "gap": 2,
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "6y2wQ",
+                                  "name": "pf1eTxt",
+                                  "fill": "rgba(255,255,255,0.2)",
+                                  "content": "Grabación (cliente envía fotos)",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 13,
+                                  "fontWeight": "500"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "hqhP2",
+                                  "name": "p1eDesc",
+                                  "fill": "rgba(255,255,255,0.15)",
+                                  "textGrowth": "fixed-width",
+                                  "width": "fill_container",
+                                  "content": "El cliente envía fotos/videos propios",
+                                  "lineHeight": 1.4,
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "v6h0y",
+                          "name": "pf1f",
+                          "width": "fill_container",
+                          "gap": 9,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "dE1LT",
+                              "name": "pf1fIcon",
+                              "fill": "#333333",
+                              "content": "—",
+                              "fontFamily": "Inter",
+                              "fontSize": 11,
+                              "fontWeight": "900"
+                            },
+                            {
+                              "type": "frame",
+                              "id": "FPzQT",
+                              "name": "txtBlock1f",
+                              "width": "fill_container",
+                              "layout": "vertical",
+                              "gap": 2,
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "mcJ3F",
+                                  "name": "pf1fTxt",
+                                  "fill": "rgba(255,255,255,0.2)",
+                                  "content": "Campañas Meta Ads",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 13,
+                                  "fontWeight": "500"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "INBQT",
+                                  "name": "p1fDesc",
+                                  "fill": "rgba(255,255,255,0.15)",
+                                  "textGrowth": "fixed-width",
+                                  "width": "fill_container",
+                                  "content": "No incluye gestión de campañas pagadas",
+                                  "lineHeight": 1.4,
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "3evCB",
+                      "name": "p1Btn",
+                      "width": "fill_container",
+                      "height": 46,
+                      "fill": "rgba(255,255,255,0.06)",
+                      "cornerRadius": 10,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "rgba(255,255,255,0.12)"
+                      },
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "TN50a",
+                          "name": "p1BtnTxt",
+                          "fill": "#FFFFFF",
+                          "content": "Me interesa →",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "800"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "TbXYi",
+                  "name": "plan2",
+                  "width": "fill_container",
+                  "fill": "linear-gradient(150deg, rgba(232,98,26,0.15), rgba(26,58,92,0.4))",
+                  "cornerRadius": 18,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#E8621A"
+                  },
+                  "layout": "vertical",
+                  "padding": [
+                    32,
+                    26
+                  ],
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "cv2Vp",
+                      "name": "p2badge",
+                      "fill": "#E8621A",
+                      "cornerRadius": 50,
+                      "padding": [
+                        5,
+                        18
+                      ],
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "x7785",
+                          "name": "p2badgeTxt",
+                          "fill": "#FFFFFF",
+                          "content": "⭐ MÁS ELEGIDO",
+                          "fontFamily": "Inter",
+                          "fontSize": 10,
+                          "fontWeight": "800",
+                          "letterSpacing": 2
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "WFgkf",
+                      "name": "p2tier",
+                      "fill": "#666666",
+                      "content": "NIVEL 02",
+                      "fontFamily": "Inter",
+                      "fontSize": 10,
+                      "fontWeight": "700",
+                      "letterSpacing": 3
+                    },
+                    {
+                      "type": "text",
+                      "id": "WabL5",
+                      "name": "p2name",
+                      "fill": "#FFFFFF",
+                      "content": "Plan Estándar",
+                      "fontFamily": "Inter",
+                      "fontSize": 24,
+                      "fontWeight": "900"
+                    },
+                    {
+                      "type": "text",
+                      "id": "eQYnI",
+                      "name": "p2focus",
+                      "fill": "#888888",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Clientes con Meta Ads + grabación incluida.",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "HRoaN",
+                      "name": "p2Price",
+                      "gap": 2,
+                      "padding": [
+                        0,
+                        0,
+                        4,
+                        0
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "lPRTJ",
+                          "name": "p2Sym",
+                          "fill": "#E8621A",
+                          "content": "$",
+                          "fontFamily": "Inter",
+                          "fontSize": 20,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "667EN",
+                          "name": "p2Val",
+                          "fill": "#FFFFFF",
+                          "content": "180",
+                          "fontFamily": "Inter",
+                          "fontSize": 52,
+                          "fontWeight": "900"
+                        },
+                        {
+                          "type": "text",
+                          "id": "oOMGc",
+                          "name": "p2Per",
+                          "fill": "#666666",
+                          "content": "/mes",
+                          "fontFamily": "Inter",
+                          "fontSize": 13
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "1GZ65",
+                      "name": "p2Disc",
+                      "fill": "#E8621A",
+                      "content": "Descuento especial disponible -$30*",
+                      "fontFamily": "Inter",
+                      "fontSize": 11,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "cbiia",
+                      "name": "p2Div",
+                      "fill": "rgba(255,255,255,0.08)",
+                      "width": "fill_container",
+                      "height": 1
+                    },
+                    {
+                      "type": "frame",
+                      "id": "YLhMC",
+                      "name": "p2Feats",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 10,
+                      "padding": [
+                        18,
+                        0,
+                        24,
+                        0
+                      ],
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "cj0W4",
+                          "name": "p2f1",
+                          "width": "fill_container",
+                          "gap": 9,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "t9suz",
+                              "name": "p2f1Ic",
+                              "fill": "#E8621A",
+                              "content": "✓",
+                              "fontFamily": "Inter",
+                              "fontSize": 11,
+                              "fontWeight": "900"
+                            },
+                            {
+                              "type": "frame",
+                              "id": "I0iBy",
+                              "name": "txtBlock2a",
+                              "width": "fill_container",
+                              "layout": "vertical",
+                              "gap": 2,
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "i482i",
+                                  "name": "p2f1Tx",
+                                  "fill": "rgba(255,255,255,0.8)",
+                                  "content": "3 artes estáticos",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 13,
+                                  "fontWeight": "500"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "MYlmL",
+                                  "name": "p2f1Desc",
+                                  "fill": "rgba(255,255,255,0.4)",
+                                  "textGrowth": "fixed-width",
+                                  "width": "fill_container",
+                                  "content": "Artes visuales optimizados para conversión",
+                                  "lineHeight": 1.4,
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "G1zaT",
+                          "name": "p2f2",
+                          "width": "fill_container",
+                          "gap": 9,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "Zy9CO",
+                              "name": "p2f2Ic",
+                              "fill": "#E8621A",
+                              "content": "✓",
+                              "fontFamily": "Inter",
+                              "fontSize": 11,
+                              "fontWeight": "900"
+                            },
+                            {
+                              "type": "frame",
+                              "id": "9P1Xd",
+                              "name": "txtBlock2b",
+                              "width": "fill_container",
+                              "layout": "vertical",
+                              "gap": 2,
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "7feOA",
+                                  "name": "p2f2Tx",
+                                  "fill": "rgba(255,255,255,0.8)",
+                                  "content": "2 carruseles + 3 videos publicitarios",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 13,
+                                  "fontWeight": "500"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "2Cu6l",
+                                  "name": "p2f2Desc",
+                                  "fill": "rgba(255,255,255,0.4)",
+                                  "textGrowth": "fixed-width",
+                                  "width": "fill_container",
+                                  "content": "2 carruseles + 3 reels publicitarios editados",
+                                  "lineHeight": 1.4,
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "HybEH",
+                          "name": "p2f3",
+                          "width": "fill_container",
+                          "gap": 9,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "tCsHh",
+                              "name": "p2f3Ic",
+                              "fill": "#E8621A",
+                              "content": "✓",
+                              "fontFamily": "Inter",
+                              "fontSize": 11,
+                              "fontWeight": "900"
+                            },
+                            {
+                              "type": "frame",
+                              "id": "gQmD7",
+                              "name": "txtBlock2c",
+                              "width": "fill_container",
+                              "layout": "vertical",
+                              "gap": 2,
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "gl7jh",
+                                  "name": "p2f3Tx",
+                                  "fill": "rgba(255,255,255,0.8)",
+                                  "content": "Grabación profesional incluida",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 13,
+                                  "fontWeight": "500"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "vwB89",
+                                  "name": "p2f3Desc",
+                                  "fill": "rgba(255,255,255,0.4)",
+                                  "textGrowth": "fixed-width",
+                                  "width": "fill_container",
+                                  "content": "Sesión de grabación con equipo Innovartis",
+                                  "lineHeight": 1.4,
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "vS3ug",
+                          "name": "p2f4",
+                          "width": "fill_container",
+                          "gap": 9,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "Xr7be",
+                              "name": "p2f4Ic",
+                              "fill": "#E8621A",
+                              "content": "✓",
+                              "fontFamily": "Inter",
+                              "fontSize": 11,
+                              "fontWeight": "900"
+                            },
+                            {
+                              "type": "frame",
+                              "id": "rfgq2",
+                              "name": "txtBlock2d",
+                              "width": "fill_container",
+                              "layout": "vertical",
+                              "gap": 2,
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "SIwJr",
+                                  "name": "p2f4Tx",
+                                  "fill": "rgba(255,255,255,0.8)",
+                                  "content": "Campañas en Meta Ads",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 13,
+                                  "fontWeight": "500"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "iTE82",
+                                  "name": "p2f4Desc",
+                                  "fill": "rgba(255,255,255,0.4)",
+                                  "textGrowth": "fixed-width",
+                                  "width": "fill_container",
+                                  "content": "Gestión y optimización de campañas Meta",
+                                  "lineHeight": 1.4,
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "7lrq9",
+                          "name": "p2f5",
+                          "width": "fill_container",
+                          "gap": 9,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "a7Cm2",
+                              "name": "p2f5Ic",
+                              "fill": "#E8621A",
+                              "content": "✓",
+                              "fontFamily": "Inter",
+                              "fontSize": 11,
+                              "fontWeight": "900"
+                            },
+                            {
+                              "type": "frame",
+                              "id": "aCdAN",
+                              "name": "txtBlock2e",
+                              "width": "fill_container",
+                              "layout": "vertical",
+                              "gap": 2,
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "xYuVy",
+                                  "name": "p2f5Tx",
+                                  "fill": "rgba(255,255,255,0.8)",
+                                  "content": "Calendario + Reporte mensual",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 13,
+                                  "fontWeight": "500"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "xZkQj",
+                                  "name": "p2f5Desc",
+                                  "fill": "rgba(255,255,255,0.4)",
+                                  "textGrowth": "fixed-width",
+                                  "width": "fill_container",
+                                  "content": "Planificación mensual + métricas reales",
+                                  "lineHeight": 1.4,
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "XsPXX",
+                          "name": "p2f6",
+                          "width": "fill_container",
+                          "gap": 9,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "Aut0z",
+                              "name": "p2f6Ic",
+                              "fill": "#E8621A",
+                              "content": "✓",
+                              "fontFamily": "Inter",
+                              "fontSize": 11,
+                              "fontWeight": "900"
+                            },
+                            {
+                              "type": "frame",
+                              "id": "gMvZN",
+                              "name": "txtBlock2f",
+                              "width": "fill_container",
+                              "layout": "vertical",
+                              "gap": 2,
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "yITrI",
+                                  "name": "p2f6Tx",
+                                  "fill": "rgba(255,255,255,0.8)",
+                                  "content": "Optimización enfocada en ventas",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 13,
+                                  "fontWeight": "500"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "zRRZn",
+                                  "name": "p2f6Desc",
+                                  "fill": "rgba(255,255,255,0.4)",
+                                  "textGrowth": "fixed-width",
+                                  "width": "fill_container",
+                                  "content": "A/B testing y ajuste continuo de campañas",
+                                  "lineHeight": 1.4,
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "26F6G",
+                      "name": "p2Btn",
+                      "width": "fill_container",
+                      "height": 46,
+                      "fill": "#E8621A",
+                      "cornerRadius": 10,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "gwp2C",
+                          "name": "p2BtnTxt",
+                          "fill": "#FFFFFF",
+                          "content": "Me interesa →",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "800"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "lLeRH",
+                  "name": "plan3",
+                  "width": "fill_container",
+                  "fill": "rgba(255,255,255,0.04)",
+                  "cornerRadius": 18,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "rgba(255,255,255,0.08)"
+                  },
+                  "layout": "vertical",
+                  "padding": [
+                    32,
+                    26
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Efjbb",
+                      "name": "p3tier",
+                      "fill": "#666666",
+                      "content": "NIVEL 03",
+                      "fontFamily": "Inter",
+                      "fontSize": 10,
+                      "fontWeight": "700",
+                      "letterSpacing": 3
+                    },
+                    {
+                      "type": "text",
+                      "id": "x4tGG",
+                      "name": "p3name",
+                      "fill": "#FFFFFF",
+                      "content": "Plan Profesional",
+                      "fontFamily": "Inter",
+                      "fontSize": 24,
+                      "fontWeight": "900"
+                    },
+                    {
+                      "type": "text",
+                      "id": "Hljc7",
+                      "name": "p3focus",
+                      "fill": "#666666",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Crecimiento agresivo. Meta + TikTok + web.",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "dLjsg",
+                      "name": "p3Price",
+                      "gap": 2,
+                      "padding": [
+                        0,
+                        0,
+                        4,
+                        0
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "qG1OL",
+                          "name": "p3Sym",
+                          "fill": "#E8621A",
+                          "content": "$",
+                          "fontFamily": "Inter",
+                          "fontSize": 20,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "Ib9FH",
+                          "name": "p3Val",
+                          "fill": "#FFFFFF",
+                          "content": "250",
+                          "fontFamily": "Inter",
+                          "fontSize": 52,
+                          "fontWeight": "900"
+                        },
+                        {
+                          "type": "text",
+                          "id": "GZDdG",
+                          "name": "p3Per",
+                          "fill": "#666666",
+                          "content": "/mes",
+                          "fontFamily": "Inter",
+                          "fontSize": 13
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "lKSkh",
+                      "name": "p3Disc",
+                      "fill": "#E8621A",
+                      "content": "Descuento especial disponible -$30*",
+                      "fontFamily": "Inter",
+                      "fontSize": 11,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "kZi8G",
+                      "name": "p3Div",
+                      "fill": "rgba(255,255,255,0.08)",
+                      "width": "fill_container",
+                      "height": 1
+                    },
+                    {
+                      "type": "frame",
+                      "id": "abEdr",
+                      "name": "p3Feats",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 10,
+                      "padding": [
+                        18,
+                        0,
+                        24,
+                        0
+                      ],
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "FDxPR",
+                          "name": "p3f1",
+                          "width": "fill_container",
+                          "gap": 9,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "6zSUG",
+                              "name": "p3f1Ic",
+                              "fill": "#E8621A",
+                              "content": "✓",
+                              "fontFamily": "Inter",
+                              "fontSize": 11,
+                              "fontWeight": "900"
+                            },
+                            {
+                              "type": "frame",
+                              "id": "Z1xLd",
+                              "name": "txtBlock3a",
+                              "width": "fill_container",
+                              "layout": "vertical",
+                              "gap": 2,
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "atQtP",
+                                  "name": "p3f1Tx",
+                                  "fill": "rgba(255,255,255,0.8)",
+                                  "content": "5 artes estáticos + 3 carruseles",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 13,
+                                  "fontWeight": "500"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "wWqnV",
+                                  "name": "p3f1Desc",
+                                  "fill": "rgba(255,255,255,0.4)",
+                                  "textGrowth": "fixed-width",
+                                  "width": "fill_container",
+                                  "content": "5 artes + 3 carruseles de alta conversión",
+                                  "lineHeight": 1.4,
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "lK15N",
+                          "name": "p3f2",
+                          "width": "fill_container",
+                          "gap": 9,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "q5d8P",
+                              "name": "p3f2Ic",
+                              "fill": "#E8621A",
+                              "content": "✓",
+                              "fontFamily": "Inter",
+                              "fontSize": 11,
+                              "fontWeight": "900"
+                            },
+                            {
+                              "type": "frame",
+                              "id": "3k95h",
+                              "name": "txtBlock3b",
+                              "width": "fill_container",
+                              "layout": "vertical",
+                              "gap": 2,
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "u8lmw",
+                                  "name": "p3f2Tx",
+                                  "fill": "rgba(255,255,255,0.8)",
+                                  "content": "5 videos cortos publicitarios",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 13,
+                                  "fontWeight": "500"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "ECcoj",
+                                  "name": "p3f2Desc",
+                                  "fill": "rgba(255,255,255,0.4)",
+                                  "textGrowth": "fixed-width",
+                                  "width": "fill_container",
+                                  "content": "5 reels para Meta + TikTok Ads",
+                                  "lineHeight": 1.4,
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "k5XRs",
+                          "name": "p3f3",
+                          "width": "fill_container",
+                          "gap": 9,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "4ojjB",
+                              "name": "p3f3Ic",
+                              "fill": "#E8621A",
+                              "content": "✓",
+                              "fontFamily": "Inter",
+                              "fontSize": 11,
+                              "fontWeight": "900"
+                            },
+                            {
+                              "type": "frame",
+                              "id": "bsJbA",
+                              "name": "txtBlock3c",
+                              "width": "fill_container",
+                              "layout": "vertical",
+                              "gap": 2,
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "ES6mN",
+                                  "name": "p3f3Tx",
+                                  "fill": "rgba(255,255,255,0.8)",
+                                  "content": "Grabación profesional incluida",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 13,
+                                  "fontWeight": "500"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "mEp6D",
+                                  "name": "p3f3Desc",
+                                  "fill": "rgba(255,255,255,0.4)",
+                                  "textGrowth": "fixed-width",
+                                  "width": "fill_container",
+                                  "content": "Producción audiovisual completa en estudio",
+                                  "lineHeight": 1.4,
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "XDIci",
+                          "name": "p3f4",
+                          "width": "fill_container",
+                          "gap": 9,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "BgIEF",
+                              "name": "p3f4Ic",
+                              "fill": "#E8621A",
+                              "content": "✓",
+                              "fontFamily": "Inter",
+                              "fontSize": 11,
+                              "fontWeight": "900"
+                            },
+                            {
+                              "type": "frame",
+                              "id": "25rQ4",
+                              "name": "txtBlock3d",
+                              "width": "fill_container",
+                              "layout": "vertical",
+                              "gap": 2,
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "Hoq6e",
+                                  "name": "p3f4Tx",
+                                  "fill": "rgba(255,255,255,0.8)",
+                                  "content": "Meta Ads + TikTok Ads",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 13,
+                                  "fontWeight": "500"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "Qyn18",
+                                  "name": "p3f4Desc",
+                                  "fill": "rgba(255,255,255,0.4)",
+                                  "textGrowth": "fixed-width",
+                                  "width": "fill_container",
+                                  "content": "Campañas activas en ambas plataformas",
+                                  "lineHeight": 1.4,
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "4luj5",
+                          "name": "p3f5",
+                          "width": "fill_container",
+                          "gap": 9,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "BZxnD",
+                              "name": "p3f5Ic",
+                              "fill": "#E8621A",
+                              "content": "✓",
+                              "fontFamily": "Inter",
+                              "fontSize": 11,
+                              "fontWeight": "900"
+                            },
+                            {
+                              "type": "frame",
+                              "id": "G29js",
+                              "name": "txtBlock3e",
+                              "width": "fill_container",
+                              "layout": "vertical",
+                              "gap": 2,
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "yyqkw",
+                                  "name": "p3f5Tx",
+                                  "fill": "rgba(255,255,255,0.8)",
+                                  "content": "Reporte mensual detallado",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 13,
+                                  "fontWeight": "500"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "W1HN9",
+                                  "name": "p3f5Desc",
+                                  "fill": "rgba(255,255,255,0.4)",
+                                  "textGrowth": "fixed-width",
+                                  "width": "fill_container",
+                                  "content": "Reporte detallado con CTR, CPL y ROAS",
+                                  "lineHeight": 1.4,
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "1z6Dp",
+                          "name": "p3f6",
+                          "width": "fill_container",
+                          "gap": 9,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "R9hGQ",
+                              "name": "p3f6Ic",
+                              "fill": "#E8621A",
+                              "content": "✓",
+                              "fontFamily": "Inter",
+                              "fontSize": 11,
+                              "fontWeight": "900"
+                            },
+                            {
+                              "type": "frame",
+                              "id": "06vyl",
+                              "name": "txtBlock3f",
+                              "width": "fill_container",
+                              "layout": "vertical",
+                              "gap": 2,
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "GoRPq",
+                                  "name": "p3f6Tx",
+                                  "fill": "rgba(255,255,255,0.8)",
+                                  "content": "Optimización avanzada en ventas",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 13,
+                                  "fontWeight": "500"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "d82LK",
+                                  "name": "p3f6Desc",
+                                  "fill": "rgba(255,255,255,0.4)",
+                                  "textGrowth": "fixed-width",
+                                  "width": "fill_container",
+                                  "content": "Escalamiento inteligente de presupuesto",
+                                  "lineHeight": 1.4,
+                                  "fontFamily": "Inter",
+                                  "fontSize": 11
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "b8eHv",
+                      "name": "p3Btn",
+                      "width": "fill_container",
+                      "height": 46,
+                      "fill": "rgba(255,255,255,0.06)",
+                      "cornerRadius": 10,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "rgba(255,255,255,0.12)"
+                      },
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "6DUPO",
+                          "name": "p3BtnTxt",
+                          "fill": "#FFFFFF",
+                          "content": "Me interesa →",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "800"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "Xo3jX",
+              "name": "plansNote",
+              "fill": "#555555",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "* La pauta publicitaria no está incluida en el plan · El descuento aplica bajo autorización del equipo Innovartis",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 13
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "1oATH",
+          "name": "Quote",
+          "width": "fill_container",
+          "fill": "#E8621A",
+          "layout": "vertical",
+          "gap": 20,
+          "padding": [
+            80,
+            140,
+            90,
+            140
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "rqRVg",
+              "name": "quoteText",
+              "fill": "#FFFFFF",
+              "textGrowth": "fixed-width",
+              "width": 760,
+              "content": "\"La publicidad no es gasto.\nEs inversión cuando está bien segmentada.\"",
+              "lineHeight": 1.2,
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 38,
+              "fontWeight": "900",
+              "letterSpacing": -1
+            },
+            {
+              "type": "text",
+              "id": "tPurG",
+              "name": "quoteCite",
+              "fill": "#FFFFFF",
+              "content": "— Daniel Guamán · Fundador de INNOVARTIS",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 18,
+              "fontWeight": "700"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "7FLt0",
+          "name": "Contact",
+          "width": "fill_container",
+          "fill": "#0F2236",
+          "gap": 80,
+          "padding": [
+            90,
+            120
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "mKdWU",
+              "name": "contactLeft",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "F7m09",
+                  "name": "contactLabel",
+                  "fill": "#E8621A",
+                  "content": "CONTÁCTANOS",
+                  "fontFamily": "Inter",
+                  "fontSize": 11,
+                  "fontWeight": "700",
+                  "letterSpacing": 3
+                },
+                {
+                  "type": "text",
+                  "id": "Di3Nw",
+                  "name": "contactTitle",
+                  "fill": "#FFFFFF",
+                  "textGrowth": "fixed-width",
+                  "width": 420,
+                  "content": "¿Listo para crecer de verdad?",
+                  "lineHeight": 1.1,
+                  "fontFamily": "Inter",
+                  "fontSize": 40,
+                  "fontWeight": "900",
+                  "letterSpacing": -1
+                },
+                {
+                  "type": "text",
+                  "id": "fype8",
+                  "name": "contactDesc",
+                  "fill": "#7A8FA0",
+                  "textGrowth": "fixed-width",
+                  "width": 400,
+                  "content": "Analizamos tu negocio sin costo y te decimos exactamente qué necesitas para generar más clientes.",
+                  "lineHeight": 1.7,
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "frame",
+                  "id": "B46xU",
+                  "name": "waBlock",
+                  "layout": "vertical",
+                  "gap": 14,
+                  "padding": [
+                    16,
+                    0,
+                    0,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "ZGOLV",
+                      "name": "waMainBtn",
+                      "fill": "#25D366",
+                      "cornerRadius": 10,
+                      "gap": 10,
+                      "padding": [
+                        16,
+                        28
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "I8eXG",
+                          "name": "waBtnIco",
+                          "content": "💬",
+                          "fontFamily": "Inter",
+                          "fontSize": 18,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "OrEcV",
+                          "name": "waBtnMainTxt",
+                          "fill": "#FFFFFF",
+                          "content": "Hablar por WhatsApp",
+                          "fontFamily": "Inter",
+                          "fontSize": 15,
+                          "fontWeight": "800"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "IIYBs",
+                      "name": "contactInfo",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "l5VMj",
+                          "name": "ci1",
+                          "fill": "#888888",
+                          "content": "📞 099 862 0536",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "text",
+                          "id": "WchSJ",
+                          "name": "ci2",
+                          "fill": "#888888",
+                          "content": "✉️ innuevate@gmail.com",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "text",
+                          "id": "mBvX0",
+                          "name": "ci3",
+                          "fill": "#888888",
+                          "content": "📍 Quito, Ecuador",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "LFtvD",
+              "name": "formCard",
+              "width": 520,
+              "fill": "#0A1828",
+              "cornerRadius": 16,
+              "stroke": {
+                "thickness": 1,
+                "fill": "rgba(232,98,26,0.25)"
+              },
+              "layout": "vertical",
+              "gap": 20,
+              "padding": [
+                36,
+                32
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "k00Zh",
+                  "name": "formTitle",
+                  "fill": "#FFFFFF",
+                  "content": "Envíanos un mensaje",
+                  "fontFamily": "Inter",
+                  "fontSize": 20,
+                  "fontWeight": "800"
+                },
+                {
+                  "type": "text",
+                  "id": "I8uww",
+                  "name": "formSubtitle",
+                  "fill": "#666666",
+                  "content": "Te respondemos en menos de 24 horas hábiles.",
+                  "fontFamily": "Inter",
+                  "fontSize": 13
+                },
+                {
+                  "type": "frame",
+                  "id": "X7Yzp",
+                  "name": "formRow1",
+                  "width": "fill_container",
+                  "gap": 14,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "7txWe",
+                      "name": "formName",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "gvsTg",
+                          "name": "formNameLbl",
+                          "fill": "#AAAAAA",
+                          "content": "Nombre",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "0f72r",
+                          "name": "formNameInput",
+                          "width": "fill_container",
+                          "height": 44,
+                          "fill": "#111111",
+                          "cornerRadius": 8,
+                          "stroke": {
+                            "thickness": 1,
+                            "fill": "rgba(255,255,255,0.1)"
+                          },
+                          "padding": [
+                            0,
+                            14
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "nTvTo",
+                              "name": "formNamePlaceholder",
+                              "fill": "#444444",
+                              "content": "Tu nombre",
+                              "fontFamily": "Inter",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "2Gvsb",
+                      "name": "formPhone",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "K0GNG",
+                          "name": "formPhoneLbl",
+                          "fill": "#AAAAAA",
+                          "content": "Teléfono",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "hU7w5",
+                          "name": "formPhoneInput",
+                          "width": "fill_container",
+                          "height": 44,
+                          "fill": "#111111",
+                          "cornerRadius": 8,
+                          "stroke": {
+                            "thickness": 1,
+                            "fill": "rgba(255,255,255,0.1)"
+                          },
+                          "padding": [
+                            0,
+                            14
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "PJy6X",
+                              "name": "formPhonePlaceholder",
+                              "fill": "#444444",
+                              "content": "+593 000 000 000",
+                              "fontFamily": "Inter",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "oOfTW",
+                  "name": "formEmailField",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 6,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "l4KmX",
+                      "name": "formEmailLbl",
+                      "fill": "#AAAAAA",
+                      "content": "Email",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "06is3",
+                      "name": "formEmailInput",
+                      "width": "fill_container",
+                      "height": 44,
+                      "fill": "#111111",
+                      "cornerRadius": 8,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "rgba(255,255,255,0.1)"
+                      },
+                      "padding": [
+                        0,
+                        14
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "488xw",
+                          "name": "formEmailPlaceholder",
+                          "fill": "#444444",
+                          "content": "tu@empresa.com",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "fMO64",
+                  "name": "formMsgField",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 6,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "KxWHR",
+                      "name": "formMsgLbl",
+                      "fill": "#AAAAAA",
+                      "content": "¿Cómo podemos ayudarte?",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "kypv1",
+                      "name": "formMsgInput",
+                      "width": "fill_container",
+                      "height": 100,
+                      "fill": "#111111",
+                      "cornerRadius": 8,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "rgba(255,255,255,0.1)"
+                      },
+                      "padding": 14,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "gfCLr",
+                          "name": "formMsgPlaceholder",
+                          "fill": "#444444",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Cuéntanos sobre tu negocio y tus objetivos...",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "ojXTz",
+                  "name": "formServiceField",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 6,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "uLeMD",
+                      "name": "formServiceLbl",
+                      "fill": "#AAAAAA",
+                      "content": "Servicio de interés",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "gtmEc",
+                      "name": "formServiceInput",
+                      "width": "fill_container",
+                      "height": 44,
+                      "fill": "#111111",
+                      "cornerRadius": 8,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "rgba(255,255,255,0.1)"
+                      },
+                      "padding": [
+                        0,
+                        14
+                      ],
+                      "justifyContent": "space_between",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "xq72l",
+                          "name": "formServicePlaceholder",
+                          "fill": "#444444",
+                          "content": "Meta Ads / TikTok Ads / Web / Todo",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "yJuSk",
+                          "name": "formServiceArrow",
+                          "fill": "#555555",
+                          "content": "▾",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "HNwvL",
+                  "name": "formSubmitBtn",
+                  "width": "fill_container",
+                  "height": 50,
+                  "fill": "#E8621A",
+                  "cornerRadius": 10,
+                  "gap": 8,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "ISE4T",
+                      "name": "formSubmitTxt",
+                      "fill": "#FFFFFF",
+                      "content": "Enviar mensaje →",
+                      "fontFamily": "Inter",
+                      "fontSize": 15,
+                      "fontWeight": "800"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "kVwW1",
+                  "name": "formPrivacy",
+                  "fill": "#444444",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Al enviar aceptas nuestra política de privacidad. No hacemos spam.",
+                  "textAlign": "center",
+                  "fontFamily": "Inter",
+                  "fontSize": 11
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "eAL6t",
+          "name": "Footer",
+          "width": "fill_container",
+          "fill": "#080F18",
+          "stroke": {
+            "thickness": {
+              "top": 1
+            },
+            "fill": "rgba(255,255,255,0.07)"
+          },
+          "layout": "vertical",
+          "children": [
+            {
+              "type": "frame",
+              "id": "oYtyJ",
+              "name": "footerMain",
+              "width": "fill_container",
+              "gap": 80,
+              "padding": [
+                52,
+                120,
+                48,
+                120
+              ],
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "oP3e0",
+                  "name": "footerBrand",
+                  "width": 280,
+                  "layout": "vertical",
+                  "gap": 14,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "ZWGNF",
+                      "name": "footerLogoRow",
+                      "gap": 12,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "zKUvd",
+                          "name": "footerLogoMark",
+                          "width": 34,
+                          "height": 34,
+                          "fill": "#E8621A",
+                          "cornerRadius": 6,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "Xsgcs",
+                              "name": "footerLogoMarkTxt",
+                              "fill": "#FFFFFF",
+                              "content": "IA",
+                              "fontFamily": "Inter",
+                              "fontSize": 12,
+                              "fontWeight": "700"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "qQxR4",
+                          "name": "footerBrandName",
+                          "fill": "#FFFFFF",
+                          "content": "INNOVARTIS",
+                          "fontFamily": "Inter",
+                          "fontSize": 17,
+                          "fontWeight": "900",
+                          "letterSpacing": 1
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "6CFMp",
+                      "name": "footerTagline",
+                      "fill": "#555555",
+                      "textGrowth": "fixed-width",
+                      "width": 240,
+                      "content": "Estrategia que sí genera resultados.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Vets7",
+                      "name": "footerSocials",
+                      "gap": 10,
+                      "padding": [
+                        4,
+                        0,
+                        0,
+                        0
+                      ],
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "2IVN7",
+                          "name": "fSoc1",
+                          "width": 34,
+                          "height": 34,
+                          "fill": "#1A1A1A",
+                          "cornerRadius": 6,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "rJ0kG",
+                              "name": "fSoc1Txt",
+                              "fill": "#666666",
+                              "content": "f",
+                              "fontFamily": "Inter",
+                              "fontSize": 14,
+                              "fontWeight": "700"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "qVxP7",
+                          "name": "fSoc2",
+                          "width": 34,
+                          "height": 34,
+                          "fill": "#1A1A1A",
+                          "cornerRadius": 6,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "xUj8v",
+                              "name": "fSoc2Txt",
+                              "fill": "#666666",
+                              "content": "in",
+                              "fontFamily": "Inter",
+                              "fontSize": 13,
+                              "fontWeight": "700"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "ZOfuh",
+                          "name": "fSoc3",
+                          "width": 34,
+                          "height": 34,
+                          "fill": "#1A1A1A",
+                          "cornerRadius": 6,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "1vkPp",
+                              "name": "fSoc3Txt",
+                              "fill": "#666666",
+                              "content": "tt",
+                              "fontFamily": "Inter",
+                              "fontSize": 13,
+                              "fontWeight": "700"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "cqv8x",
+                  "name": "footerCol1",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "8Sk7n",
+                      "name": "fc1Title",
+                      "fill": "#FFFFFF",
+                      "content": "Servicios",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "700",
+                      "letterSpacing": 1
+                    },
+                    {
+                      "type": "text",
+                      "id": "eFamr",
+                      "name": "fc1L1",
+                      "fill": "#555555",
+                      "content": "Meta Ads",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "CUjet",
+                      "name": "fc1L2",
+                      "fill": "#555555",
+                      "content": "TikTok Ads",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "xqsIf",
+                      "name": "fc1L3",
+                      "fill": "#555555",
+                      "content": "Diseño Web",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "bOe7q",
+                      "name": "fc1L4",
+                      "fill": "#555555",
+                      "content": "Producción de Contenido",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "AGVYw",
+                  "name": "footerCol2",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "beFby",
+                      "name": "fc2Title",
+                      "fill": "#FFFFFF",
+                      "content": "Empresa",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "700",
+                      "letterSpacing": 1
+                    },
+                    {
+                      "type": "text",
+                      "id": "uMp6h",
+                      "name": "fc2L1",
+                      "fill": "#555555",
+                      "content": "Planes y Precios",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "OE9VD",
+                      "name": "fc2L2",
+                      "fill": "#555555",
+                      "content": "Quiénes Somos",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "aAhHb",
+                      "name": "fc2L3",
+                      "fill": "#555555",
+                      "content": "Contacto",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "jAwTn",
+                  "name": "footerCol3",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "S7DXQ",
+                      "name": "fc3Title",
+                      "fill": "#FFFFFF",
+                      "content": "Contacto",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "700",
+                      "letterSpacing": 1
+                    },
+                    {
+                      "type": "text",
+                      "id": "g36kj",
+                      "name": "fc3L1",
+                      "fill": "#555555",
+                      "content": "📞 099 862 0536",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "9xFkK",
+                      "name": "fc3L2",
+                      "fill": "#555555",
+                      "content": "✉️ innuevate@gmail.com",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "qWlJq",
+                      "name": "fc3L3",
+                      "fill": "#555555",
+                      "content": "📍 Quito, Ecuador",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "7Nzeb",
+              "name": "footerBar",
+              "width": "fill_container",
+              "height": 52,
+              "fill": "#050C14",
+              "stroke": {
+                "thickness": {
+                  "top": 1
+                },
+                "fill": "rgba(255,255,255,0.05)"
+              },
+              "padding": [
+                0,
+                120
+              ],
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "uz9JS",
+                  "name": "footerCopyright",
+                  "fill": "#333333",
+                  "content": "© 2026 Innovartis. Todos los derechos reservados.",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "qxyOZ",
+                  "name": "footerMade",
+                  "fill": "#333333",
+                  "content": "Quito, Ecuador · Agencia de Marketing Digital",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "Bfqkp",
+      "x": 1200,
+      "y": 3700,
+      "name": "FloatingWA",
+      "width": 200,
+      "height": 60,
+      "fill": "transparent",
+      "layout": "none",
+      "children": [
+        {
+          "type": "frame",
+          "id": "accf5",
+          "x": 0,
+          "y": 0,
+          "name": "WA Float Button",
+          "fill": "#25D366",
+          "cornerRadius": 50,
+          "effect": {
+            "type": "shadow",
+            "shadowType": "outer",
+            "color": "rgba(37,211,102,0.45)",
+            "offset": {
+              "x": 0,
+              "y": 8
+            },
+            "blur": 24
+          },
+          "gap": 10,
+          "padding": [
+            14,
+            22
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "digss",
+              "name": "waFltIcon",
+              "content": "💬",
+              "fontFamily": "Inter",
+              "fontSize": 20,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "3XO1Y",
+              "name": "waFltTxt",
+              "fill": "#FFFFFF",
+              "content": "WhatsApp",
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "800"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
