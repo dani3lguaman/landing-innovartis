@@ -4,6 +4,6 @@ export default function robots() {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://www.innovartis.ec/sitemap.xml",
+    sitemap: "https://www.innovartis.lat/sitemap.xml",
   };
 }

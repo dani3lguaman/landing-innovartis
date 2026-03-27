@@ -8,7 +8,7 @@ const inter = Inter({
 });
 
 export const metadata = {
-  metadataBase: new URL("https://www.innovartis.ec"),
+  metadataBase: new URL("https://www.innovartis.lat"),
   title: {
     default: "INNOVARTIS — Agencia de Marketing Digital en Quito, Ecuador",
     template: "%s | INNOVARTIS",
@@ -36,7 +36,7 @@ export const metadata = {
   openGraph: {
     type: "website",
     locale: "es_EC",
-    url: "https://www.innovartis.ec",
+    url: "https://www.innovartis.lat",
     siteName: "INNOVARTIS",
     title: "INNOVARTIS — Agencia de Marketing Digital en Quito, Ecuador",
     description:
@@ -69,7 +69,7 @@ export const metadata = {
     },
   },
   alternates: {
-    canonical: "https://www.innovartis.ec",
+    canonical: "https://www.innovartis.lat",
   },
   verification: {
     google: "",
@@ -80,8 +80,8 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "MarketingAgency",
   name: "INNOVARTIS",
-  url: "https://www.innovartis.ec",
-  logo: "https://www.innovartis.ec/logo-innovartis.jpg",
+  url: "https://www.innovartis.lat",
+  logo: "https://www.innovartis.lat/logo-innovartis.jpg",
   description:
     "Agencia de marketing digital en Quito, Ecuador. Especializada en Meta Ads, TikTok Ads, producción de contenido, Google Maps y diseño web.",
   address: {
