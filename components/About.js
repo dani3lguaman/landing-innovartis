@@ -197,30 +197,12 @@ export default function About() {
         <p className="text-brand text-[11px] font-bold tracking-[3px] mb-6 uppercase">
           El equipo en acción
         </p>
-        <div className="grid grid-cols-3 gap-4">
-          <div className="col-span-2 rounded-[16px] overflow-hidden" style={{ height: "340px" }}>
-            <img
-              src="/servicio1.jpg"
-              alt="Equipo InnovArtis en sesión de grabación con cliente"
-              className="w-full h-full object-cover object-center"
-            />
-          </div>
-          <div className="flex flex-col gap-4">
-            <div className="rounded-[16px] overflow-hidden" style={{ height: "160px" }}>
-              <img
-                src="/equipo.jpg"
-                alt="Equipo InnovArtis trabajando en campo"
-                className="w-full h-full object-cover object-top"
-              />
-            </div>
-            <div className="rounded-[16px] overflow-hidden" style={{ height: "164px" }}>
-              <img
-                src="/trabajo2.jpg"
-                alt="Equipo InnovArtis en producción"
-                className="w-full h-full object-cover object-top"
-              />
-            </div>
-          </div>
+        <div className="rounded-[16px] overflow-hidden" style={{ height: "340px" }}>
+          <img
+            src="/servicio1.jpg"
+            alt="Equipo InnovArtis en sesión de grabación con cliente"
+            className="w-full h-full object-cover object-center"
+          />
         </div>
       </div>
     </section>
