@@ -72,7 +72,7 @@ const clients = [
 function Modal({ client, onClose }) {
   return (
     <div
-      className="fixed inset-0 z-[100] flex items-center justify-center p-6"
+      className="fixed inset-0 z-[100] flex items-center justify-center p-4 md:p-6"
       style={{ backgroundColor: "rgba(0,0,0,0.5)", backdropFilter: "blur(8px)" }}
       onClick={onClose}
     >
@@ -82,11 +82,12 @@ function Modal({ client, onClose }) {
           backgroundColor: "#FFFFFF",
           border: "1px solid #E2E8F0",
           boxShadow: "0 24px 80px rgba(0,0,0,0.15)",
+          maxHeight: "90vh",
+          overflowY: "auto",
         }}
         onClick={(e) => e.stopPropagation()}
       >
-        {/* Header modal */}
-        <div className="flex items-start justify-between px-8 pt-7 pb-5" style={{ borderBottom: "1px solid #E2E8F0" }}>
+        <div className="flex items-start justify-between px-6 md:px-8 pt-6 md:pt-7 pb-5" style={{ borderBottom: "1px solid #E2E8F0" }}>
           <div>
             <span
               className="text-[10px] font-bold tracking-[2px] uppercase px-2.5 py-1 rounded-[4px] mb-3 inline-block"
@@ -94,7 +95,7 @@ function Modal({ client, onClose }) {
             >
               {client.category}
             </span>
-            <h3 className="font-black text-[26px] leading-tight" style={{ color: "#0F2236" }}>{client.name}</h3>
+            <h3 className="font-black text-[22px] md:text-[26px] leading-tight" style={{ color: "#0F2236" }}>{client.name}</h3>
             <p className="text-[13px] mt-1" style={{ color: "#4A5568" }}>{client.description}</p>
           </div>
           <button
@@ -106,8 +107,7 @@ function Modal({ client, onClose }) {
           </button>
         </div>
 
-        {/* Servicios */}
-        <div className="px-8 py-4" style={{ borderBottom: "1px solid #E2E8F0" }}>
+        <div className="px-6 md:px-8 py-4" style={{ borderBottom: "1px solid #E2E8F0" }}>
           <p className="text-[10px] font-bold tracking-[2px] uppercase mb-2" style={{ color: "#7A8FA0" }}>Servicios prestados</p>
           <span
             className="text-[12px] font-semibold px-3 py-1.5 rounded-[6px]"
@@ -117,8 +117,7 @@ function Modal({ client, onClose }) {
           </span>
         </div>
 
-        {/* Portafolio grid */}
-        <div className="px-8 py-6">
+        <div className="px-6 md:px-8 py-6">
           <p className="text-[10px] font-bold tracking-[2px] uppercase mb-4" style={{ color: "#7A8FA0" }}>Trabajo realizado</p>
           <div className="grid grid-cols-3 gap-3">
             {[1, 2, 3, 4, 5, 6].map((n) => (
@@ -132,19 +131,13 @@ function Modal({ client, onClose }) {
               </div>
             ))}
           </div>
-          <p className="text-[11px] mt-4 text-center" style={{ color: "#7A8FA0" }}>
-            ¿Quieres ver ejemplos reales? Escríbenos por WhatsApp.
-          </p>
           <a
             href="https://wa.me/593998620536"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center gap-2 mt-3 h-[42px] rounded-[10px] text-[13px] font-black text-white hover:opacity-90 transition-opacity"
+            className="flex items-center justify-center gap-2 mt-4 h-[42px] rounded-[10px] text-[13px] font-black text-white hover:opacity-90 transition-opacity"
             style={{ backgroundColor: "#25D366" }}
           >
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-            </svg>
             Pedir información
           </a>
         </div>
@@ -159,29 +152,29 @@ export default function Portfolio() {
   return (
     <section
       id="portafolio"
-      className="py-[90px] px-[120px]"
+      className="py-14 md:py-[90px] px-5 md:px-[120px]"
       style={{ backgroundColor: "#F4F7FA" }}
     >
       {selected && <Modal client={selected} onClose={() => setSelected(null)} />}
 
-      <div className="mb-[52px]">
+      <div className="mb-10 md:mb-[52px]">
         <p className="text-brand text-[11px] font-bold tracking-[3px] mb-4 uppercase">Portafolio</p>
-        <div className="flex items-start justify-between gap-12">
-          <h2 className="font-black text-[46px] tracking-[-1.5px] leading-tight" style={{ color: "#0F2236" }}>
+        <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 md:gap-12">
+          <h2 className="font-black text-[30px] md:text-[46px] tracking-[-1.5px] leading-tight" style={{ color: "#0F2236" }}>
             Negocios reales que<br />confían en InnovArtis
           </h2>
-          <p className="text-[17px] font-medium leading-[1.7] max-w-[400px] mt-1" style={{ color: "#4A5568" }}>
+          <p className="text-[15px] md:text-[17px] font-medium leading-[1.7] md:max-w-[400px] md:mt-1" style={{ color: "#4A5568" }}>
             Haz clic en cualquier cliente para conocer el trabajo que hicimos juntos.
           </p>
         </div>
       </div>
 
-      <div className="grid grid-cols-4 gap-4">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
         {clients.map((client, i) => (
           <button
             key={i}
             onClick={() => setSelected(client)}
-            className="text-left rounded-[14px] px-5 py-5 flex flex-col gap-3 group transition-all duration-300 hover:-translate-y-1 hover:shadow-md"
+            className="text-left rounded-[14px] px-4 py-4 md:px-5 md:py-5 flex flex-col gap-2 md:gap-3 group transition-all duration-300 hover:-translate-y-1 hover:shadow-md"
             style={{
               backgroundColor: "#FFFFFF",
               border: "1px solid #E2E8F0",
@@ -206,15 +199,9 @@ export default function Portfolio() {
             >
               {client.category}
             </span>
-            <span className="font-black text-[16px] leading-tight" style={{ color: "#0F2236" }}>{client.name}</span>
+            <span className="font-black text-[14px] md:text-[16px] leading-tight" style={{ color: "#0F2236" }}>{client.name}</span>
             <span className="text-[11px] font-medium" style={{ color: "#7A8FA0" }}>
               {client.services}
-            </span>
-            <span
-              className="text-[11px] font-bold mt-auto flex items-center gap-1 transition-opacity opacity-0 group-hover:opacity-100"
-              style={{ color: client.categoryColor }}
-            >
-              Ver trabajo →
             </span>
           </button>
         ))}

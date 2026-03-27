@@ -1,10 +1,10 @@
 export default function Hero() {
   return (
     <section
-      className="relative pt-[172px] px-[140px] pb-[90px] overflow-hidden"
+      className="relative pt-24 md:pt-[172px] px-5 md:px-[140px] pb-12 md:pb-[90px] overflow-hidden"
       style={{ background: "linear-gradient(180deg, #FFFFFF 0%, #F4F7FA 100%)" }}
     >
-      {/* Radial glow naranja sutil */}
+      {/* Radial glow */}
       <div
         className="absolute top-0 right-0 w-[900px] h-[900px] pointer-events-none"
         style={{
@@ -13,35 +13,24 @@ export default function Hero() {
         }}
       />
 
-      {/* Partícula decorativa */}
-      <div
-        className="absolute top-[200px] right-[200px] w-3 h-3 rounded-full pointer-events-none"
-        style={{ backgroundColor: "rgba(232,98,26,0.3)", animation: "floatSlow 7s ease-in-out infinite" }}
-      />
-      <div
-        className="absolute top-[380px] right-[480px] w-2 h-2 rounded-full pointer-events-none"
-        style={{ backgroundColor: "rgba(232,98,26,0.18)", animation: "floatSlow 9s ease-in-out infinite 2s" }}
-      />
-
       {/* Badge */}
       <div
-        className="inline-flex items-center mb-8 px-4 py-1.5 rounded-[50px] text-brand text-[11px] font-semibold tracking-[2px] animate-bounceIn border-glow-animate"
+        className="inline-flex items-center mb-6 md:mb-8 px-4 py-1.5 rounded-[50px] text-brand text-[11px] font-semibold tracking-[2px] animate-bounceIn border-glow-animate"
         style={{ backgroundColor: "rgba(232,98,26,0.07)", border: "1px solid rgba(232,98,26,0.35)" }}
       >
         📍 Quito, Ecuador · Agencia de Marketing Digital
       </div>
 
       {/* H1 */}
-      <h1 className="flex flex-col mb-6">
+      <h1 className="flex flex-col mb-5 md:mb-6">
         <span
-          className="font-black leading-none tracking-[-3px] animate-fadeInUp delay-100"
-          style={{ fontSize: "96px", color: "#0F2236" }}
+          className="font-black leading-none tracking-[-2px] md:tracking-[-3px] animate-fadeInUp delay-100 text-[44px] md:text-[96px]"
+          style={{ color: "#0F2236" }}
         >
           Estrategias que sí
         </span>
         <span
-          className="text-shimmer font-black leading-none tracking-[-3px] animate-fadeInUp delay-200"
-          style={{ fontSize: "96px" }}
+          className="text-shimmer font-black leading-none tracking-[-2px] md:tracking-[-3px] animate-fadeInUp delay-200 text-[44px] md:text-[96px]"
         >
           generan resultados
         </span>
@@ -49,30 +38,30 @@ export default function Hero() {
 
       {/* Línea decorativa */}
       <div
-        className="w-[80px] h-[3px] rounded-full mb-8 animate-fadeIn delay-400"
+        className="w-[60px] md:w-[80px] h-[3px] rounded-full mb-6 md:mb-8 animate-fadeIn delay-400"
         style={{ background: "linear-gradient(90deg, #E8621A, transparent)" }}
       />
 
       {/* Subtitle */}
       <p
-        className="font-medium leading-[1.65] max-w-[600px] mb-8 animate-fadeInUp delay-400"
-        style={{ fontSize: "22px", color: "#4A5568" }}
+        className="font-medium leading-[1.65] max-w-[600px] mb-6 md:mb-8 animate-fadeInUp delay-400 text-[17px] md:text-[22px]"
+        style={{ color: "#4A5568" }}
       >
         Convierte tu inversión en clientes reales con{" "}
         <strong style={{ color: "#0F2236", fontWeight: 800 }}>estrategia y datos</strong>.
       </p>
 
       {/* CTAs */}
-      <div className="flex items-center gap-4 mb-10 animate-fadeInUp delay-500">
+      <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 mb-8 md:mb-10 animate-fadeInUp delay-500">
         <a
           href="https://wa.me/593998620536?text=Hola%2C%20quiero%20agendar%20mi%20asesor%C3%ADa%20gratuita"
           target="_blank"
           rel="noopener noreferrer"
-          className="btn-glow inline-flex items-center gap-3 text-white font-black rounded-[10px]"
+          className="btn-glow inline-flex items-center gap-3 text-white font-black rounded-[10px] w-full sm:w-auto justify-center"
           style={{
             backgroundColor: "#E8621A",
-            fontSize: "16px",
-            padding: "18px 36px",
+            fontSize: "15px",
+            padding: "16px 28px",
             letterSpacing: "0.5px",
           }}
         >
@@ -80,10 +69,10 @@ export default function Hero() {
         </a>
         <a
           href="#planes"
-          className="font-black rounded-[10px] transition-all hover:bg-brand hover:border-brand hover:text-white"
+          className="font-black rounded-[10px] transition-all hover:bg-brand hover:border-brand hover:text-white w-full sm:w-auto text-center"
           style={{
-            fontSize: "15px",
-            padding: "17px 32px",
+            fontSize: "14px",
+            padding: "15px 28px",
             border: "1px solid #E2E8F0",
             color: "#0F2236",
             letterSpacing: "0.5px",
@@ -95,7 +84,7 @@ export default function Hero() {
       </div>
 
       {/* Trust badges */}
-      <div className="flex items-center gap-6 mb-14 animate-fadeIn delay-600 flex-wrap">
+      <div className="grid grid-cols-2 md:flex md:items-center gap-3 md:gap-6 mb-10 md:mb-14 animate-fadeIn delay-600">
         {[
           { icon: "🔒", text: "Trabajamos con contrato" },
           { icon: "📋", text: "RUC activo · Empresa legal" },
@@ -112,7 +101,7 @@ export default function Hero() {
       </div>
 
       {/* Social */}
-      <div className="flex items-center gap-3 mb-14 animate-fadeIn delay-600">
+      <div className="flex items-center gap-3 mb-10 md:mb-14 animate-fadeIn delay-600">
         <span className="text-[10px] font-bold tracking-[2px]" style={{ color: "#7A8FA0" }}>
           SÍGUENOS
         </span>
@@ -154,7 +143,7 @@ export default function Hero() {
 
       {/* Stats */}
       <div
-        className="flex items-center gap-0 pt-14 animate-fadeIn delay-700"
+        className="flex flex-col sm:flex-row items-start sm:items-center gap-6 sm:gap-0 pt-10 md:pt-14 animate-fadeIn delay-700"
         style={{ borderTop: "1px solid #E2E8F0" }}
       >
         {[
@@ -164,10 +153,10 @@ export default function Hero() {
         ].map((stat, i) => (
           <div key={i} className="flex items-center">
             {i > 0 && (
-              <div className="w-px h-10 mx-12" style={{ backgroundColor: "#E2E8F0" }} />
+              <div className="hidden sm:block w-px h-10 mx-8 md:mx-12" style={{ backgroundColor: "#E2E8F0" }} />
             )}
             <div className="flex flex-col gap-1">
-              <span className="text-brand font-black text-[22px]">{stat.value}</span>
+              <span className="text-brand font-black text-[20px] md:text-[22px]">{stat.value}</span>
               <span className="text-[11px] font-medium" style={{ color: "#7A8FA0" }}>
                 {stat.label}
               </span>

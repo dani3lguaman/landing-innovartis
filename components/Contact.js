@@ -29,22 +29,21 @@ export default function Contact() {
   return (
     <section
       id="contacto"
-      className="py-[90px] px-[120px] flex gap-[80px]"
+      className="py-14 md:py-[90px] px-5 md:px-[120px] flex flex-col md:flex-row gap-10 md:gap-[80px]"
       style={{ backgroundColor: "#F4F7FA" }}
     >
       {/* Left */}
-      <div className="flex flex-col gap-8 flex-1">
+      <div className="flex flex-col gap-6 md:gap-8 flex-1">
         <div>
           <p className="text-brand text-[11px] font-bold tracking-[3px] mb-4 uppercase">Contáctanos</p>
-          <h2 className="font-black text-[40px] leading-[1.1] tracking-[-1px] max-w-[420px] mb-4" style={{ color: "#0F2236" }}>
+          <h2 className="font-black text-[28px] md:text-[40px] leading-[1.1] tracking-[-1px] mb-4" style={{ color: "#0F2236" }}>
             ¿Listo para crecer de verdad?
           </h2>
-          <p className="text-[16px] font-medium leading-[1.7] max-w-[400px]" style={{ color: "#4A5568" }}>
+          <p className="text-[15px] md:text-[16px] font-medium leading-[1.7] md:max-w-[400px]" style={{ color: "#4A5568" }}>
             Analizamos tu negocio sin costo y te decimos exactamente qué necesitas para generar más clientes.
           </p>
         </div>
 
-        {/* WhatsApp CTA */}
         <a
           href="https://wa.me/593998620536"
           target="_blank"
@@ -56,7 +55,6 @@ export default function Contact() {
           Hablar por WhatsApp
         </a>
 
-        {/* Contact info */}
         <div className="flex flex-col gap-2">
           <p className="text-[14px] font-medium" style={{ color: "#4A5568" }}>📞 099 862 0536</p>
           <p className="text-[14px] font-medium" style={{ color: "#4A5568" }}>✉️ innuevate@gmail.com</p>
@@ -66,16 +64,16 @@ export default function Contact() {
 
       {/* Right: Form */}
       <div
-        className="w-[520px] flex-shrink-0 rounded-[16px] flex flex-col gap-5"
+        className="w-full md:w-[520px] md:flex-shrink-0 rounded-[16px] flex flex-col gap-5"
         style={{
           backgroundColor: "#FFFFFF",
           border: "1px solid #E2E8F0",
           boxShadow: "0 4px 24px rgba(0,0,0,0.06)",
-          padding: "36px 32px",
+          padding: "28px 24px",
         }}
       >
         <div>
-          <h3 className="font-black text-[20px] mb-1" style={{ color: "#0F2236" }}>Envíanos un mensaje</h3>
+          <h3 className="font-black text-[18px] md:text-[20px] mb-1" style={{ color: "#0F2236" }}>Envíanos un mensaje</h3>
           <p className="text-[13px] font-medium" style={{ color: "#7A8FA0" }}>
             Te respondemos en menos de 24 horas hábiles.
           </p>
@@ -91,55 +89,24 @@ export default function Contact() {
           </div>
         ) : (
           <form onSubmit={handleSubmit} className="flex flex-col gap-4">
-            {/* Name + Phone */}
             <div className="flex gap-[14px]">
               <div className="flex-1 flex flex-col gap-1.5">
                 <label className="text-[12px] font-semibold" style={{ color: "#4A5568" }}>Nombre</label>
-                <input
-                  type="text"
-                  name="nombre"
-                  value={form.nombre}
-                  onChange={handleChange}
-                  placeholder="Tu nombre"
-                  className={inputClass}
-                  style={inputStyle}
-                  required
-                />
+                <input type="text" name="nombre" value={form.nombre} onChange={handleChange} placeholder="Tu nombre" className={inputClass} style={inputStyle} required />
               </div>
               <div className="flex-1 flex flex-col gap-1.5">
                 <label className="text-[12px] font-semibold" style={{ color: "#4A5568" }}>Teléfono</label>
-                <input
-                  type="tel"
-                  name="telefono"
-                  value={form.telefono}
-                  onChange={handleChange}
-                  placeholder="+593 000 000 000"
-                  className={inputClass}
-                  style={inputStyle}
-                />
+                <input type="tel" name="telefono" value={form.telefono} onChange={handleChange} placeholder="+593 000 000 000" className={inputClass} style={inputStyle} />
               </div>
             </div>
 
-            {/* Email */}
             <div className="flex flex-col gap-1.5">
               <label className="text-[12px] font-semibold" style={{ color: "#4A5568" }}>Email</label>
-              <input
-                type="email"
-                name="email"
-                value={form.email}
-                onChange={handleChange}
-                placeholder="tu@empresa.com"
-                className={inputClass}
-                style={inputStyle}
-                required
-              />
+              <input type="email" name="email" value={form.email} onChange={handleChange} placeholder="tu@empresa.com" className={inputClass} style={inputStyle} required />
             </div>
 
-            {/* Message */}
             <div className="flex flex-col gap-1.5">
-              <label className="text-[12px] font-semibold" style={{ color: "#4A5568" }}>
-                ¿Cómo podemos ayudarte?
-              </label>
+              <label className="text-[12px] font-semibold" style={{ color: "#4A5568" }}>¿Cómo podemos ayudarte?</label>
               <textarea
                 name="mensaje"
                 value={form.mensaje}
@@ -152,11 +119,8 @@ export default function Contact() {
               />
             </div>
 
-            {/* Service */}
             <div className="flex flex-col gap-1.5">
-              <label className="text-[12px] font-semibold" style={{ color: "#4A5568" }}>
-                Servicio de interés
-              </label>
+              <label className="text-[12px] font-semibold" style={{ color: "#4A5568" }}>Servicio de interés</label>
               <div className="relative">
                 <select
                   name="servicio"
@@ -165,24 +129,16 @@ export default function Contact() {
                   className="w-full h-11 rounded-[8px] px-3.5 text-[13px] appearance-none focus:outline-none"
                   style={{ ...inputStyle, color: form.servicio ? "#0F2236" : "#A0AEC0" }}
                 >
-                  <option value="" disabled>
-                    Meta Ads / TikTok Ads / Web / Todo
-                  </option>
+                  <option value="" disabled>Meta Ads / TikTok Ads / Web / Todo</option>
                   <option value="meta">Meta Ads</option>
                   <option value="tiktok">TikTok Ads</option>
                   <option value="web">Diseño Web</option>
                   <option value="todo">Todo incluido</option>
                 </select>
-                <span
-                  className="absolute right-3.5 top-1/2 -translate-y-1/2 pointer-events-none text-[13px]"
-                  style={{ color: "#7A8FA0" }}
-                >
-                  ▾
-                </span>
+                <span className="absolute right-3.5 top-1/2 -translate-y-1/2 pointer-events-none text-[13px]" style={{ color: "#7A8FA0" }}>▾</span>
               </div>
             </div>
 
-            {/* Submit */}
             <button
               type="submit"
               className="bg-brand text-white font-black text-[15px] h-[50px] rounded-[10px] hover:opacity-90 transition-opacity cursor-pointer"

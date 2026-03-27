@@ -8,17 +8,17 @@ const features = [
 export default function WebService() {
   return (
     <section
-      className="py-[90px] px-[120px] flex gap-[80px] items-center"
+      className="py-14 md:py-[90px] px-5 md:px-[120px] flex flex-col md:flex-row gap-10 md:gap-[80px] items-center"
       style={{ backgroundColor: "#FFFFFF" }}
     >
       {/* Left content */}
       <div className="flex-1">
         <p className="text-brand text-[11px] font-bold tracking-[3px] mb-4 uppercase">Nuevo servicio</p>
-        <h2 className="font-black text-[40px] leading-[1.1] tracking-[-1px] max-w-[480px] mb-5" style={{ color: "#0F2236" }}>
+        <h2 className="font-black text-[28px] md:text-[40px] leading-[1.1] tracking-[-1px] mb-5" style={{ color: "#0F2236" }}>
           Diseñamos tu sitio web que convierte visitas en clientes
         </h2>
         <p
-          className="text-[16px] font-medium leading-[1.7] max-w-[460px] mb-8"
+          className="text-[15px] md:text-[16px] font-medium leading-[1.7] mb-8"
           style={{ color: "#4A5568" }}
         >
           Landing pages, sitios corporativos y e-commerce diseñados con foco en conversión. Tu web como
@@ -38,7 +38,7 @@ export default function WebService() {
 
       {/* Right: visual */}
       <div
-        className="w-[480px] h-[380px] rounded-[16px] flex-shrink-0 flex items-center justify-center overflow-hidden"
+        className="w-full md:w-[480px] h-[260px] md:h-[380px] rounded-[16px] md:flex-shrink-0 flex items-center justify-center overflow-hidden"
         style={{
           border: "1px solid #E2E8F0",
           background: "linear-gradient(135deg, #F4F7FA 0%, #FFFFFF 100%)",
@@ -46,7 +46,7 @@ export default function WebService() {
         }}
       >
         <div className="text-center">
-          <div className="text-[72px] mb-4">💻</div>
+          <div className="text-[56px] md:text-[72px] mb-4">💻</div>
           <p className="text-[14px] font-medium" style={{ color: "#4A5568" }}>
             Diseño web de alto impacto
           </p>

@@ -394,7 +394,7 @@ const WA_ICON = (
 function ServiceCard({ svc, fullWidth = false }) {
   return (
     <div
-      className={`rounded-[18px] flex ${fullWidth ? "flex-row items-center gap-10" : "flex-col"} gap-5 relative group transition-all duration-300 hover:-translate-y-1 hover:shadow-md`}
+      className={`rounded-[18px] flex flex-col ${fullWidth ? "md:flex-row md:items-center md:gap-10" : ""} gap-5 relative group transition-all duration-300 hover:-translate-y-1 hover:shadow-md`}
       style={{
         backgroundColor: "#FFFFFF",
         border: "1px solid #E2E8F0",
@@ -532,26 +532,26 @@ export default function Plans() {
   return (
     <section
       id="planes"
-      className="py-[90px] px-[120px]"
+      className="py-14 md:py-[90px] px-5 md:px-[120px]"
       style={{ backgroundColor: "#FFFFFF" }}
     >
       {/* Header */}
-      <div className="mb-[52px]">
+      <div className="mb-10 md:mb-[52px]">
         <p className="text-brand text-[11px] font-bold tracking-[3px] mb-4 uppercase">
           Planes y Precios 2026
         </p>
-        <div className="flex items-end justify-between gap-12">
-          <h2 className="font-black tracking-[-2px] leading-[0.95]" style={{ fontSize: "64px", color: "#0F2236" }}>
+        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 md:gap-12">
+          <h2 className="font-black text-[34px] md:text-[64px] tracking-[-2px] leading-[0.95]" style={{ color: "#0F2236" }}>
             Elige tu plan<br />de crecimiento
           </h2>
-          <p className="text-[16px] font-medium leading-[1.6] max-w-[520px] mb-1" style={{ color: "#4A5568" }}>
+          <p className="text-[15px] md:text-[16px] font-medium leading-[1.6] md:max-w-[520px] md:mb-1" style={{ color: "#4A5568" }}>
             Estrategia + Producción + Distribución en cada plan. La pauta publicitaria no está incluida.
           </p>
         </div>
       </div>
 
       {/* Plan groups */}
-      <div className="flex flex-col gap-14">
+      <div className="flex flex-col gap-10 md:gap-14">
         {planGroups.map((group, gi) => (
           <div key={gi}>
             <p
@@ -561,10 +561,7 @@ export default function Plans() {
               {group.label}
             </p>
             <div
-              className="grid gap-5"
-              style={{
-                gridTemplateColumns: `repeat(${group.plans.length === 1 ? 1 : group.plans.length <= 2 ? 2 : 4}, 1fr)`,
-              }}
+              className={`grid gap-4 md:gap-5 grid-cols-1 sm:grid-cols-2 ${group.plans.length >= 4 ? "md:grid-cols-4" : group.plans.length === 1 ? "md:grid-cols-1 max-w-sm" : "md:grid-cols-2"}`}
             >
               {group.plans.map((plan, pi) => (
                 <PlanCard key={pi} plan={plan} />
@@ -575,50 +572,49 @@ export default function Plans() {
       </div>
 
       {/* Additional services */}
-      <div className="mt-24" data-animate>
+      <div className="mt-16 md:mt-24" data-animate>
         <p className="text-brand text-[11px] font-bold tracking-[3px] mb-4 uppercase">
           Servicios Adicionales
         </p>
-        <div className="flex items-end justify-between gap-12 mb-12">
+        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 md:gap-12 mb-8 md:mb-12">
           <h2
-            className="font-black tracking-[-2px] leading-[0.95]"
-            style={{ fontSize: "64px", color: "#0F2236" }}
+            className="font-black text-[30px] md:text-[64px] tracking-[-2px] leading-[0.95]"
+            style={{ color: "#0F2236" }}
           >
             Todo lo que tu negocio<br />
             <span className="text-brand">necesita</span>
           </h2>
-          <p className="text-[16px] font-medium leading-[1.6] max-w-[460px] mb-1" style={{ color: "#4A5568" }}>
+          <p className="text-[15px] md:text-[16px] font-medium leading-[1.6] md:max-w-[460px] md:mb-1" style={{ color: "#4A5568" }}>
             Suma cualquier servicio a tu plan actual o contrátalo de forma independiente.
           </p>
         </div>
 
-        {/* Gestión de plataformas — 3 cols */}
+        {/* Gestión de plataformas */}
         <p className="text-[10px] font-bold tracking-[3px] uppercase mb-5" style={{ color: "#7A8FA0" }}>
           Gestión de plataformas
         </p>
-        <div className="grid grid-cols-3 gap-5 mb-5">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mb-5">
           {adsPlatforms.map((svc, i) => (
             <ServiceCard key={i} svc={svc} />
           ))}
         </div>
 
-        {/* Agente IA — full width */}
+        {/* Agente IA */}
         <p className="text-[10px] font-bold tracking-[3px] uppercase mb-5 mt-10" style={{ color: "#7A8FA0" }}>
           Tecnología e IA
         </p>
         <ServiceCard svc={aiService} fullWidth />
 
-        {/* CRM — 2 cols */}
+        {/* CRM */}
         <p className="text-[10px] font-bold tracking-[3px] uppercase mb-5 mt-10" style={{ color: "#7A8FA0" }}>
           Capacitación CRM
         </p>
-        <div className="grid grid-cols-2 gap-5">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
           {crmServices.map((svc, i) => (
             <ServiceCard key={i} svc={svc} />
           ))}
         </div>
 
-        {/* Nota pauta */}
         <div className="flex items-start gap-2 mt-8">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#E8621A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="mt-0.5 flex-shrink-0">
             <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>

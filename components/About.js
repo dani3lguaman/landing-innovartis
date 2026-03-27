@@ -49,24 +49,24 @@ export default function About() {
   return (
     <section
       id="nosotros"
-      className="py-[90px] px-[120px]"
+      className="py-14 md:py-[90px] px-5 md:px-[120px]"
       style={{ backgroundColor: "#FFFFFF" }}
     >
       {/* Header */}
-      <div className="mb-[52px]" data-animate>
+      <div className="mb-10 md:mb-[52px]" data-animate>
         <p className="text-brand text-[11px] font-bold tracking-[3px] mb-4 uppercase">
           Quiénes somos
         </p>
-        <div className="flex items-end justify-between gap-12">
+        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 md:gap-12">
           <h2
-            className="font-black tracking-[-2px] leading-[0.95]"
-            style={{ fontSize: "64px", color: "#0F2236" }}
+            className="font-black text-[36px] md:text-[64px] tracking-[-2px] leading-[0.95]"
+            style={{ color: "#0F2236" }}
           >
             No somos una<br />
             <span className="text-brand">agencia común.</span>
           </h2>
           <p
-            className="text-[17px] font-medium leading-[1.7] max-w-[460px] mb-1"
+            className="text-[15px] md:text-[17px] font-medium leading-[1.7] md:max-w-[460px] md:mb-1"
             style={{ color: "#4A5568" }}
           >
             Somos un equipo especializado en publicidad digital con certificaciones reales, contratos firmados y compromiso total con tus resultados.
@@ -75,10 +75,10 @@ export default function About() {
       </div>
 
       {/* Daniel + equipo */}
-      <div className="grid grid-cols-3 gap-5 mb-14">
-        {/* Daniel card — destacada */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mb-10 md:mb-14">
+        {/* Daniel card */}
         <div
-          className="col-span-1 rounded-[18px] p-7 flex flex-col gap-5 relative overflow-hidden"
+          className="md:col-span-1 rounded-[18px] p-6 md:p-7 flex flex-col gap-5 relative overflow-hidden"
           style={{
             background: "#FFFFFF",
             border: "1px solid rgba(232,98,26,0.3)",
@@ -86,7 +86,6 @@ export default function About() {
           }}
           data-animate
         >
-          {/* Foto real de Daniel */}
           <div className="w-full aspect-square rounded-[12px] overflow-hidden mb-2">
             <img
               src="/daniel.jpg"
@@ -96,7 +95,7 @@ export default function About() {
           </div>
           <div>
             <span className="text-brand text-[10px] font-bold tracking-[2px] uppercase">CEO · Fundador</span>
-            <h3 className="font-black text-[22px] mt-1" style={{ color: "#0F2236" }}>Daniel Guamán</h3>
+            <h3 className="font-black text-[20px] md:text-[22px] mt-1" style={{ color: "#0F2236" }}>Daniel Guamán</h3>
             <p className="text-[13px] font-medium mt-1.5" style={{ color: "#4A5568" }}>
               Especialista certificado en Meta Ads y publicidad digital. La cara y garantía de cada campaña.
             </p>
@@ -115,11 +114,11 @@ export default function About() {
         </div>
 
         {/* Trust badges */}
-        <div className="col-span-2 grid grid-cols-2 gap-4">
+        <div className="md:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-4">
           {trustBadges.map((badge, i) => (
             <div
               key={i}
-              className="rounded-[14px] p-6 flex flex-col gap-3"
+              className="rounded-[14px] p-5 md:p-6 flex flex-col gap-3"
               style={{
                 backgroundColor: "#FFFFFF",
                 border: "1px solid #E2E8F0",
@@ -133,7 +132,7 @@ export default function About() {
               >
                 {badge.icon}
               </div>
-              <h4 className="font-black text-[16px]" style={{ color: "#0F2236" }}>{badge.title}</h4>
+              <h4 className="font-black text-[15px] md:text-[16px]" style={{ color: "#0F2236" }}>{badge.title}</h4>
               <p className="text-[13px] font-medium leading-[1.6]" style={{ color: "#4A5568" }}>
                 {badge.description}
               </p>
@@ -147,20 +146,19 @@ export default function About() {
         <p className="text-brand text-[11px] font-bold tracking-[3px] mb-6 uppercase">
           Certificaciones oficiales
         </p>
-        <div className="grid grid-cols-4 gap-4">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {certifications.map((cert, i) => (
             <div
               key={i}
-              className="rounded-[14px] p-5 flex flex-col gap-3"
+              className="rounded-[14px] p-4 md:p-5 flex flex-col gap-3"
               style={{
                 backgroundColor: "#FFFFFF",
                 border: "1px solid #E2E8F0",
                 boxShadow: "0 1px 3px rgba(0,0,0,0.06)",
               }}
             >
-              {/* Imagen certificado */}
               {cert.image ? (
-                <div className="w-full h-[130px] rounded-[8px] overflow-hidden">
+                <div className="w-full h-[110px] md:h-[130px] rounded-[8px] overflow-hidden">
                   <img
                     src={cert.image}
                     alt={cert.title}
@@ -169,21 +167,15 @@ export default function About() {
                 </div>
               ) : (
                 <div
-                  className="w-full h-[130px] rounded-[8px] flex flex-col items-center justify-center gap-1"
-                  style={{
-                    backgroundColor: "#F4F7FA",
-                    border: "1px dashed #E2E8F0",
-                  }}
+                  className="w-full h-[110px] md:h-[130px] rounded-[8px] flex flex-col items-center justify-center gap-1"
+                  style={{ backgroundColor: "#F4F7FA", border: "1px dashed #E2E8F0" }}
                 >
-                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="rgba(232,98,26,0.35)" strokeWidth="1.5">
-                    <circle cx="12" cy="8" r="4"/><path d="M8 14l-2 8 6-3 6 3-2-8"/>
-                  </svg>
                   <span className="text-[10px]" style={{ color: "#7A8FA0" }}>Próximamente</span>
                 </div>
               )}
               <div>
-                <p className="font-bold text-[12px] leading-tight" style={{ color: "#0F2236" }}>{cert.title}</p>
-                <p className="text-[11px] mt-1" style={{ color: "#7A8FA0" }}>
+                <p className="font-bold text-[11px] md:text-[12px] leading-tight" style={{ color: "#0F2236" }}>{cert.title}</p>
+                <p className="text-[10px] md:text-[11px] mt-1" style={{ color: "#7A8FA0" }}>
                   {cert.issuer} · {cert.year}
                 </p>
               </div>
@@ -192,12 +184,12 @@ export default function About() {
         </div>
       </div>
 
-      {/* Galería del equipo trabajando */}
-      <div className="mt-16" data-animate>
+      {/* Galería del equipo */}
+      <div className="mt-12 md:mt-16" data-animate>
         <p className="text-brand text-[11px] font-bold tracking-[3px] mb-6 uppercase">
           El equipo en acción
         </p>
-        <div className="rounded-[16px] overflow-hidden" style={{ height: "340px" }}>
+        <div className="rounded-[16px] overflow-hidden" style={{ height: "260px", maxHeight: "340px" }}>
           <img
             src="/servicio1.jpg"
             alt="Equipo InnovArtis en sesión de grabación con cliente"

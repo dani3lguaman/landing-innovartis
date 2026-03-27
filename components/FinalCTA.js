@@ -1,37 +1,33 @@
 export default function FinalCTA() {
   return (
     <section
-      className="py-[100px] px-[140px] flex flex-col items-center text-center"
+      className="py-16 md:py-[100px] px-5 md:px-[140px] flex flex-col items-center text-center"
       style={{ backgroundColor: "#E8621A" }}
     >
-      {/* Título */}
       <h2
-        className="font-black text-white leading-[1.08] tracking-[-2px] max-w-[780px] mb-6"
-        style={{ fontSize: "56px" }}
+        className="font-black text-white leading-[1.08] tracking-[-1.5px] md:tracking-[-2px] max-w-[780px] mb-5 md:mb-6 text-[32px] md:text-[56px]"
       >
         Somos el equipo que necesitas para hacer crecer tu negocio
       </h2>
 
-      {/* Subtítulo */}
       <p
-        className="font-medium leading-[1.65] max-w-[520px] mb-10"
-        style={{ fontSize: "20px", color: "rgba(255,255,255,0.85)" }}
+        className="font-medium leading-[1.65] max-w-[520px] mb-8 md:mb-10 text-[16px] md:text-[20px]"
+        style={{ color: "rgba(255,255,255,0.85)" }}
       >
         Con estrategia, datos y resultados reales. Sin humo.
       </p>
 
-      {/* CTAs */}
-      <div className="flex items-center gap-4 mb-8 flex-wrap justify-center">
+      <div className="flex flex-col sm:flex-row items-center gap-3 md:gap-4 mb-7 md:mb-8 w-full sm:w-auto">
         <a
           href="https://wa.me/593998620536?text=Hola%2C%20quiero%20agendar%20mi%20asesor%C3%ADa%20gratuita"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 font-black rounded-[10px] transition-all hover:scale-105 hover:shadow-xl"
+          className="inline-flex items-center justify-center gap-2 font-black rounded-[10px] transition-all hover:scale-105 hover:shadow-xl w-full sm:w-auto"
           style={{
             backgroundColor: "#FFFFFF",
             color: "#E8621A",
-            fontSize: "16px",
-            padding: "18px 36px",
+            fontSize: "15px",
+            padding: "16px 32px",
             boxShadow: "0 4px 20px rgba(0,0,0,0.15)",
           }}
         >
@@ -44,12 +40,12 @@ export default function FinalCTA() {
           href="https://wa.me/593998620536?text=Hola%2C%20quiero%20hablar%20sobre%20mi%20negocio"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 font-black rounded-[10px] transition-all hover:bg-white hover:text-brand"
+          className="inline-flex items-center justify-center gap-2 font-black rounded-[10px] transition-all hover:bg-white hover:text-brand w-full sm:w-auto"
           style={{
             backgroundColor: "transparent",
             color: "#FFFFFF",
-            fontSize: "16px",
-            padding: "17px 32px",
+            fontSize: "15px",
+            padding: "15px 28px",
             border: "2px solid rgba(255,255,255,0.6)",
           }}
         >
@@ -57,15 +53,14 @@ export default function FinalCTA() {
         </a>
       </div>
 
-      {/* Badge */}
       <div
-        className="inline-flex items-center gap-2 px-5 py-2.5 rounded-[50px]"
+        className="inline-flex items-center gap-2 px-4 py-2.5 rounded-[50px]"
         style={{
           backgroundColor: "rgba(0,0,0,0.12)",
           border: "1px solid rgba(255,255,255,0.2)",
         }}
       >
-        <span className="text-white font-semibold text-[13px]">
+        <span className="text-white font-semibold text-[12px] md:text-[13px]">
           ⚡ Respuesta en menos de 2 horas · +8 negocios en Quito confían en nosotros
         </span>
       </div>
