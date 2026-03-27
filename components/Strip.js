@@ -7,11 +7,14 @@ const items = [
 
 export default function Strip() {
   return (
-    <div className="bg-brand flex items-center justify-center gap-8" style={{ height: "52px" }}>
+    <div
+      className="flex items-center justify-center gap-8"
+      style={{ height: "52px", backgroundColor: "#0F2236" }}
+    >
       {items.map((item, i) => (
         <div key={i} className="flex items-center gap-8">
           {i > 0 && (
-            <span className="text-white font-bold" style={{ opacity: 0.5 }}>
+            <span className="text-white font-bold" style={{ opacity: 0.4 }}>
               ·
             </span>
           )}

@@ -3,39 +3,51 @@ const services = [
     icon: "🧠",
     title: "Estrategia",
     description:
-      "Plan de contenido, guiones para reels, segmentación de audiencias y enfoque total en conversión.",
-    bg: "rgba(232,98,26,0.08)",
-    border: "rgba(232,98,26,0.22)",
+      "Plan de contenido mensual, guiones para reels, segmentación de audiencias y enfoque total en conversión.",
   },
   {
     icon: "🎥",
-    title: "Producción",
+    title: "Producción de Contenido",
     description:
-      "Grabación profesional de reels, fotografías comerciales, videos promocionales y diseño gráfico de alto impacto.",
-    bg: "rgba(26,58,92,0.5)",
-    border: "rgba(26,58,92,0.8)",
+      "Grabación profesional dentro de Quito, fotografías comerciales, videos publicitarios y diseño gráfico.",
   },
   {
     icon: "📈",
-    title: "Distribución",
+    title: "Campañas Meta Ads",
     description:
-      "Campañas Meta Ads y TikTok Ads, manejo de redes sociales, optimización de presupuesto y reportes reales.",
-    bg: "rgba(15,55,35,0.3)",
-    border: "rgba(25,100,55,0.2)",
+      "Campañas activas en Facebook, Instagram y WhatsApp. Optimización constante y reporte mensual de resultados reales.",
+  },
+  {
+    icon: "🎵",
+    title: "TikTok Ads",
+    description:
+      "Campañas publicitarias en TikTok para negocios que quieren llegar a audiencias de rápido crecimiento.",
+  },
+  {
+    icon: "📍",
+    title: "Google Maps",
+    description:
+      "Optimizamos y gestionamos su perfil en Google Maps para que aparezca primero cuando sus clientes lo buscan. Un servicio que muy pocas agencias ofrecen.",
+  },
+  {
+    icon: "🌐",
+    title: "Diseño Web",
+    description:
+      "Landing pages y sitios corporativos diseñados para convertir visitas en clientes. Integración con WhatsApp, formularios y SEO básico.",
   },
 ];
 
 export default function Services() {
   return (
-    <section id="servicios" className="bg-navy py-[90px] px-[120px]">
+    <section id="servicios" className="py-[90px] px-[120px]" style={{ backgroundColor: "#F4F7FA" }}>
       {/* Header */}
       <div className="mb-[52px]">
         <p className="text-brand text-[11px] font-bold tracking-[3px] mb-4 uppercase">Lo que hacemos</p>
         <div className="flex items-start justify-between gap-12">
-          <h2 className="text-white font-black text-[46px] tracking-[-1.5px] leading-tight">
+          <h2 className="font-black text-[46px] tracking-[-1.5px] leading-tight" style={{ color: "#0F2236" }}>
             Agencia integral de principio a fin
           </h2>
-          <p className="text-[17px] font-medium leading-[1.7] max-w-[520px] mt-1" style={{ color: "#7A8FA0" }}>
+          <p className="text-[17px] font-medium leading-[1.7] max-w-[520px] mt-1" style={{ color: "#4A5568" }}>
             Cubrimos todo el proceso para que tú solo te enfoques en atender los clientes que te conseguimos.
           </p>
         </div>
@@ -46,12 +58,21 @@ export default function Services() {
         {services.map((svc, i) => (
           <div
             key={i}
-            className="rounded-[14px] p-8 flex flex-col gap-4"
-            style={{ backgroundColor: svc.bg, border: `1px solid ${svc.border}` }}
+            className="rounded-[14px] p-8 flex flex-col gap-4 transition-all duration-300 hover:-translate-y-1 hover:shadow-md"
+            style={{
+              backgroundColor: "#FFFFFF",
+              border: "1px solid #E2E8F0",
+              boxShadow: "0 1px 3px rgba(0,0,0,0.06)",
+            }}
           >
-            <span className="text-[32px]">{svc.icon}</span>
-            <h3 className="text-white font-black text-[22px]">{svc.title}</h3>
-            <p className="text-[14px] font-medium leading-[1.6]" style={{ color: "#7A8FA0" }}>
+            <div
+              className="w-12 h-12 rounded-[10px] flex items-center justify-center text-[24px]"
+              style={{ backgroundColor: "rgba(232,98,26,0.08)" }}
+            >
+              {svc.icon}
+            </div>
+            <h3 className="font-black text-[22px]" style={{ color: "#0F2236" }}>{svc.title}</h3>
+            <p className="text-[14px] font-medium leading-[1.6]" style={{ color: "#4A5568" }}>
               {svc.description}
             </p>
           </div>
