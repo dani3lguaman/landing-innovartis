@@ -1,28 +1,37 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
-import Strip from "@/components/Strip";
-import WhoWeServe from "@/components/WhoWeServe";
+import WhyUs from "@/components/WhyUs";
+import Cases from "@/components/Cases";
 import Services from "@/components/Services";
-import WebService from "@/components/WebService";
-import Plans from "@/components/Plans";
-import Quote from "@/components/Quote";
-import Contact from "@/components/Contact";
+import AgentDemo from "@/components/AgentDemo";
+import Method from "@/components/Method";
+import PlansSection from "@/components/PlansSection";
+import Loyalty from "@/components/Loyalty";
+import Team from "@/components/Team";
+import FinalCTA from "@/components/FinalCTA";
 import Footer from "@/components/Footer";
 import FloatingWhatsApp from "@/components/FloatingWhatsApp";
 
 export default function Home() {
   return (
-    <div className="bg-navy">
+    <div className="bg-paper">
       <Header />
       <main>
         <Hero />
-        <Strip />
-        <WhoWeServe />
+        <hr className="hairline max-w-[1150px] mx-auto" />
+        <WhyUs />
+        <hr className="hairline max-w-[1150px] mx-auto" />
+        <Cases />
+        <hr className="hairline max-w-[1150px] mx-auto" />
         <Services />
-        <WebService />
-        <Plans />
-        <Quote />
-        <Contact />
+        <AgentDemo />
+        <Method />
+        <PlansSection />
+        <hr className="hairline max-w-[1150px] mx-auto" />
+        <Loyalty />
+        <hr className="hairline max-w-[1150px] mx-auto" />
+        <Team />
+        <FinalCTA />
       </main>
       <Footer />
       <FloatingWhatsApp />

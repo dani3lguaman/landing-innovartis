@@ -1,86 +1,76 @@
+import Reveal from "./Reveal";
+import Counter from "./Counter";
+import { WA_LINK } from "./constants";
+
+const stats = [
+  { value: 3, suffix: "", label: "años construyendo marcas" },
+  { value: 12, suffix: "+", label: "empresas acompañadas" },
+  { value: 700, suffix: "", label: "leads en una sola campaña" },
+  { value: 24, suffix: "/7", label: "automatización trabajando" },
+];
+
 export default function Hero() {
   return (
-    <section
-      className="relative pt-[172px] px-[140px] pb-[80px] overflow-hidden"
-      style={{ background: "linear-gradient(180deg, #0D1F30 0%, #162C42 100%)" }}
-    >
-      {/* Radial glow */}
-      <div
-        className="absolute top-0 right-0 w-[800px] h-[800px] pointer-events-none"
-        style={{
-          background: "radial-gradient(circle at 80% 20%, rgba(232,98,26,0.12) 0%, transparent 60%)",
-        }}
-      />
-
-      {/* Badge */}
-      <div
-        className="inline-flex items-center mb-8 px-4 py-1.5 rounded-[50px] text-brand text-[11px] font-semibold tracking-[2px]"
-        style={{ backgroundColor: "rgba(232,98,26,0.12)", border: "1px solid rgba(232,98,26,0.3)" }}
-      >
-        📍 Quito, Ecuador · Especialistas B2B
-      </div>
-
-      {/* H1 */}
-      <h1 className="flex flex-col mb-6">
-        <span className="text-white font-black text-[80px] leading-none tracking-[-3px]">Más Clientes.</span>
-        <span className="text-brand font-black text-[80px] leading-none tracking-[-3px]">Más Ingresos.</span>
-        <span
-          className="font-black text-[80px] leading-none tracking-[-3px]"
-          style={{ color: "rgba(255,255,255,0.25)" }}
-        >
-          Menos Esfuerzo.
-        </span>
-      </h1>
-
-      {/* Subtitle */}
-      <p className="text-[18px] font-medium leading-[1.7] max-w-[580px] mb-8" style={{ color: "#9AAABB" }}>
-        Estrategia, producción y campañas pagadas (Meta Ads + TikTok Ads) para empresas que quieren crecer.
-        También diseñamos tu sitio web.
-      </p>
-
-      {/* CTAs */}
-      <div className="flex items-center gap-[14px] mb-14">
-        <a
-          href="#planes"
-          className="bg-brand text-white text-[15px] font-black px-8 py-4 rounded-[8px] hover:opacity-90 transition-opacity"
-        >
-          Ver planes y precios →
-        </a>
-        <a
-          href="#contacto"
-          className="text-[14px] font-medium px-7 py-[15px] rounded-[8px] hover:opacity-80 transition-opacity"
-          style={{
-            border: "1px solid rgba(255,255,255,0.15)",
-            color: "rgba(255,255,255,0.65)",
-          }}
-        >
-          Agendar llamada gratis
-        </a>
-      </div>
-
-      {/* Stats */}
-      <div
-        className="flex items-center gap-0 pt-14"
-        style={{ borderTop: "1px solid rgba(255,255,255,0.08)" }}
-      >
-        {[
-          { value: "Meta + TikTok", label: "Campañas pagadas" },
-          { value: "100%", label: "Enfoque en ventas" },
-          { value: "Web + Ads", label: "Solución integral" },
-        ].map((stat, i) => (
-          <div key={i} className="flex items-center">
-            {i > 0 && (
-              <div className="w-px h-10 mx-12" style={{ backgroundColor: "rgba(255,255,255,0.1)" }} />
-            )}
-            <div className="flex flex-col gap-1">
-              <span className="text-brand font-black text-[22px]">{stat.value}</span>
-              <span className="text-[11px] font-medium" style={{ color: "#666666" }}>
-                {stat.label}
-              </span>
+    <section className="max-w-[1150px] mx-auto px-6 pt-16 md:pt-24 pb-14">
+      <div className="grid md:grid-cols-[1.15fr_0.85fr] gap-12 items-center">
+        <div>
+          <Reveal>
+            <p className="kicker mb-5">Agencia de marketing estratégico · Quito, Ecuador</p>
+          </Reveal>
+          <Reveal delay={120}>
+            <h1 className="font-heading text-navy text-[46px] md:text-[64px] leading-[1.05] mb-7">
+              Estrategia que <em className="text-accent not-italic font-heading italic">sí</em> genera
+              resultados.
+            </h1>
+          </Reveal>
+          <Reveal delay={240}>
+            <p className="text-[17px] leading-[1.75] text-ink-soft max-w-[520px] mb-9">
+              No te cobramos por una imagen bonita. Te acompañamos con{" "}
+              <strong className="text-ink">campañas, datos, CRM y automatización</strong> para que tu
+              negocio consiga clientes reales. Somos estrategas de marketing — no una fábrica de
+              contenido.
+            </p>
+          </Reveal>
+          <Reveal delay={360}>
+            <div className="flex flex-wrap gap-4">
+              <a href={WA_LINK} target="_blank" rel="noopener noreferrer" className="btn-solid">
+                Hablemos por WhatsApp
+              </a>
+              <a href="#casos" className="btn-outline">
+                Ver resultados reales
+              </a>
             </div>
-          </div>
-        ))}
+          </Reveal>
+        </div>
+
+        <Reveal delay={300}>
+          <figure className="plate">
+            <img
+              src="/img/hero-produccion.webp"
+              alt="Producción de contenido de InnovArtis en el local de un cliente"
+            />
+            <figcaption className="pt-3 pb-1 px-1 text-[12.5px] italic text-ink-soft">
+              Producción real en el local de un cliente — Quito.
+            </figcaption>
+          </figure>
+        </Reveal>
       </div>
+
+      <Reveal delay={200}>
+        <div className="mt-16 border-y border-line grid grid-cols-2 md:grid-cols-4">
+          {stats.map((s, i) => (
+            <div
+              key={i}
+              className="py-7 px-4 text-center border-line [&:not(:last-child)]:md:border-r [&:nth-child(odd)]:border-r md:[&:nth-child(odd)]:border-r-0 md:[&:not(:last-child)]:border-r"
+            >
+              <p className="display-num text-navy text-[38px] leading-none mb-1.5">
+                <Counter value={s.value} suffix={s.suffix} />
+              </p>
+              <p className="text-[13px] text-ink-soft">{s.label}</p>
+            </div>
+          ))}
+        </div>
+      </Reveal>
     </section>
   );
 }
