@@ -1,4 +1,4 @@
-import { DM_Sans } from "next/font/google";
+import { DM_Sans, Playfair_Display } from "next/font/google";
 import styles from "./remy.module.css";
 
 const dmSans = DM_Sans({
@@ -7,10 +7,16 @@ const dmSans = DM_Sans({
   variable: "--font-dm-sans",
 });
 
+const playfair = Playfair_Display({
+  subsets: ["latin"],
+  weight: ["600", "700"],
+  variable: "--font-playfair",
+});
+
 export const metadata = {
   title: "Remy Ecuador — Extensiones de cabello 100% naturales",
   description:
-    "100% natural hair extensions · Quito y Guayaquil. WhatsApp, Instagram, TikTok y ubicaciones de nuestras sucursales.",
+    "Extensiones de cabello 100% humano y extensiones de pestañas premium (solo Remy Sur). Quito y Guayaquil. WhatsApp, Instagram, TikTok y ubicaciones.",
   openGraph: {
     title: "Remy Ecuador",
     description: "Extensiones de cabello 100% naturales · Quito y Guayaquil",
@@ -51,6 +57,15 @@ function MapsIcon({ className }) {
   );
 }
 
+const disenos = [
+  { nombre: "Clásicas", precio: "$25" },
+  { nombre: "Híbridas", precio: "$25" },
+  { nombre: "Volumen Ruso", precio: "$30" },
+  { nombre: "Hawaiana", precio: "$30" },
+  { nombre: "Aura", precio: "$30" },
+  { nombre: "Foxy", precio: "$30" },
+];
+
 const sucursales = [
   {
     nombre: "Remy Sur",
@@ -78,20 +93,24 @@ const sucursales = [
   },
 ];
 
+const waPestanas =
+  "https://wa.me/593987125904?text=Hola%2C%20quiero%20agendar%20una%20cita%20para%20extensiones%20de%20pesta%C3%B1as%20en%20Remy%20Sur%20%E2%9C%A8";
+const waExtensiones =
+  "https://wa.me/593996578736?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20extensiones%20de%20cabello%20%E2%9C%A8";
+
 export default function RemyPage() {
   return (
-    <main className={`${styles.body} ${dmSans.variable}`}>
+    <main className={`${styles.body} ${dmSans.variable} ${playfair.variable}`}>
       <div className={styles.page}>
         <div className={styles.avatarWrap}>
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img className={styles.avatar} src="/remy/logo.jpg" alt="Remy Ecuador" />
+          <div className={styles.avatarRing}>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img className={styles.avatar} src="/remy/logo.jpg" alt="Remy Ecuador" />
+          </div>
         </div>
         <div className={styles.profileName}>Remy Ecuador</div>
-        <div className={styles.profileBio}>
-          100% natural hair extensions
-          <br />
-          Quito · Guayaquil
-        </div>
+        <div className={styles.profileBio}>100% natural hair extensions</div>
+        <div className={styles.profileCity}>Quito · Guayaquil</div>
 
         <a className={styles.ltBtn} href="https://wa.me/593996578736" target="_blank" rel="noopener noreferrer">
           <WhatsAppIcon className={`${styles.icon} ${styles.waColor}`} />
@@ -110,6 +129,56 @@ export default function RemyPage() {
           <span className={styles.lbl}>TikTok — @remycabello</span>
           <span className={styles.arr}>›</span>
         </a>
+
+        <div className={styles.secLbl}>Nuevo · Pestañas</div>
+
+        <div className={styles.featureCard}>
+          <div className={styles.featureImgWrap}>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img className={styles.featureImg} src="/remy/pestanas.jpg" alt="Extensiones de pestañas Remy" />
+            <span className={styles.featureBadge}>✨ Solo en Remy Sur</span>
+          </div>
+          <div className={styles.featureBody}>
+            <div className={styles.featureTitle}>La mirada que siempre has querido</div>
+            <p className={styles.featureText}>
+              Extensiones de pestañas premium con fibras tecnológicas ultralivianas e insumos
+              hipoalergénicos — un resultado hermoso, ligero y cómodo que cuida tus pestañas naturales.
+            </p>
+            <div className={styles.priceGrid}>
+              {disenos.map((d) => (
+                <div className={styles.priceRow} key={d.nombre}>
+                  <span>{d.nombre}</span>
+                  <span className={styles.priceTag}>{d.precio}</span>
+                </div>
+              ))}
+            </div>
+            <div className={styles.featureMeta}>
+              ⏰ Aplicación: ~2 horas &nbsp;·&nbsp; 🔄 Retoques desde $18 (~1 hora)
+              <br />
+              💡 Retoque cada 2–3 semanas para una mirada siempre perfecta.
+            </div>
+            <a className={styles.ctaBtn} href={waPestanas} target="_blank" rel="noopener noreferrer">
+              <WhatsAppIcon />
+              Agendar cita en Remy Sur
+            </a>
+          </div>
+        </div>
+
+        <div className={styles.secLbl}>Extensiones de cabello</div>
+
+        <div className={styles.splitCard}>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img className={styles.splitImg} src="/remy/extensiones.jpg" alt="Extensiones de cabello 100% humano" />
+          <div className={styles.splitBody}>
+            <div className={styles.splitTitle}>Cabello que transforma tu confianza</div>
+            <p className={styles.splitText}>
+              Extensiones 100% cabello humano: aspecto natural, brillo, suavidad y durabilidad.
+            </p>
+            <a className={styles.splitLink} href={waExtensiones} target="_blank" rel="noopener noreferrer">
+              Cotizar por WhatsApp ›
+            </a>
+          </div>
+        </div>
 
         <div className={styles.secLbl}>Sucursales</div>
 
