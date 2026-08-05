@@ -6,6 +6,7 @@ import { WA_LINK } from "./constants";
 const links = [
   { href: "#casos", label: "Casos" },
   { href: "#servicios", label: "Servicios" },
+  { href: "#web", label: "Web e IA" },
   { href: "#metodo", label: "Método" },
   { href: "#planes", label: "Planes" },
   { href: "#equipo", label: "Equipo" },

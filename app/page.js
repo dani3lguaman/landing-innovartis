@@ -4,6 +4,7 @@ import WhyUs from "@/components/WhyUs";
 import Cases from "@/components/Cases";
 import Services from "@/components/Services";
 import AgentDemo from "@/components/AgentDemo";
+import WebOffers from "@/components/WebOffers";
 import Method from "@/components/Method";
 import PlansSection from "@/components/PlansSection";
 import Loyalty from "@/components/Loyalty";
@@ -25,6 +26,7 @@ export default function Home() {
         <hr className="hairline max-w-[1150px] mx-auto" />
         <Services />
         <AgentDemo />
+        <WebOffers />
         <Method />
         <PlansSection />
         <hr className="hairline max-w-[1150px] mx-auto" />

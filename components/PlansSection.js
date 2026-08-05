@@ -72,15 +72,16 @@ const EXTRAS = [
   { id: "arte", label: "Arte adicional", unit: 3, type: "count", max: 10 },
   { id: "pieza", label: "Carrusel o reel adicional", unit: 6, type: "count", max: 10 },
   { id: "jornada", label: "Jornada extra de grabación", unit: 20, type: "count", max: 4 },
-  { id: "crm", label: "CRM HubSpot para tu empresa", type: "quote" },
-  { id: "web", label: "Diseño y desarrollo web", type: "quote" },
-  { id: "ia", label: "Agente IA de WhatsApp", type: "quote" },
+  { id: "crm", label: "CRM HubSpot para tu empresa", note: "se cotiza aparte", type: "quote" },
+  { id: "web", label: "Landing page para tu negocio", note: "$120 pago único", type: "quote" },
+  { id: "tienda", label: "Tienda online", note: "desde $300 pago único", type: "quote" },
+  { id: "ia", label: "Agente IA de WhatsApp", note: "desde $150 + mensualidad", type: "quote" },
 ];
 
 export default function PlansSection() {
   const [selected, setSelected] = useState("estandar");
   const [counts, setCounts] = useState({ arte: 0, pieza: 0, jornada: 0 });
-  const [quotes, setQuotes] = useState({ crm: false, web: false, ia: false });
+  const [quotes, setQuotes] = useState({ crm: false, web: false, tienda: false, ia: false });
 
   const plan = PLANS.find((p) => p.id === selected);
 
@@ -98,7 +99,7 @@ export default function PlansSection() {
       if (e.type === "count" && counts[e.id] > 0)
         lines.push(`• ${e.label} × ${counts[e.id]} (+$${counts[e.id] * e.unit})`);
     });
-    quoteItems.forEach((e) => lines.push(`• ${e.label} (a cotizar)`));
+    quoteItems.forEach((e) => lines.push(`• ${e.label} (${e.note})`));
     if (total != null) lines.push(`Total estimado: $${total}/mes`);
     lines.push("¿Me ayudan con el siguiente paso?");
     return `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(lines.join("\n"))}`;
@@ -212,7 +213,7 @@ export default function PlansSection() {
               {EXTRAS.filter((e) => e.type === "quote").map((e) => (
                 <label key={e.id} className="flex items-center justify-between gap-4 cursor-pointer">
                   <p className="text-[14.5px] text-ink">
-                    {e.label} <span className="text-ink-soft text-[13px]">(se cotiza aparte)</span>
+                    {e.label} <span className="text-ink-soft text-[13px]">({e.note})</span>
                   </p>
                   <input
                     type="checkbox"

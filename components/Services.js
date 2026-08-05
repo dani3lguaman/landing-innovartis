@@ -19,7 +19,7 @@ const services = [
   },
   {
     name: "Diseño y desarrollo web",
-    body: "Sitios que convierten visitas en conversaciones y clientes.",
+    body: "Sitios que convierten visitas en clientes — landing desde $120, tienda online desde $300.",
   },
   {
     name: "Asesoría estratégica",
