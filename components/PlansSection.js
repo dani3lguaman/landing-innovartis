@@ -126,7 +126,7 @@ const EXTRA_GROUPS = [
     items: [
       { id: "arte", label: "Arte adicional", unit: 15, type: "count", max: 10 },
       { id: "video", label: "Video adicional", unit: 30, type: "count", max: 10 },
-      { id: "carrusel", label: "Carrusel de 3 imágenes", unit: 20, type: "count", max: 10 },
+      { id: "carrusel", label: "Carrusel de 3 imágenes", unit: 30, type: "count", max: 10 },
     ],
   },
   {
