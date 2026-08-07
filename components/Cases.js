@@ -36,26 +36,13 @@ const cases = [
 export default function Cases() {
   return (
     <section id="casos" className="max-w-[1150px] mx-auto px-6 py-20">
+      {/* Caso estrella: campañas + CRM */}
       <Reveal>
-        <div className="max-w-[680px] mb-4">
-          <p className="kicker mb-4">Casos de éxito · Resultados con evidencia</p>
-          <h2 className="font-heading text-navy text-[36px] md:text-[44px] leading-[1.12] mb-5">
-            De un local de barrio a una clínica con cinco sucursales.
-          </h2>
-          <p className="text-[16px] leading-[1.8] text-ink-soft">
-            Cada caso con su métrica y su evidencia real — capturas, likes, comentarios respondidos.
-            Así trabajamos: lo que no se puede mostrar, no se promete.
-          </p>
-        </div>
-      </Reveal>
-
-      {/* Caso estrella: academia */}
-      <Reveal delay={120}>
-        <div className="mt-10 border border-accent bg-white grid md:grid-cols-[1fr_1.1fr]">
+        <div className="border border-accent bg-white grid md:grid-cols-[1fr_1.1fr]">
           <div className="p-8 md:p-10 flex flex-col justify-center">
-            <p className="kicker mb-4">Caso destacado · Sector educativo</p>
+            <p className="kicker mb-4">Caso destacado · Campañas con CRM</p>
             <h3 className="font-heading text-navy text-[28px] leading-tight mb-4">
-              Academia de inglés — campañas con CRM
+              De $1.000 en pauta a 50 clientes nuevos cada mes
             </h3>
             <div className="flex items-baseline gap-6 mb-5">
               <div>
@@ -68,17 +55,19 @@ export default function Cases() {
                 <p className="display-num text-accent-deep text-[52px] leading-none">
                   <Counter value={50} />
                 </p>
-                <p className="text-[13px] text-ink-soft mt-1">matrículas al mes</p>
+                <p className="text-[13px] text-ink-soft mt-1">clientes cerrados al mes</p>
               </div>
             </div>
             <p className="text-[15px] leading-[1.8] text-ink-soft">
               Con <strong className="text-ink">$1.000 de pauta</strong> generamos ≈700 leads y 50
-              matrículas mensuales, con seguimiento ordenado en HubSpot CRM. El mismo método aplica a
-              cualquier negocio que viva de captar clientes.
+              cierres mensuales, cada contacto con seguimiento ordenado en HubSpot CRM.{" "}
+              <strong className="text-ink">El método no cambia según el rubro:</strong> si tu negocio
+              vive de conseguir clientes —salud, servicios, industria, retail, educación— funciona
+              igual.
             </p>
           </div>
           <figure className="plate !border-0 !border-l border-line m-0">
-            <img src="/img/caso-academia.webp" alt="Cuenta de TikTok de la academia con videos de cientos de miles de vistas" />
+            <img src="/img/caso-academia.webp" alt="Cuenta de TikTok del cliente con videos de cientos de miles de vistas" />
           </figure>
         </div>
       </Reveal>

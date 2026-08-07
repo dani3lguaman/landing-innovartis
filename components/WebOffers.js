@@ -3,25 +3,27 @@ import { WA_NUMBER } from "./constants";
 
 const offers = [
   {
-    name: "Landing page",
-    price: "$120",
-    priceNote: "pago único",
+    name: "Página web",
+    price: "$150",
+    priceNote: "pago único · dominio incluido",
     focus: "Tu negocio online en una semana, listo para vender.",
     features: [
       "1 página profesional a tu marca",
+      "Tu dominio propio incluido el primer año",
       "Botón de WhatsApp y formulario de contacto",
       "Diseño adaptado a celular",
-      "Publicada en tu dominio",
+      "Publicada y funcionando — sin trámites para ti",
     ],
-    wa: "Hola InnovArtis, quiero una landing page ($120) para mi negocio.",
+    wa: "Hola InnovArtis, quiero una página web ($150, dominio incluido) para mi negocio.",
   },
   {
     name: "Tienda online",
     price: "desde $300",
-    priceNote: "según catálogo",
+    priceNote: "pago único · dominio incluido",
     focus: "Catálogo, carrito y pedidos directo a tu WhatsApp.",
     features: [
       "Catálogo de productos administrable",
+      "Tu dominio propio incluido el primer año",
       "Pedidos por WhatsApp o pasarela de pago",
       "Diseño a tu marca, rápido y en celular",
       "Capacitación para que la manejes tú",
@@ -96,9 +98,12 @@ export default function WebOffers() {
       </div>
 
       <Reveal>
-        <p className="mt-8 text-[13px] text-ink-soft italic">
-          El dominio (tu dirección .com) lo paga el cliente — te asesoramos para comprarlo. La
-          mensualidad del agente IA depende del volumen de conversaciones de tu negocio.
+        <p className="mt-8 text-[13px] leading-[1.8] text-ink-soft italic">
+          Tu página incluye el dominio (tu dirección propia en internet) durante el primer año. A
+          partir del segundo año son <strong className="not-italic text-ink">$50 al año</strong> por
+          la renovación del dominio y el mantenimiento — nosotros nos encargamos de todo, tú no haces
+          ningún trámite. La mensualidad del agente IA depende del volumen de conversaciones de tu
+          negocio.
         </p>
       </Reveal>
     </section>

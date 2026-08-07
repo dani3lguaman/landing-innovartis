@@ -17,7 +17,7 @@ const team = [
     name: "Vanessa",
     role: "Diseñadora multimedia",
     body: "Diseña y produce el contenido, y sale a grabar cobertura en sitio con equipo propio.",
-    img: null,
+    img: "/img/equipo-vanessa.jpg",
   },
 ];
 

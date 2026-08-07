@@ -3,7 +3,11 @@ import Reveal from "./Reveal";
 const services = [
   {
     name: "Campañas publicitarias",
-    body: "Gestión de pauta en Meta, TikTok y Google, dirigida a resultados medibles.",
+    body: "Gestión de pauta en Meta Ads, Google Ads y TikTok Ads, dirigida a resultados medibles.",
+  },
+  {
+    name: "Google Maps para tu negocio",
+    body: "Que te encuentren cuando buscan lo que vendes cerca: ficha creada, verificada y optimizada.",
   },
   {
     name: "Producción de contenido",
@@ -11,7 +15,7 @@ const services = [
   },
   {
     name: "CRM HubSpot",
-    body: "Implementación y personalización para capturar y dar seguimiento a cada lead.",
+    body: "Implementación y personalización para no perder ni un lead — desde $200 + $50/mes de gestión.",
   },
   {
     name: "Automatización y agentes IA",
@@ -19,7 +23,7 @@ const services = [
   },
   {
     name: "Diseño y desarrollo web",
-    body: "Sitios que convierten visitas en clientes — landing desde $120, tienda online desde $300.",
+    body: "Sitios que convierten visitas en clientes — página web $150 con dominio incluido, tienda online desde $300.",
   },
   {
     name: "Asesoría estratégica",

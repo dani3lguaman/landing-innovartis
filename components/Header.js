@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import { WA_LINK } from "./constants";
 
 const links = [
   { href: "#casos", label: "Casos" },
@@ -32,7 +31,7 @@ export default function Header() {
               {l.label}
             </a>
           ))}
-          <a href={WA_LINK} target="_blank" rel="noopener noreferrer" className="btn-outline !py-2.5 !px-6">
+          <a href="#conocerte" className="btn-outline !py-2.5 !px-6">
             Hablemos
           </a>
         </nav>
@@ -58,7 +57,7 @@ export default function Header() {
               {l.label}
             </a>
           ))}
-          <a href={WA_LINK} target="_blank" rel="noopener noreferrer" className="btn-outline w-fit">
+          <a href="#conocerte" onClick={() => setOpen(false)} className="btn-outline w-fit">
             Hablemos
           </a>
         </nav>

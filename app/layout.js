@@ -15,6 +15,7 @@ const lora = Lora({
 });
 
 export const metadata = {
+  metadataBase: new URL("https://innovartis.lat"),
   title: "INNOVARTIS — Estrategia que sí genera resultados · Quito",
   description:
     "Agencia de marketing estratégico en Quito, Ecuador. Campañas, datos, CRM y automatización para empresas que quieren crecer en serio. Casos reales con métricas reales.",
@@ -22,6 +23,10 @@ export const metadata = {
     title: "INNOVARTIS — Estrategia que sí genera resultados",
     description:
       "Campañas, datos, CRM y automatización para empresas que quieren crecer en serio.",
+    url: "https://innovartis.lat",
+    siteName: "InnovArtis",
+    locale: "es_EC",
+    type: "website",
   },
 };
 

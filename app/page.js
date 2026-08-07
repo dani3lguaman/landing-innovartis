@@ -8,6 +8,7 @@ import WebOffers from "@/components/WebOffers";
 import Method from "@/components/Method";
 import PlansSection from "@/components/PlansSection";
 import Loyalty from "@/components/Loyalty";
+import Discovery from "@/components/Discovery";
 import Team from "@/components/Team";
 import FinalCTA from "@/components/FinalCTA";
 import Footer from "@/components/Footer";
@@ -31,7 +32,7 @@ export default function Home() {
         <PlansSection />
         <hr className="hairline max-w-[1150px] mx-auto" />
         <Loyalty />
-        <hr className="hairline max-w-[1150px] mx-auto" />
+        <Discovery />
         <Team />
         <FinalCTA />
       </main>
