@@ -25,11 +25,11 @@ const steps = [
 
 export default function Method() {
   return (
-    <section id="metodo" className="bg-navy-deep py-20">
+    <section id="metodo" className="bg-navy-deep section-y">
       <div className="max-w-[1150px] mx-auto px-6">
         <Reveal>
           <p className="kicker mb-4">Cómo trabajamos</p>
-          <h2 className="font-heading text-white text-[36px] md:text-[44px] leading-[1.12] mb-12 max-w-[620px]">
+          <h2 className="font-heading text-white text-heading mb-12 max-w-[620px]">
             Un método, cualquier industria.
           </h2>
         </Reveal>

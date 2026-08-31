@@ -18,7 +18,7 @@ export default function Hero() {
             <p className="kicker mb-5">Agencia de marketing estratégico · Quito, Ecuador</p>
           </Reveal>
           <Reveal delay={120}>
-            <h1 className="font-heading text-navy text-[46px] md:text-[64px] leading-[1.05] mb-7">
+            <h1 className="font-heading text-navy text-display mb-7">
               Estrategia que <em className="text-accent not-italic font-heading italic">sí</em> genera
               resultados.
             </h1>

@@ -33,10 +33,10 @@ const services = [
 
 export default function Services() {
   return (
-    <section id="servicios" className="max-w-[1150px] mx-auto px-6 py-20">
+    <section id="servicios" className="max-w-[1150px] mx-auto px-6 section-y">
       <Reveal>
         <p className="kicker mb-4">Servicios</p>
-        <h2 className="font-heading text-navy text-[36px] md:text-[44px] leading-[1.12] mb-10 max-w-[640px]">
+        <h2 className="font-heading text-navy text-heading mb-10 max-w-[640px]">
           Mucho más que piezas gráficas.
         </h2>
       </Reveal>

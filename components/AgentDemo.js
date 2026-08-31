@@ -107,12 +107,12 @@ export default function AgentDemo() {
   };
 
   return (
-    <section className="bg-navy-deep py-20">
+    <section className="bg-navy-deep section-y">
       <div className="max-w-[1150px] mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
         <Reveal>
           <div>
             <p className="kicker mb-4">Pruébalo tú mismo · Demo en vivo</p>
-            <h2 className="font-heading text-white text-[36px] md:text-[44px] leading-[1.12] mb-5">
+            <h2 className="font-heading text-white text-heading mb-5">
               Así trabaja un agente IA nuestro.
             </h2>
             <p className="text-[16px] leading-[1.85] text-white/75 mb-4">
@@ -128,7 +128,7 @@ export default function AgentDemo() {
           </div>
         </Reveal>
 
-        <Reveal delay={150}>
+        <Reveal delay={120}>
           <div className="bg-[#e7e0d6] border border-white/20 max-w-[430px] md:ml-auto w-full">
             {/* Barra superior estilo chat */}
             <div className="bg-navy-darker px-4 py-3 flex items-center gap-3">

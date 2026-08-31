@@ -229,10 +229,10 @@ export default function PlansSection() {
   );
 
   return (
-    <section id="planes" className="max-w-[1150px] mx-auto px-6 py-20">
+    <section id="planes" className="max-w-[1150px] mx-auto px-6 section-y">
       <Reveal>
         <p className="kicker mb-4">Planes y calculadora</p>
-        <h2 className="font-heading text-navy text-[36px] md:text-[44px] leading-[1.12] mb-4 max-w-[680px]">
+        <h2 className="font-heading text-navy text-heading mb-4 max-w-[680px]">
           Inversión transparente y estandarizada.
         </h2>
         <p className="text-[16px] leading-[1.8] text-ink-soft max-w-[640px] mb-8">

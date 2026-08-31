@@ -2,12 +2,12 @@ import Reveal from "./Reveal";
 
 export default function Loyalty() {
   return (
-    <section className="max-w-[1150px] mx-auto px-6 py-20">
+    <section className="max-w-[1150px] mx-auto px-6 section-y">
       <div className="grid md:grid-cols-2 gap-12 items-start">
         <Reveal>
           <div>
             <p className="kicker mb-4">Cómo trabajamos contigo</p>
-            <h2 className="font-heading text-navy text-[36px] md:text-[44px] leading-[1.12] mb-5">
+            <h2 className="font-heading text-navy text-heading mb-5">
               Hacemos que te descubran. La venta la cierras tú.
             </h2>
             <p className="text-[16px] leading-[1.8] text-ink-soft mb-4">
@@ -23,7 +23,7 @@ export default function Loyalty() {
           </div>
         </Reveal>
         <div className="space-y-5">
-          <Reveal delay={120}>
+          <Reveal delay={100}>
             <div className="border border-line bg-white p-7">
               <h3 className="font-heading text-navy text-[22px] mb-2">
                 Sabes en qué se va cada dólar
@@ -35,7 +35,7 @@ export default function Loyalty() {
               </p>
             </div>
           </Reveal>
-          <Reveal delay={180}>
+          <Reveal delay={200}>
             <div className="border border-line bg-white p-7">
               <h3 className="font-heading text-navy text-[22px] mb-2">Beneficios por antigüedad</h3>
               <p className="text-[14.5px] leading-[1.75] text-ink-soft">
@@ -44,7 +44,7 @@ export default function Loyalty() {
               </p>
             </div>
           </Reveal>
-          <Reveal delay={240}>
+          <Reveal delay={300}>
             <div className="border border-line bg-white p-7">
               <h3 className="font-heading text-navy text-[22px] mb-2">Programa de referidos</h3>
               <p className="text-[14.5px] leading-[1.75] text-ink-soft">

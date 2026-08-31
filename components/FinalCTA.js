@@ -3,7 +3,7 @@ import { WA_LINK, WA_NUMBER_DISPLAY } from "./constants";
 
 export default function FinalCTA() {
   return (
-    <section id="contacto" className="bg-navy py-24">
+    <section id="contacto" className="bg-navy section-y">
       <div className="max-w-[760px] mx-auto px-6 text-center">
         <Reveal>
           <p className="kicker mb-5">Conversemos</p>

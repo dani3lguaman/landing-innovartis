@@ -165,12 +165,12 @@ export default function Discovery() {
   };
 
   return (
-    <section id="conocerte" className="bg-paper-soft py-20 border-y border-line">
+    <section id="conocerte" className="bg-paper-soft section-y border-y border-line">
       <div className="max-w-[1150px] mx-auto px-6 grid md:grid-cols-[0.85fr_1.15fr] gap-12 items-start">
         <Reveal>
           <div className="md:sticky md:top-28">
             <p className="kicker mb-4">Antes de venderte nada</p>
-            <h2 className="font-heading text-navy text-[36px] md:text-[44px] leading-[1.12] mb-5">
+            <h2 className="font-heading text-navy text-heading mb-5">
               Queremos conocerte.
             </h2>
             <p className="text-[16px] leading-[1.85] text-ink-soft mb-4">

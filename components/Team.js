@@ -29,10 +29,10 @@ const team = [
 
 export default function Team() {
   return (
-    <section id="equipo" className="max-w-[1150px] mx-auto px-6 py-20">
+    <section id="equipo" className="max-w-[1150px] mx-auto px-6 section-y">
       <Reveal>
         <p className="kicker mb-4">Equipo</p>
-        <h2 className="font-heading text-navy text-[36px] md:text-[44px] leading-[1.12] mb-12 max-w-[620px]">
+        <h2 className="font-heading text-navy text-heading mb-12 max-w-[620px]">
           Personas reales detrás de cada resultado.
         </h2>
       </Reveal>

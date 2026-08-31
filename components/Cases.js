@@ -35,7 +35,7 @@ const cases = [
 
 export default function Cases() {
   return (
-    <section id="casos" className="max-w-[1150px] mx-auto px-6 py-20">
+    <section id="casos" className="max-w-[1150px] mx-auto px-6 section-y">
       {/* Caso estrella: campañas + CRM */}
       <Reveal>
         <div className="border border-accent bg-white grid md:grid-cols-[1fr_1.1fr]">

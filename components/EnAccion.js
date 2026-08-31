@@ -41,11 +41,11 @@ const shots = [
 
 export default function EnAccion() {
   return (
-    <section id="en-accion" className="py-20 overflow-hidden">
+    <section id="en-accion" className="section-y overflow-hidden">
       <div className="max-w-[1150px] mx-auto px-6">
         <Reveal>
           <p className="kicker mb-4">Así trabajamos</p>
-          <h2 className="font-heading text-navy text-[36px] md:text-[44px] leading-[1.12] mb-4 max-w-[680px]">
+          <h2 className="font-heading text-navy text-heading mb-4 max-w-[680px]">
             Esto no es banco de imágenes. Es un día nuestro de trabajo.
           </h2>
           <p className="text-[16px] leading-[1.8] text-ink-soft max-w-[640px] mb-10">
