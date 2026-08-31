@@ -75,8 +75,8 @@ export default function Cases() {
       <div className="mt-8 grid md:grid-cols-2 gap-6">
         {cases.map((c, i) => (
           <Reveal key={c.name} delay={i * 90}>
-            <article className="border border-line bg-white h-full flex flex-col hover:border-accent transition-colors">
-              <figure className="plate !border-0 !border-b border-line">
+            <article className="group border border-line bg-white h-full flex flex-col hover:border-accent transition-colors">
+              <figure className="plate card-zoom !border-0 !border-b border-line">
                 <img src={c.img} alt={`Evidencia real del caso ${c.name}`} />
               </figure>
               <div className="p-7 flex flex-col flex-1">
@@ -94,7 +94,7 @@ export default function Cases() {
                     href={c.link.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="mt-3 text-[13.5px] text-accent-deep underline underline-offset-4 w-fit"
+                    className="link-underline mt-3 text-[13.5px] text-accent-deep w-fit"
                   >
                     {c.link.label}
                   </a>

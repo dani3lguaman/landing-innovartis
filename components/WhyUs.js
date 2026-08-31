@@ -4,14 +4,16 @@ export default function WhyUs() {
   return (
     <section className="max-w-[1150px] mx-auto px-6 section-y">
       <div className="grid md:grid-cols-2 gap-12 items-start">
-        <Reveal>
-          <div>
+        <div>
+          <Reveal>
             <p className="kicker mb-4">Por qué nos eligen</p>
+          </Reveal>
+          <Reveal mask delay={80}>
             <h2 className="font-heading text-navy text-heading">
               No nos pagan por la imagen o el video. Nos pagan por los resultados.
             </h2>
-          </div>
-        </Reveal>
+          </Reveal>
+        </div>
         <Reveal delay={120}>
           <div className="text-[16px] leading-[1.85] text-ink-soft space-y-5 md:pt-2">
             <p>
@@ -33,12 +35,16 @@ export default function WhyUs() {
       <hr className="hairline my-16" />
 
       <div className="grid md:grid-cols-2 gap-12 items-start">
-        <Reveal>
-          <div>
+        <div>
+          <Reveal>
             <p className="kicker mb-4">Cómo trabajamos contigo</p>
+          </Reveal>
+          <Reveal mask delay={80}>
             <h2 className="font-heading text-navy text-heading mb-5">
               Hacemos que te descubran. La venta la cierras tú.
             </h2>
+          </Reveal>
+          <Reveal delay={160}>
             <p className="text-[16px] leading-[1.8] text-ink-soft mb-4">
               Seamos claros desde el principio:{" "}
               <strong className="text-ink">nosotros no cerramos tus ventas</strong>. Nuestro trabajo
@@ -49,8 +55,8 @@ export default function WhyUs() {
               No solo queremos tu dinero: queremos ayudarte a conseguir resultados reales y construir
               una relación de años.
             </p>
-          </div>
-        </Reveal>
+          </Reveal>
+        </div>
         <div className="space-y-5">
           <Reveal delay={100}>
             <div className="border border-line bg-white p-7">

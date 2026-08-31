@@ -29,6 +29,8 @@ export default function Method() {
       <div className="max-w-[1150px] mx-auto px-6">
         <Reveal>
           <p className="kicker mb-4">Cómo trabajamos</p>
+        </Reveal>
+        <Reveal mask delay={80}>
           <h2 className="font-heading text-white text-heading mb-12 max-w-[620px]">
             Un método, cualquier industria.
           </h2>

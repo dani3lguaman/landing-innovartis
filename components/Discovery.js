@@ -167,12 +167,16 @@ export default function Discovery() {
   return (
     <section id="conocerte" className="bg-paper-soft section-y border-y border-line">
       <div className="max-w-[1150px] mx-auto px-6 grid md:grid-cols-[0.85fr_1.15fr] gap-12 items-start">
-        <Reveal>
-          <div className="md:sticky md:top-28">
+        <div className="md:sticky md:top-28">
+          <Reveal>
             <p className="kicker mb-4">Antes de venderte nada</p>
+          </Reveal>
+          <Reveal mask delay={80}>
             <h2 className="font-heading text-navy text-heading mb-5">
               Queremos conocerte.
             </h2>
+          </Reveal>
+          <Reveal delay={160}>
             <p className="text-[16px] leading-[1.85] text-ink-soft mb-4">
               No mandamos cotizaciones genéricas. Respóndenos cinco preguntas —las mismas que te
               haríamos tomando un café— y te contestamos con{" "}
@@ -181,8 +185,8 @@ export default function Discovery() {
             <p className="text-[14px] leading-[1.8] text-ink-soft italic">
               Toma menos de un minuto. Nadie te va a llamar para insistirte.
             </p>
-          </div>
-        </Reveal>
+          </Reveal>
+        </div>
 
         <Reveal delay={120}>
           <div className="bg-white border border-line">

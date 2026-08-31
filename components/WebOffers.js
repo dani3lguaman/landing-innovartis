@@ -58,9 +58,13 @@ export default function WebOffers() {
     <section id="web" className="max-w-[1150px] mx-auto px-6 section-y">
       <Reveal>
         <p className="kicker mb-4">Nuevo · Páginas web y asistentes de WhatsApp</p>
+      </Reveal>
+      <Reveal mask delay={80}>
         <h2 className="font-heading text-navy text-heading mb-4 max-w-[680px]">
           Tienes online lo que necesita tu negocio.
         </h2>
+      </Reveal>
+      <Reveal delay={160}>
         <p className="text-[16px] leading-[1.8] text-ink-soft max-w-[640px] mb-12">
           Esta misma página que estás viendo la diseñamos y desarrollamos nosotros. Hacemos lo mismo
           por tu negocio: precios claros, entrega rápida y todo conectado a tu WhatsApp.

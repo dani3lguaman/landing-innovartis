@@ -32,6 +32,8 @@ export default function Team() {
     <section id="equipo" className="max-w-[1150px] mx-auto px-6 section-y">
       <Reveal>
         <p className="kicker mb-4">Equipo</p>
+      </Reveal>
+      <Reveal mask delay={80}>
         <h2 className="font-heading text-navy text-heading mb-12 max-w-[620px]">
           Personas reales detrás de cada resultado.
         </h2>

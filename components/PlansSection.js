@@ -232,9 +232,13 @@ export default function PlansSection() {
     <section id="planes" className="max-w-[1150px] mx-auto px-6 section-y">
       <Reveal>
         <p className="kicker mb-4">Planes y calculadora</p>
+      </Reveal>
+      <Reveal mask delay={80}>
         <h2 className="font-heading text-navy text-heading mb-4 max-w-[680px]">
           Inversión transparente y estandarizada.
         </h2>
+      </Reveal>
+      <Reveal delay={160}>
         <p className="text-[16px] leading-[1.8] text-ink-soft max-w-[640px] mb-8">
           Precios claros, sin regateo: elige tu punto de partida y arma tu plan al instante. ¿Tu
           empresa necesita algo más grande? Los proyectos corporativos se cotizan a la medida.

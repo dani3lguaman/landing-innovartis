@@ -36,6 +36,8 @@ export default function Services() {
     <section id="servicios" className="max-w-[1150px] mx-auto px-6 section-y">
       <Reveal>
         <p className="kicker mb-4">Servicios</p>
+      </Reveal>
+      <Reveal mask delay={80}>
         <h2 className="font-heading text-navy text-heading mb-10 max-w-[640px]">
           Mucho más que piezas gráficas.
         </h2>

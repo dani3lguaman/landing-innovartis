@@ -45,9 +45,13 @@ export default function EnAccion() {
       <div className="max-w-[1150px] mx-auto px-6">
         <Reveal>
           <p className="kicker mb-4">Así trabajamos</p>
+        </Reveal>
+        <Reveal mask delay={80}>
           <h2 className="font-heading text-navy text-heading mb-4 max-w-[680px]">
             Esto no es banco de imágenes. Es un día nuestro de trabajo.
           </h2>
+        </Reveal>
+        <Reveal delay={160}>
           <p className="text-[16px] leading-[1.8] text-ink-soft max-w-[640px] mb-10">
             Grabamos en el local de cada cliente con equipo propio — luz, micrófono y dirección de
             escena. Estas son escenas reales de esta semana, sin filtro y sin actores.
