@@ -5,25 +5,25 @@ const offers = [
   {
     name: "Página web",
     price: "$150",
-    priceNote: "pago único · dominio incluido",
+    priceNote: "pago único · el dominio queda a tu nombre",
     focus: "Tu negocio online en una semana, listo para vender.",
     features: [
       "1 página profesional a tu marca",
-      "Tu dominio propio incluido el primer año",
+      "El dominio se registra a TU nombre — es tuyo, no nuestro",
       "Botón de WhatsApp y formulario de contacto",
       "Diseño adaptado a celular",
-      "Publicada y funcionando — sin trámites para ti",
+      "Publicada y funcionando — te guiamos en cada paso",
     ],
-    wa: "Hola InnovArtis, quiero una página web ($150, dominio incluido) para mi negocio.",
+    wa: "Hola InnovArtis, quiero una página web ($150, con el dominio a mi nombre) para mi negocio.",
   },
   {
     name: "Tienda online",
     price: "desde $300",
-    priceNote: "pago único · dominio incluido",
+    priceNote: "pago único · el dominio queda a tu nombre",
     focus: "Catálogo, carrito y pedidos directo a tu WhatsApp.",
     features: [
       "Catálogo de productos administrable",
-      "Tu dominio propio incluido el primer año",
+      "El dominio se registra a TU nombre — es tuyo, no nuestro",
       "Pedidos por WhatsApp o pasarela de pago",
       "Diseño a tu marca, rápido y en celular",
       "Capacitación para que la manejes tú",
@@ -99,11 +99,13 @@ export default function WebOffers() {
 
       <Reveal>
         <p className="mt-8 text-[13px] leading-[1.8] text-ink-soft italic">
-          Tu página incluye el dominio (tu dirección propia en internet) durante el primer año. A
-          partir del segundo año son <strong className="not-italic text-ink">$50 al año</strong> por
-          la renovación del dominio y el mantenimiento — nosotros nos encargamos de todo, tú no haces
-          ningún trámite. La mensualidad del agente IA depende del volumen de conversaciones de tu
-          negocio.
+          Los números completos, desde hoy: la página se construye una sola vez ($150). El dominio
+          — tu dirección propia en internet — <strong className="not-italic text-ink">lo compras tú
+          y queda registrado a tu nombre</strong>: te guiamos en la compra y si un día te quieres ir,
+          te lo llevas. Mantener la página al aire cuesta{" "}
+          <strong className="not-italic text-ink">$100 al año</strong>, con hosting, seguridad y
+          actualizaciones incluidos. No hay un cuarto cobro. La mensualidad del agente depende del
+          volumen de conversaciones de tu negocio.
         </p>
       </Reveal>
     </section>

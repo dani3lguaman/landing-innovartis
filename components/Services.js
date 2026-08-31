@@ -23,7 +23,7 @@ const services = [
   },
   {
     name: "Diseño y desarrollo web",
-    body: "Sitios que convierten visitas en clientes — página web $150 con dominio incluido, tienda online desde $300.",
+    body: "Sitios que convierten visitas en clientes — página web $150 con el dominio a tu nombre, tienda online desde $300.",
   },
   {
     name: "Asesoría estratégica",

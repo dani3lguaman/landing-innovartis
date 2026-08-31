@@ -17,7 +17,13 @@ const team = [
     name: "Vanessa",
     role: "Diseñadora multimedia",
     body: "Diseña y produce el contenido, y sale a grabar cobertura en sitio con equipo propio.",
-    img: "/img/equipo-vanessa.jpg",
+    img: "/img/equipo-vanessa-nueva.jpg",
+  },
+  {
+    name: "Martina",
+    role: "Asistente creativa",
+    body: "Coordina briefs, materiales y aprobaciones para que cada pieza salga a tiempo.",
+    img: "/img/equipo-martina.jpg",
   },
 ];
 
@@ -30,7 +36,7 @@ export default function Team() {
           Personas reales detrás de cada resultado.
         </h2>
       </Reveal>
-      <div className="grid md:grid-cols-3 gap-10">
+      <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-10">
         {team.map((t, i) => (
           <Reveal key={t.name} delay={i * 120}>
             <div>

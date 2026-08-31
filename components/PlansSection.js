@@ -138,8 +138,8 @@ const EXTRA_GROUPS = [
     title: "Web, CRM y automatización",
     hint: "Proyectos que se cobran aparte del plan mensual",
     items: [
-      { id: "web", label: "Página web para tu negocio", note: "$150 único, dominio incluido", type: "quote" },
-      { id: "tienda", label: "Tienda online", note: "desde $300, dominio incluido", type: "quote" },
+      { id: "web", label: "Página web para tu negocio", note: "$150 único, dominio a tu nombre", type: "quote" },
+      { id: "tienda", label: "Tienda online", note: "desde $300, dominio a tu nombre", type: "quote" },
       { id: "ia", label: "Agente IA de WhatsApp", note: "desde $150 + mensualidad", type: "quote" },
       { id: "crm", label: "CRM HubSpot montado a tu medida", note: "desde $200 + $50/mes", type: "quote" },
     ],
