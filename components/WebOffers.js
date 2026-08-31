@@ -1,5 +1,9 @@
+"use client";
+
+import { useState } from "react";
 import Reveal from "./Reveal";
 import { WA_NUMBER } from "./constants";
+import WhatsAppAssistantDemo from "./WhatsAppAssistantDemo";
 
 const offers = [
   {
@@ -31,26 +35,29 @@ const offers = [
     wa: "Hola InnovArtis, quiero cotizar una tienda online (desde $300).",
   },
   {
-    name: "Agente IA de WhatsApp",
+    name: "Asistente automático de WhatsApp",
     price: "desde $150",
     priceNote: "instalación + mensualidad",
-    focus: "Atiende, agenda y registra clientes 24/7 — como la demo de arriba.",
+    focus: "Atiende, agenda y registra clientes 24/7 — pruébalo abajo.",
     features: [
       "Configurado con tus precios, horarios y tono",
       "Responde al instante, de día y de noche",
       "Cada contacto queda ordenado en tu CRM",
       "Mantenimiento y ajustes mensuales incluidos",
     ],
-    wa: "Hola InnovArtis, quiero un agente IA de WhatsApp para mi negocio.",
+    wa: "Hola InnovArtis, quiero un asistente automático de WhatsApp para mi negocio.",
     featured: true,
+    showDemo: true,
   },
 ];
 
 export default function WebOffers() {
+  const [demoOpen, setDemoOpen] = useState(false);
+
   return (
     <section id="web" className="max-w-[1150px] mx-auto px-6 section-y">
       <Reveal>
-        <p className="kicker mb-4">Nuevo · Páginas web y agentes IA</p>
+        <p className="kicker mb-4">Nuevo · Páginas web y asistentes de WhatsApp</p>
         <h2 className="font-heading text-navy text-heading mb-4 max-w-[680px]">
           Tienes online lo que necesita tu negocio.
         </h2>
@@ -84,6 +91,15 @@ export default function WebOffers() {
                   </li>
                 ))}
               </ul>
+              {o.showDemo && (
+                <button
+                  type="button"
+                  onClick={() => setDemoOpen((v) => !v)}
+                  className="btn-outline w-full mb-3"
+                >
+                  {demoOpen ? "Ocultar la demo" : "Probar la demo en vivo →"}
+                </button>
+              )}
               <a
                 href={`https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(o.wa)}`}
                 target="_blank"
@@ -97,6 +113,17 @@ export default function WebOffers() {
         ))}
       </div>
 
+      {demoOpen && (
+        <Reveal className="mt-10">
+          <div className="bg-navy-deep p-6 md:p-10">
+            <p className="kicker !text-white/60 mb-6 text-center">
+              Demo en vivo · Así responde el asistente
+            </p>
+            <WhatsAppAssistantDemo />
+          </div>
+        </Reveal>
+      )}
+
       <Reveal>
         <p className="mt-8 text-[13px] leading-[1.8] text-ink-soft italic">
           Los números completos, desde hoy: la página se construye una sola vez ($150). El dominio
@@ -104,8 +131,8 @@ export default function WebOffers() {
           y queda registrado a tu nombre</strong>: te guiamos en la compra y si un día te quieres ir,
           te lo llevas. Mantener la página al aire cuesta{" "}
           <strong className="not-italic text-ink">$100 al año</strong>, con hosting, seguridad y
-          actualizaciones incluidos. No hay un cuarto cobro. La mensualidad del agente depende del
-          volumen de conversaciones de tu negocio.
+          actualizaciones incluidos. No hay un cuarto cobro. La mensualidad del asistente depende
+          del volumen de conversaciones de tu negocio.
         </p>
       </Reveal>
     </section>

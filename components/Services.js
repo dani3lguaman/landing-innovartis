@@ -18,8 +18,8 @@ const services = [
     body: "Implementación y personalización para no perder ni un lead — desde $200 + $50/mes de gestión.",
   },
   {
-    name: "Automatización y agentes IA",
-    body: "Agentes de WhatsApp que responden y ordenan contactos sin que se te escape nadie.",
+    name: "Automatización y asistentes de WhatsApp",
+    body: "Asistentes automáticos de WhatsApp que responden y ordenan contactos sin que se te escape nadie.",
   },
   {
     name: "Diseño y desarrollo web",

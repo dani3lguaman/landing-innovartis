@@ -63,7 +63,7 @@ export default function Team() {
       <Reveal>
         <p className="mt-12 text-[14.5px] italic text-ink-soft max-w-[520px]">
           Contamos con equipo propio — iPhone, micrófono y luz — para garantizar un trabajo de
-          calidad. Nada de contenido masivo generado por inteligencia artificial.
+          calidad. Nada de contenido masivo ni genérico: todo se graba y se dirige a mano.
         </p>
       </Reveal>
     </section>
