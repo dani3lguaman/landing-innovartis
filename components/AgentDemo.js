@@ -7,7 +7,7 @@ import { WA_NUMBER } from "./constants";
 const SCRIPT = {
   start: {
     bot: [
-      "¡Hola! 👋 Soy un agente IA como los que InnovArtis crea para sus clientes.",
+      "¡Hola! 👋 Soy un asistente automático como los que InnovArtis crea para sus clientes.",
       "Atiendo el WhatsApp de un negocio 24/7: respondo precios, agendo citas y registro cada contacto en el CRM. Pruébame 👇",
     ],
     options: [
@@ -58,7 +58,7 @@ const SCRIPT = {
       "Mientras tú duermes, yo atiendo. Mientras trabajas, yo agendo. Y cada contacto queda ordenado en tu CRM. 🤖",
       "InnovArtis me configura a la medida de tu negocio: tus precios, tus horarios, tu tono. ¿Quieres uno así?",
     ],
-    options: [{ label: "Quiero un agente IA para mi negocio →", href: true }],
+    options: [{ label: "Quiero un asistente así para mi negocio →", href: true }],
   },
 };
 
@@ -113,7 +113,7 @@ export default function AgentDemo() {
           <div>
             <p className="kicker mb-4">Pruébalo tú mismo · Demo en vivo</p>
             <h2 className="font-heading text-white text-[36px] md:text-[44px] leading-[1.12] mb-5">
-              Así trabaja un agente IA nuestro.
+              Así trabaja un asistente nuestro.
             </h2>
             <p className="text-[16px] leading-[1.85] text-white/75 mb-4">
               No te contamos que hacemos automatización — te dejamos{" "}
@@ -136,7 +136,7 @@ export default function AgentDemo() {
                 🤖
               </div>
               <div>
-                <p className="text-white text-[14px] leading-tight">Agente IA · InnovArtis</p>
+                <p className="text-white text-[14px] leading-tight">Asistente · InnovArtis</p>
                 <p className="text-[11.5px] leading-tight text-[#8fd3a7]">
                   {typing ? "escribiendo…" : "en línea"}
                 </p>
@@ -185,7 +185,7 @@ export default function AgentDemo() {
                     <a
                       key={opt.label}
                       href={`https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(
-                        "Hola InnovArtis, probé la demo del agente IA en su web y quiero uno para mi negocio."
+                        "Hola InnovArtis, probé la demo del asistente en su web y quiero uno para mi negocio."
                       )}`}
                       target="_blank"
                       rel="noopener noreferrer"

@@ -91,7 +91,7 @@ const HIGH_VOLUME = [
     id: "gold",
     name: "Gold",
     price: { sin: 480, con: 510 },
-    resumen: "26 piezas · todo lo del Plus + agente IA de WhatsApp 24/7",
+    resumen: "26 piezas · todo lo del Plus + asistente automático de WhatsApp 24/7",
   },
   {
     id: "diamante",
@@ -112,7 +112,7 @@ const CORPORATE = {
     "Estrategia y acompañamiento dedicados",
     "Campañas Meta + TikTok + Google",
     "CRM HubSpot con embudo completo",
-    "Automatización y agentes IA",
+    "Automatización y asistentes de WhatsApp",
     "Producción audiovisual a la escala que necesites",
   ],
 };
@@ -140,7 +140,7 @@ const EXTRA_GROUPS = [
     items: [
       { id: "web", label: "Página web para tu negocio", note: "$150 único, dominio a tu nombre", type: "quote" },
       { id: "tienda", label: "Tienda online", note: "desde $300, dominio a tu nombre", type: "quote" },
-      { id: "ia", label: "Agente IA de WhatsApp", note: "desde $150 + mensualidad", type: "quote" },
+      { id: "ia", label: "Asistente automático de WhatsApp", note: "desde $150 + mensualidad", type: "quote" },
       { id: "crm", label: "CRM HubSpot montado a tu medida", note: "desde $200 + $50/mes", type: "quote" },
     ],
   },

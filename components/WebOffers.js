@@ -31,7 +31,7 @@ const offers = [
     wa: "Hola InnovArtis, quiero cotizar una tienda online (desde $300).",
   },
   {
-    name: "Agente IA de WhatsApp",
+    name: "Asistente automático de WhatsApp",
     price: "desde $150",
     priceNote: "instalación + mensualidad",
     focus: "Atiende, agenda y registra clientes 24/7 — como la demo de arriba.",
@@ -41,7 +41,7 @@ const offers = [
       "Cada contacto queda ordenado en tu CRM",
       "Mantenimiento y ajustes mensuales incluidos",
     ],
-    wa: "Hola InnovArtis, quiero un agente IA de WhatsApp para mi negocio.",
+    wa: "Hola InnovArtis, quiero un asistente automático de WhatsApp para mi negocio.",
     featured: true,
   },
 ];
@@ -50,7 +50,7 @@ export default function WebOffers() {
   return (
     <section id="web" className="max-w-[1150px] mx-auto px-6 py-20">
       <Reveal>
-        <p className="kicker mb-4">Nuevo · Páginas web y agentes IA</p>
+        <p className="kicker mb-4">Nuevo · Páginas web y asistentes de WhatsApp</p>
         <h2 className="font-heading text-navy text-[36px] md:text-[44px] leading-[1.12] mb-4 max-w-[680px]">
           Tienes online lo que necesita tu negocio.
         </h2>
