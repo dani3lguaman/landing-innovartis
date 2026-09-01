@@ -1,0 +1,392 @@
+.body {
+  font-family: var(--font-dm-sans), "DM Sans", sans-serif;
+  background: #faf6f1;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 2.5rem 1rem 4rem;
+}
+
+.page {
+  max-width: 480px;
+  width: 100%;
+}
+
+.avatarWrap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.9rem;
+}
+
+.avatarRing {
+  padding: 4px;
+  border: 1px solid #c8a86b;
+  border-radius: 50%;
+}
+
+.avatar {
+  width: 92px;
+  height: 92px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #fff;
+  display: block;
+}
+
+.profileName {
+  text-align: center;
+  font-family: var(--font-playfair), Georgia, serif;
+  font-size: 28px;
+  font-weight: 600;
+  color: #1c1613;
+  margin-bottom: 6px;
+}
+
+.profileBio {
+  text-align: center;
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #b09877;
+  margin-bottom: 4px;
+}
+
+.profileCity {
+  text-align: center;
+  font-size: 12px;
+  color: #9c8b7d;
+  margin-bottom: 2.2rem;
+}
+
+.ltBtn {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  padding: 15px 18px;
+  margin-bottom: 10px;
+  border-radius: 14px;
+  border: 1px solid #eadfd2;
+  background: #fff;
+  color: #1c1613;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.15s, border-color 0.15s, transform 0.15s;
+}
+
+.ltBtn:hover {
+  background: #fdfaf5;
+  border-color: #c8a86b;
+  transform: translateY(-1px);
+}
+
+.icon {
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+}
+
+.lbl {
+  flex: 1;
+}
+
+.arr {
+  font-size: 13px;
+  color: #c8a86b;
+}
+
+.secLbl {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #b09877;
+  margin: 2rem 0 0.8rem;
+}
+
+.secLbl::before,
+.secLbl::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #e5d8c6;
+}
+
+.featureCard {
+  border: 1px solid #eadfd2;
+  border-radius: 18px;
+  overflow: hidden;
+  background: #fff;
+  margin-bottom: 12px;
+  box-shadow: 0 12px 32px rgba(90, 65, 40, 0.08);
+}
+
+.featureImgWrap {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+}
+
+.featureImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.featureBadge {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  background: #1c1613;
+  color: #f5e7d0;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  padding: 7px 12px;
+  border-radius: 999px;
+}
+
+.featureBody {
+  padding: 20px 20px 22px;
+}
+
+.featureTitle {
+  font-family: var(--font-playfair), Georgia, serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #1c1613;
+  margin-bottom: 8px;
+}
+
+.featureText {
+  font-size: 13px;
+  line-height: 1.65;
+  color: #8a7a6e;
+  margin-bottom: 16px;
+}
+
+.priceGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px 18px;
+  margin-bottom: 16px;
+}
+
+.priceRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 8px;
+  font-size: 13px;
+  color: #1c1613;
+  border-bottom: 1px dotted #e5d8c6;
+  padding-bottom: 6px;
+}
+
+.priceTag {
+  font-family: var(--font-playfair), Georgia, serif;
+  font-weight: 700;
+  color: #b08a4f;
+  white-space: nowrap;
+}
+
+.featureMeta {
+  font-size: 12px;
+  line-height: 1.7;
+  color: #8a7a6e;
+  background: #faf6f1;
+  border-radius: 10px;
+  padding: 10px 14px;
+  margin-bottom: 18px;
+}
+
+.ctaBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  padding: 14px 18px;
+  border-radius: 999px;
+  background: #1c1613;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background 0.15s, transform 0.15s;
+}
+
+.ctaBtn:hover {
+  background: #3a2e26;
+  transform: translateY(-1px);
+}
+
+.ctaBtn svg {
+  width: 18px;
+  height: 18px;
+  fill: #fff;
+  color: #fff;
+}
+
+.splitCard {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  border: 1px solid #eadfd2;
+  border-radius: 18px;
+  overflow: hidden;
+  background: #fff;
+  margin-bottom: 12px;
+}
+
+.splitImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.splitBody {
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+}
+
+.splitTitle {
+  font-family: var(--font-playfair), Georgia, serif;
+  font-size: 19px;
+  font-weight: 600;
+  line-height: 1.25;
+  color: #1c1613;
+}
+
+.splitText {
+  font-size: 12px;
+  line-height: 1.6;
+  color: #8a7a6e;
+}
+
+.splitLink {
+  font-size: 13px;
+  font-weight: 500;
+  color: #b08a4f;
+  text-decoration: none;
+  margin-top: 4px;
+}
+
+.splitLink:hover {
+  text-decoration: underline;
+}
+
+.sucCard {
+  border: 1px solid #eadfd2;
+  border-radius: 14px;
+  overflow: hidden;
+  margin-bottom: 10px;
+  background: #fff;
+}
+
+.sucHead {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 16px;
+  border-bottom: 1px solid #f2e9dc;
+}
+
+.sucDot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.sucTitle {
+  font-size: 14px;
+  font-weight: 500;
+  color: #1c1613;
+}
+
+.sucSub {
+  font-size: 11px;
+  color: #a89482;
+}
+
+.sucBtns {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.sucLink {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 13px 4px;
+  text-decoration: none;
+  color: #1c1613;
+  font-size: 11px;
+  font-weight: 500;
+  border-right: 1px solid #f2e9dc;
+  transition: background 0.12s;
+}
+
+.sucLink:last-child {
+  border-right: none;
+}
+
+.sucLink:hover {
+  background: #fdfaf5;
+}
+
+.sucLink svg {
+  width: 22px;
+  height: 22px;
+}
+
+.footer {
+  text-align: center;
+  font-size: 11px;
+  color: #b3a18b;
+  margin-top: 2.4rem;
+}
+
+.footer a {
+  color: #b3a18b;
+  text-decoration: none;
+}
+
+.waColor {
+  color: #25d366;
+  fill: #25d366;
+}
+
+.mapsColor {
+  color: #ea4335;
+  fill: #ea4335;
+}
+
+.igColor {
+  color: #c13584;
+  fill: #c13584;
+}
+
+.tikColor {
+  fill: #1c1613;
+}
+
+@media (max-width: 400px) {
+  .splitCard {
+    grid-template-columns: 120px 1fr;
+  }
+}

@@ -1,78 +1,32 @@
-import { Inter } from "next/font/google";
+import { Cormorant_Garamond, Lora } from "next/font/google";
 import "./globals.css";
-import ScrollAnimator from "@/components/ScrollAnimator";
 
-const inter = Inter({
+const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800", "900"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-cormorant",
+});
+
+const lora = Lora({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  style: ["normal", "italic"],
+  variable: "--font-lora",
 });
 
 export const metadata = {
-  metadataBase: new URL("https://www.innovartis.lat"),
-  title: {
-    default: "INNOVARTIS — Agencia de Marketing Digital en Quito, Ecuador",
-    template: "%s | INNOVARTIS",
-  },
+  metadataBase: new URL("https://innovartis.lat"),
+  title: "INNOVARTIS — Estrategia que sí genera resultados · Quito",
   description:
-    "Agencia de marketing digital en Quito. Estrategia, producción de contenido, Meta Ads, TikTok Ads, Google Maps y diseño web para empresas que quieren crecer. Resultados medibles con contrato.",
-  keywords: [
-    "agencia de marketing digital Quito",
-    "marketing digital Ecuador",
-    "Meta Ads Quito",
-    "TikTok Ads Ecuador",
-    "publicidad digital Quito",
-    "agencia publicidad Quito",
-    "diseño web Quito",
-    "Google Maps optimización Quito",
-    "producción de contenido Quito",
-    "campañas Facebook Ads Ecuador",
-    "agencia marketing Quito Ecuador",
-    "INNOVARTIS",
-  ],
-  authors: [{ name: "INNOVARTIS", url: "https://www.innovartis.ec" }],
-  creator: "INNOVARTIS",
-  publisher: "INNOVARTIS",
-  category: "Marketing Digital",
+    "Agencia de marketing estratégico en Quito, Ecuador. Campañas, datos, CRM y automatización para empresas que quieren crecer en serio. Casos reales con métricas reales.",
   openGraph: {
-    type: "website",
+    title: "INNOVARTIS — Estrategia que sí genera resultados",
+    description:
+      "Campañas, datos, CRM y automatización para empresas que quieren crecer en serio.",
+    url: "https://innovartis.lat",
+    siteName: "InnovArtis",
     locale: "es_EC",
-    url: "https://www.innovartis.lat",
-    siteName: "INNOVARTIS",
-    title: "INNOVARTIS — Agencia de Marketing Digital en Quito, Ecuador",
-    description:
-      "Estrategia, producción y campañas pagadas (Meta Ads + TikTok Ads) para empresas que quieren crecer. Diseño web profesional. Quito, Ecuador.",
-    images: [
-      {
-        url: "/logo-innovartis.jpg",
-        width: 1200,
-        height: 630,
-        alt: "INNOVARTIS — Agencia de Marketing Digital en Quito",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "INNOVARTIS — Agencia de Marketing Digital en Quito",
-    description:
-      "Meta Ads, TikTok Ads, producción de contenido y diseño web en Quito, Ecuador. Resultados medibles con contrato.",
-    images: ["/logo-innovartis.jpg"],
-  },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      "max-video-preview": -1,
-      "max-image-preview": "large",
-      "max-snippet": -1,
-    },
-  },
-  alternates: {
-    canonical: "https://www.innovartis.lat",
-  },
-  verification: {
-    google: "",
+    type: "website",
   },
 };
 
@@ -83,7 +37,7 @@ const jsonLd = {
   url: "https://www.innovartis.lat",
   logo: "https://www.innovartis.lat/logo-innovartis.jpg",
   description:
-    "Agencia de marketing digital en Quito, Ecuador. Especializada en Meta Ads, TikTok Ads, producción de contenido, Google Maps y diseño web.",
+    "Agencia de marketing estratégico en Quito, Ecuador. Campañas, datos, CRM y automatización. También páginas web desde $150, pago único, con el dominio registrado a nombre del cliente.",
   address: {
     "@type": "PostalAddress",
     addressLocality: "Quito",
@@ -101,10 +55,7 @@ const jsonLd = {
     "https://www.tiktok.com/@innovartis.ec",
     "https://www.facebook.com/innovartis.ec",
   ],
-  areaServed: {
-    "@type": "City",
-    name: "Quito",
-  },
+  areaServed: { "@type": "City", name: "Quito" },
   serviceType: [
     "Marketing Digital",
     "Meta Ads",
@@ -124,8 +75,7 @@ export default function RootLayout({ children }) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className={`${inter.className} antialiased`}>
-        <ScrollAnimator />
+      <body className={`${cormorant.variable} ${lora.variable} antialiased`}>
         {children}
       </body>
     </html>
