@@ -7,22 +7,37 @@ import WhatsAppAssistantDemo from "./WhatsAppAssistantDemo";
 
 const offers = [
   {
-    name: "Página web",
-    price: "$150",
-    priceNote: "pago único · el dominio queda a tu nombre",
-    focus: "Tu negocio online en una semana, listo para vender.",
+    name: "Página Express",
+    price: "$60",
+    priceNote: "pago único · en dirección tunegocio.pages.dev",
+    focus: "Tu negocio en internet en días, con botón de WhatsApp.",
+    features: [
+      "1 página con tus servicios, fotos y contacto",
+      "Botón de WhatsApp y llamada",
+      "Diseño adaptado a celular",
+      "1 ronda de cambios antes de publicar",
+      "Pasas a tu .com cuando quieras pagando solo la diferencia",
+    ],
+    wa: "Hola InnovArtis, quiero la Página Express ($60) para mi negocio.",
+  },
+  {
+    name: "Página Profesional",
+    price: "$120",
+    priceNote: "pago único · tu dominio .com a tu nombre",
+    focus: "Tu negocio en Google, listo para recibir clientes.",
     features: [
       "1 página profesional a tu marca",
-      "El dominio se registra a TU nombre — es tuyo, no nuestro",
-      "Botón de WhatsApp y formulario de contacto",
-      "Diseño adaptado a celular",
-      "Publicada y funcionando — te guiamos en cada paso",
+      "El dominio .com se registra a TU nombre — es tuyo, no nuestro",
+      "WhatsApp, llamada, cotizador y preguntas frecuentes",
+      "Preparada para Google y Google Maps",
+      "3 rondas de cambios · primer año al aire incluido",
     ],
-    wa: "Hola InnovArtis, quiero una página web ($150, con el dominio a mi nombre) para mi negocio.",
+    wa: "Hola InnovArtis, quiero la Página Profesional ($120, con el dominio a mi nombre) para mi negocio.",
+    featured: true,
   },
   {
     name: "Tienda online",
-    price: "desde $300",
+    price: "$250",
     priceNote: "pago único · el dominio queda a tu nombre",
     focus: "Catálogo, carrito y pedidos directo a tu WhatsApp.",
     features: [
@@ -32,7 +47,7 @@ const offers = [
       "Diseño a tu marca, rápido y en celular",
       "Capacitación para que la manejes tú",
     ],
-    wa: "Hola InnovArtis, quiero cotizar una tienda online (desde $300).",
+    wa: "Hola InnovArtis, quiero cotizar una tienda online ($250).",
   },
   {
     name: "Asistente automático de WhatsApp",
@@ -46,7 +61,6 @@ const offers = [
       "Mantenimiento y ajustes mensuales incluidos",
     ],
     wa: "Hola InnovArtis, quiero un asistente automático de WhatsApp para mi negocio.",
-    featured: true,
     showDemo: true,
   },
 ];
@@ -71,7 +85,7 @@ export default function WebOffers() {
         </p>
       </Reveal>
 
-      <div className="grid md:grid-cols-3 gap-6">
+      <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-6">
         {offers.map((o, i) => (
           <Reveal key={o.name} delay={i * 100} className="h-full">
             <div
@@ -130,13 +144,15 @@ export default function WebOffers() {
 
       <Reveal>
         <p className="mt-8 text-[13px] leading-[1.8] text-ink-soft italic">
-          Los números completos, desde hoy: la página se construye una sola vez ($150). El dominio
-          — tu dirección propia en internet — <strong className="not-italic text-ink">lo compras tú
-          y queda registrado a tu nombre</strong>: te guiamos en la compra y si un día te quieres ir,
-          te lo llevas. Mantener la página al aire cuesta{" "}
-          <strong className="not-italic text-ink">$100 al año</strong>, con hosting, seguridad y
-          actualizaciones incluidos. No hay un cuarto cobro. La mensualidad del asistente depende
-          del volumen de conversaciones de tu negocio.
+          Los números completos, desde hoy: la página se construye una sola vez. Con la{" "}
+          <strong className="not-italic text-ink">Profesional ($120)</strong> tu dominio .com queda
+          registrado a tu nombre: si un día te quieres ir, te lo llevas. Desde el segundo año,
+          mantenerla al aire cuesta <strong className="not-italic text-ink">$100 al año</strong>, con
+          hosting, seguridad y dos rondas de cambios. La{" "}
+          <strong className="not-italic text-ink">Express ($60)</strong> vive en una dirección
+          .pages.dev y pasa a .com pagando solo la diferencia. ¿Das clases? Tu plataforma de cursos
+          propia cuesta $500. La mensualidad del asistente depende del volumen de conversaciones de tu
+          negocio.
         </p>
       </Reveal>
     </section>
