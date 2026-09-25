@@ -37,7 +37,7 @@ const jsonLd = {
   url: "https://www.innovartis.lat",
   logo: "https://www.innovartis.lat/logo-innovartis.jpg",
   description:
-    "Agencia de marketing estratégico en Quito, Ecuador. Campañas, datos, CRM y automatización. También páginas web desde $150, pago único, con el dominio registrado a nombre del cliente.",
+    "Agencia de marketing estratégico en Quito, Ecuador. Campañas, datos, CRM y automatización. También páginas web desde $60, pago único; la Profesional ($120) con el dominio .com registrado a nombre del cliente.",
   address: {
     "@type": "PostalAddress",
     addressLocality: "Quito",
