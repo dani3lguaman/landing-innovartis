@@ -11,7 +11,7 @@ const stats = [
 
 export default function Hero() {
   return (
-    <section className="max-w-[1150px] mx-auto px-6 pt-16 md:pt-24 pb-14">
+    <section className="max-w-[1200px] mx-auto px-6 pt-16 md:pt-24 pb-14">
       <div className="grid md:grid-cols-[1.15fr_0.85fr] gap-12 items-center">
         <div>
           <Reveal>

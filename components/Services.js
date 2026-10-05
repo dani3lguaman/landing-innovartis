@@ -33,7 +33,7 @@ const services = [
 
 export default function Services() {
   return (
-    <section id="servicios" className="max-w-[1150px] mx-auto px-6 section-y">
+    <section id="servicios" className="max-w-[1200px] mx-auto px-6 section-y">
       <Reveal>
         <p className="kicker mb-4">Servicios</p>
       </Reveal>

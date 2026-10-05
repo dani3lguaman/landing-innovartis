@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 @theme inline {
-  --color-paper: #f3f2f2;
-  --color-paper-soft: #eceae8;
+  --color-paper: #ffffff;
+  --color-paper-soft: #f4f7fa;
   --color-ink: #23303b;
   --color-ink-soft: #4d5d6b;
   --color-navy: #2c4a63;
@@ -10,10 +10,10 @@
   --color-navy-darker: #1b2d3c;
   --color-accent: #ee7b4d;
   --color-accent-deep: #c85f35;
-  --color-line: #d8d4d0;
+  --color-line: #e2e8ee;
   --color-wa: #25d366;
-  --font-heading: var(--font-cormorant), Georgia, serif;
-  --font-body: var(--font-lora), Georgia, serif;
+  --font-heading: var(--font-montserrat), Arial, sans-serif;
+  --font-body: var(--font-montserrat), Arial, sans-serif;
 }
 
 html {
@@ -21,27 +21,29 @@ html {
 }
 
 body {
-  background-color: #f3f2f2;
+  background-color: #ffffff;
   color: #23303b;
-  font-family: var(--font-lora), Georgia, serif;
+  font-family: var(--font-montserrat), Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 
 /* ---- Tipografía editorial ---- */
 .font-heading {
-  font-family: var(--font-cormorant), Georgia, serif;
+  font-family: var(--font-montserrat), Arial, sans-serif;
+  font-weight: 800;
+  letter-spacing: -0.015em;
 }
 
 /* ---- Escala tipográfica fluida (Fase 4: tokens, skill agency-web §1) ---- */
 .text-display {
-  font-size: clamp(36px, 3vw + 24px, 96px);
-  line-height: 1.05;
+  font-size: clamp(32px, 2.2vw + 20px, 60px);
+  line-height: 1.1;
   letter-spacing: -0.02em;
 }
 
 .text-heading {
-  font-size: clamp(28px, 1.8vw + 22px, 44px);
-  line-height: 1.12;
+  font-size: clamp(26px, 1.2vw + 18px, 38px);
+  line-height: 1.18;
   letter-spacing: -0.01em;
 }
 
@@ -53,31 +55,34 @@ body {
 
 @media (min-width: 768px) {
   .section-y {
-    padding-top: 144px;
-    padding-bottom: 144px;
+    padding-top: 96px;
+    padding-bottom: 96px;
   }
 }
 
 .kicker {
-  font-family: var(--font-lora), Georgia, serif;
+  font-family: var(--font-montserrat), Arial, sans-serif;
   font-size: 12px;
-  font-weight: 600;
-  letter-spacing: 0.22em;
+  font-weight: 700;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
   color: #ee7b4d;
 }
 
 .display-num {
-  font-family: var(--font-cormorant), Georgia, serif;
+  font-family: var(--font-montserrat), Arial, sans-serif;
   font-variant-numeric: tabular-nums;
-  letter-spacing: 0.04em;
+  font-weight: 800;
+  letter-spacing: -0.01em;
 }
 
 /* ---- Imagen tipo lámina (plate) ---- */
 .plate {
   background: #ffffff;
-  border: 1px solid #d8d4d0;
-  padding: 10px;
+  border: 1px solid #e2e8ee;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(44, 74, 99, 0.08);
 }
 
 .plate img {
@@ -89,7 +94,7 @@ body {
 /* ---- Reglas finas ---- */
 .hairline {
   border: 0;
-  border-top: 1px solid #d8d4d0;
+  border-top: 1px solid #e2e8ee;
 }
 
 /* ---- Botones editoriales ----
@@ -103,6 +108,8 @@ body {
   gap: 8px;
   padding: 13px 28px;
   border: 1px solid #ee7b4d;
+  border-radius: 8px;
+  font-weight: 600;
   font-size: 14px;
   letter-spacing: 0.02em;
   cursor: pointer;
@@ -249,3 +256,45 @@ textarea::placeholder {
 
 .typing-dot:nth-child(2) { animation-delay: 0.15s; }
 .typing-dot:nth-child(3) { animation-delay: 0.3s; }
+
+/* ---- Estilo AQUABEC v2 (5-oct-2026): tarjetas redondeadas con sombra suave ---- */
+.card {
+  background: #ffffff;
+  border: 1px solid #e2e8ee;
+  border-radius: 14px;
+  box-shadow: 0 4px 18px rgba(44, 74, 99, 0.06);
+  transition: box-shadow 0.2s ease, transform 0.2s ease, border-color 0.2s ease;
+}
+
+a.card:hover,
+button.card:hover,
+.card-hover:hover {
+  box-shadow: 0 12px 32px rgba(44, 74, 99, 0.14);
+  border-color: #f5ad8d;
+  transform: translateY(-2px);
+}
+
+.title-bar::after {
+  content: "";
+  display: block;
+  width: 56px;
+  height: 3px;
+  margin-top: 14px;
+  background: #ee7b4d;
+  border-radius: 2px;
+}
+
+.title-bar.center::after {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}

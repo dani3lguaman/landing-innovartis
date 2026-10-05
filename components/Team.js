@@ -29,7 +29,7 @@ const team = [
 
 export default function Team() {
   return (
-    <section id="equipo" className="max-w-[1150px] mx-auto px-6 section-y">
+    <section id="equipo" className="max-w-[1200px] mx-auto px-6 section-y">
       <Reveal>
         <p className="kicker mb-4">Equipo</p>
       </Reveal>

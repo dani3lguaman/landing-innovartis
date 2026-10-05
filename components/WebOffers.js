@@ -69,7 +69,7 @@ export default function WebOffers() {
   const [demoOpen, setDemoOpen] = useState(false);
 
   return (
-    <section id="web" className="max-w-[1150px] mx-auto px-6 section-y">
+    <section id="web" className="max-w-[1200px] mx-auto px-6 section-y">
       <Reveal>
         <p className="kicker mb-4">Nuevo · Páginas web y asistentes de WhatsApp</p>
       </Reveal>

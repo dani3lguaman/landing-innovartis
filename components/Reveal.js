@@ -22,7 +22,7 @@ export default function Reveal({ children, delay = 0, className = "", mask = fal
           }
         });
       },
-      { threshold: 0.2 }
+      { threshold: 0, rootMargin: "0px 0px -8% 0px" }
     );
     obs.observe(el);
     return () => obs.disconnect();

@@ -116,7 +116,7 @@ export default function AdsResults() {
   const max = Math.max(...c.campaigns.map((x) => x.value));
 
   return (
-    <section id="resultados" className="max-w-[1150px] mx-auto px-6 section-y">
+    <section id="resultados" className="max-w-[1200px] mx-auto px-6 section-y">
       <Reveal>
         <p className="kicker mb-4">Resultados reales · Meta Ads</p>
       </Reveal>

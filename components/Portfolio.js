@@ -38,7 +38,7 @@ export default function Portfolio() {
   const current = open === null ? null : items[open];
 
   return (
-    <section id="portafolio" className="max-w-[1150px] mx-auto px-6 section-y">
+    <section id="portafolio" className="max-w-[1200px] mx-auto px-6 section-y">
       <Reveal>
         <p className="kicker mb-4">Portafolio · Trabajo real</p>
       </Reveal>

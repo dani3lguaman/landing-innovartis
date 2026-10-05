@@ -1,46 +1,32 @@
-import Header from "@/components/Header";
-import Hero from "@/components/Hero";
-import WhyUs from "@/components/WhyUs";
+import Shell from "@/components/Shell";
+import HomeHero from "@/components/HomeHero";
+import TrustStrip from "@/components/TrustStrip";
+import OfertaMes from "@/components/OfertaMes";
+import ServiceCards from "@/components/ServiceCards";
+import NumbersRow from "@/components/NumbersRow";
+import ClientsStrip from "@/components/ClientsStrip";
+import PortfolioTeaser from "@/components/PortfolioTeaser";
 import Cases from "@/components/Cases";
-import Portfolio from "@/components/Portfolio";
-import AdsResults from "@/components/AdsResults";
-import EnAccion from "@/components/EnAccion";
-import Services from "@/components/Services";
-import WebOffers from "@/components/WebOffers";
 import Method from "@/components/Method";
-import PlansSection from "@/components/PlansSection";
-import Discovery from "@/components/Discovery";
-import Team from "@/components/Team";
 import FinalCTA from "@/components/FinalCTA";
-import Footer from "@/components/Footer";
-import FloatingWhatsApp from "@/components/FloatingWhatsApp";
 
+// Portada con la estructura de AQUABEC v2: portada navy → franja de garantías → promociones →
+// soluciones → cifras y clientes → portafolio → casos → método → contacto.
 export default function Home() {
   return (
-    <div className="bg-paper">
-      <Header />
-      <main>
-        <Hero />
-        <hr className="hairline max-w-[1150px] mx-auto" />
-        <WhyUs />
-        <hr className="hairline max-w-[1150px] mx-auto" />
-        <Cases />
-        <AdsResults />
-        <Portfolio />
-        <hr className="hairline max-w-[1150px] mx-auto" />
-        <EnAccion />
-        <hr className="hairline max-w-[1150px] mx-auto" />
-        <Services />
-        <WebOffers />
-        <Method />
-        <PlansSection />
-        <hr className="hairline max-w-[1150px] mx-auto" />
-        <Discovery />
-        <Team />
-        <FinalCTA />
-      </main>
-      <Footer />
-      <FloatingWhatsApp />
-    </div>
+    <Shell>
+      <HomeHero />
+      <TrustStrip />
+      <OfertaMes />
+      <ServiceCards />
+      <section className="pt-16">
+        <NumbersRow />
+      </section>
+      <ClientsStrip />
+      <PortfolioTeaser />
+      <Cases />
+      <Method />
+      <FinalCTA />
+    </Shell>
   );
 }
