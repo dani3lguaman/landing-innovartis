@@ -91,7 +91,7 @@ const HIGH_VOLUME = [
     id: "gold",
     name: "Gold",
     price: { sin: 480, con: 510 },
-    resumen: "26 piezas · todo lo del Plus + agente IA de WhatsApp 24/7",
+    resumen: "26 piezas · todo lo del Plus + asistente automático de WhatsApp 24/7",
   },
   {
     id: "diamante",
@@ -112,7 +112,7 @@ const CORPORATE = {
     "Estrategia y acompañamiento dedicados",
     "Campañas Meta + TikTok + Google",
     "CRM HubSpot con embudo completo",
-    "Automatización y agentes IA",
+    "Automatización y asistentes de WhatsApp",
     "Producción audiovisual a la escala que necesites",
   ],
 };
