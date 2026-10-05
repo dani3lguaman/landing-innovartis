@@ -12,6 +12,7 @@ export const PORTFOLIO = [
     client: "Cabello Remy EC",
     rubro: "Belleza",
     piece: "Arte para Instagram",
+    metric: { value: 9512, label: "conversaciones por WhatsApp en 12 meses, desde $0,32 c/u" },
   },
   {
     src: "/portafolio/remy/carrusel-3razones-portada.jpg",
@@ -19,6 +20,7 @@ export const PORTFOLIO = [
     client: "Cabello Remy EC",
     rubro: "Belleza",
     piece: "Carrusel · portada",
+    metric: { value: 4803, label: "conversaciones en Guayaquil a $0,32 c/u" },
   },
   {
     src: "/portafolio/remy/carrusel-3razones-01-mas-largo.jpg",

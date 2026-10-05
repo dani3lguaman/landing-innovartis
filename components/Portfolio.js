@@ -95,7 +95,7 @@ export default function Portfolio() {
               <p className="text-[12px] text-ink-soft">{p.piece}</p>
               {p.metric && (
                 <p className="mt-1.5 text-[12px] text-accent-deep">
-                  <span className="display-num text-[18px]">{p.metric.value}</span> {p.metric.label}
+                  <span className="display-num text-[18px]">{p.metric.value.toLocaleString("es-EC")}</span> {p.metric.label}
                 </p>
               )}
             </div>
