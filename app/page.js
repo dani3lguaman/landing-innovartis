@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import WhyUs from "@/components/WhyUs";
 import Cases from "@/components/Cases";
+import Portfolio from "@/components/Portfolio";
 import EnAccion from "@/components/EnAccion";
 import Services from "@/components/Services";
 import WebOffers from "@/components/WebOffers";
@@ -23,6 +24,7 @@ export default function Home() {
         <WhyUs />
         <hr className="hairline max-w-[1150px] mx-auto" />
         <Cases />
+        <Portfolio />
         <hr className="hairline max-w-[1150px] mx-auto" />
         <EnAccion />
         <hr className="hairline max-w-[1150px] mx-auto" />
