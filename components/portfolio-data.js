@@ -3,9 +3,45 @@
 // Vetados en la web: Tokilla, Surty, Óptica, Aquabec.
 // type: "img" | "video" · metric opcional: { value, label, date }
 
-export const RUBROS = ["Todos", "Belleza", "Mascotas", "Industria", "Gastronomía"];
+export const RUBROS = ["Todos", "Belleza", "Limpieza", "Mascotas", "Industria", "Gastronomía"];
 
 export const PORTFOLIO = [
+  {
+    src: "/portafolio/pachy/post-1.webp",
+    type: "img",
+    client: "Pachy Limpieza Profesional",
+    rubro: "Limpieza",
+    piece: "Post · limpieza industrial",
+    metric: { value: 3548, label: "conversaciones por WhatsApp en 12 meses, desde $0,44 c/u" },
+  },
+  {
+    src: "/portafolio/pachy/post-2.webp",
+    type: "img",
+    client: "Pachy Limpieza Profesional",
+    rubro: "Limpieza",
+    piece: "Post · antes y después",
+  },
+  {
+    src: "/portafolio/pachy/carrusel-servicios.webp",
+    type: "img",
+    client: "Pachy Limpieza Profesional",
+    rubro: "Limpieza",
+    piece: "Carrusel · catálogo de servicios",
+  },
+  {
+    src: "/portafolio/pachy/antes-despues.webp",
+    type: "img",
+    client: "Pachy Limpieza Profesional",
+    rubro: "Limpieza",
+    piece: "Antes y después",
+  },
+  {
+    src: "/portafolio/pachy/clientes-felices.webp",
+    type: "img",
+    client: "Pachy Limpieza Profesional",
+    rubro: "Limpieza",
+    piece: "Carrusel · clientes felices",
+  },
   {
     src: "/portafolio/remy/arte-extensiones-cabello-transforma.jpg",
     type: "img",
