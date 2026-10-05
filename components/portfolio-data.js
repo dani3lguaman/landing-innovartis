@@ -3,7 +3,7 @@
 // Vetados en la web: Tokilla, Surty, Óptica, Aquabec.
 // type: "img" | "video" · metric opcional: { value, label, date }
 
-export const RUBROS = ["Todos", "Belleza", "Limpieza", "Industria", "Alimentos", "Mascotas", "Gastronomía"];
+export const RUBROS = ["Todos", "Belleza", "Limpieza", "Industria", "Alimentos", "Mascotas", "Gastronomía", "Educación", "Eventos"];
 
 // href: enlace a la publicación real (la captura muestra los números tal como estaban ese día).
 export const PORTFOLIO = [
@@ -17,6 +17,14 @@ export const PORTFOLIO = [
     href: "https://www.facebook.com/reel/1374759481081194",
   },
   {
+    src: "/portafolio/ads/inyecpro-may-oct.webp",
+    type: "img",
+    client: "InyecPro · fábrica de plásticos",
+    rubro: "Industria",
+    piece: "Ads Manager · 5-may al 4-oct-2026",
+    metric: { value: 1729, label: "conversaciones por WhatsApp a $0,57 c/u" },
+  },
+  {
     src: "/portafolio/damavid/reel-62mil.webp",
     type: "img",
     client: "Damavid Aqua · agua purificada",
@@ -26,12 +34,28 @@ export const PORTFOLIO = [
     href: "https://www.facebook.com/reel/4297411207210341",
   },
   {
+    src: "/portafolio/ads/damavid-jun-oct.webp",
+    type: "img",
+    client: "Damavid Aqua · agua purificada",
+    rubro: "Alimentos",
+    piece: "Ads Manager · 1-jun al 4-oct-2026",
+    metric: { value: 329, label: "conversaciones por WhatsApp a $0,95 c/u" },
+  },
+  {
     src: "/portafolio/pachy/post-1.webp",
     type: "img",
     client: "Pachy Limpieza Profesional",
     rubro: "Limpieza",
     piece: "Post · limpieza industrial",
     metric: { value: 3548, label: "conversaciones por WhatsApp en 12 meses, desde $0,44 c/u" },
+  },
+  {
+    src: "/portafolio/ads/pachy-2026.webp",
+    type: "img",
+    client: "Pachy Limpieza Profesional",
+    rubro: "Limpieza",
+    piece: "Ads Manager · 1-ene al 4-oct-2026",
+    metric: { value: 2508, label: "conversaciones por WhatsApp a $0,68 c/u" },
   },
   {
     src: "/portafolio/pachy/post-2.webp",
@@ -118,6 +142,92 @@ export const PORTFOLIO = [
     client: "Cabello Remy EC",
     rubro: "Belleza",
     piece: "Arte · local del sur",
+  },
+  {
+    src: "/portafolio/ads/metallum-30d.webp",
+    type: "img",
+    client: "Metallum · pérgolas y estructuras",
+    rubro: "Industria",
+    piece: "Ads Manager · 5-sep al 4-oct-2026",
+    metric: { value: 239, label: "clientes potenciales (formulario) a $0,41 c/u" },
+  },
+  {
+    src: "/portafolio/controlfrio/servicios.webp",
+    type: "img",
+    client: "Controlfrío · climatización industrial",
+    rubro: "Industria",
+    piece: "Post · servicios",
+  },
+  {
+    src: "/portafolio/controlfrio/lluvias.webp",
+    type: "img",
+    client: "Controlfrío · climatización industrial",
+    rubro: "Industria",
+    piece: "Post · temporada de lluvias",
+  },
+  {
+    src: "/portafolio/sertec/1.webp",
+    type: "img",
+    client: "SERTEC Generación · generadores",
+    rubro: "Industria",
+    piece: "Post · soporte técnico",
+  },
+  {
+    src: "/portafolio/sertec/2.webp",
+    type: "img",
+    client: "SERTEC Generación · generadores",
+    rubro: "Industria",
+    piece: "Post · stock de repuestos",
+  },
+  {
+    src: "/portafolio/sertec/3.webp",
+    type: "img",
+    client: "SERTEC Generación · generadores",
+    rubro: "Industria",
+    piece: "Post · repuestos",
+  },
+  {
+    src: "/portafolio/enquality/san-valentin.webp",
+    type: "img",
+    client: "Enquality · academia de inglés",
+    rubro: "Educación",
+    piece: "Post · promo San Valentín",
+  },
+  {
+    src: "/portafolio/enquality/marzo-2.webp",
+    type: "img",
+    client: "Enquality · academia de inglés",
+    rubro: "Educación",
+    piece: "Post · promo de marzo",
+  },
+  {
+    src: "/portafolio/enquality/carrusel-1.webp",
+    type: "img",
+    client: "Enquality · academia de inglés",
+    rubro: "Educación",
+    piece: "Carrusel · portada",
+  },
+  {
+    src: "/portafolio/enquality/carrusel-2.webp",
+    type: "img",
+    client: "Enquality · academia de inglés",
+    rubro: "Educación",
+    piece: "Carrusel · lámina 2",
+  },
+  {
+    src: "/portafolio/enquality/carrusel-3.webp",
+    type: "img",
+    client: "Enquality · academia de inglés",
+    rubro: "Educación",
+    piece: "Carrusel · lámina 3",
+  },
+  {
+    src: "/portafolio/ads/kya-ago.webp",
+    type: "img",
+    client: "KYA Ecuador",
+    rubro: "Eventos",
+    piece: "Ads Manager · 25-jul al 30-ago-2026",
+    metric: { value: 347, label: "clientes potenciales (formulario) a $0,55 c/u" },
   },
   {
     src: "/img/caso-metropolis.webp",
