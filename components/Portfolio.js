@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useState } from "react";
 import Reveal from "./Reveal";
+import Tilt from "./Tilt";
 import { PORTFOLIO, RUBROS } from "./portfolio-data";
 
 // Portafolio filtrable por rubro + visor en grande (flechas, Esc, deslizar en celular).
@@ -74,8 +75,8 @@ export default function Portfolio() {
 
       <div className="columns-2 md:columns-3 gap-4 [&>*]:mb-4">
         {items.map((p, i) => (
+          <Tilt key={p.src} max={6} className="break-inside-avoid">
           <button
-            key={p.src}
             onClick={() => setOpen(i)}
             className="group block w-full text-left break-inside-avoid border border-line bg-white hover:border-accent transition-colors"
             aria-label={`Ver en grande: ${p.piece} para ${p.client}`}
@@ -100,6 +101,7 @@ export default function Portfolio() {
               )}
             </div>
           </button>
+          </Tilt>
         ))}
       </div>
 

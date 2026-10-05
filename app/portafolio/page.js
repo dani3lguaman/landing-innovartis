@@ -14,7 +14,7 @@ export const metadata = {
 export default function PortafolioPage() {
   return (
     <Shell>
-      <PageHero kicker="Portafolio" title="Mira lo que hacemos en un negocio como el tuyo">
+      <PageHero img="/portafolio/sertec/d-mateo-carrusel-1.webp" kicker="Portafolio" title="Mira lo que hacemos en un negocio como el tuyo">
         <p>Elige tu rubro y toca cualquier pieza para verla en grande. Todo lo produjimos para clientes reales.</p>
       </PageHero>
       <Portfolio />

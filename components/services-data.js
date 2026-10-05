@@ -3,6 +3,7 @@
 export const SERVICES = [
   {
     key: "meta",
+    hook: "Clientes escribiéndote por WhatsApp",
     title: "Campañas en Meta Ads",
     body: "Facebook e Instagram dirigidos a tu WhatsApp o a un formulario. Segmentamos por zona, probamos anuncios y te reportamos cada mes.",
     href: "/resultados",
@@ -11,6 +12,7 @@ export const SERVICES = [
   },
   {
     key: "google",
+    hook: "Sal primero cuando te buscan",
     title: "Google Ads",
     body: "Aparece cuando alguien busca lo que vendes. Campañas de búsqueda que llevan a tu WhatsApp, a tu llamada o a tu web.",
     href: "/google-ads",
@@ -20,6 +22,7 @@ export const SERVICES = [
   },
   {
     key: "contenido",
+    hook: "Grabamos en tu negocio",
     title: "Producción de contenido",
     body: "Reels, posts y carruseles hechos por personas, con grabación en tu negocio. El contenido es el medio; el cliente es el fin.",
     href: "/portafolio",
@@ -28,6 +31,7 @@ export const SERVICES = [
   },
   {
     key: "webs",
+    hook: "Desde USD 60, con tu .com",
     title: "Páginas web",
     body: "Desde una página de $60 hasta tiendas en línea. Con tu dominio .com registrado a tu nombre y botón directo a WhatsApp.",
     href: "/webs",
@@ -36,6 +40,7 @@ export const SERVICES = [
   },
   {
     key: "whatsapp",
+    hook: "Atiende aunque estés ocupado",
     title: "Asistente automático de WhatsApp",
     body: "Responde precios, horarios y preguntas frecuentes a cualquier hora, y te pasa al cliente listo para cerrar.",
     href: "/webs#asistente",
@@ -44,6 +49,7 @@ export const SERVICES = [
   },
   {
     key: "maps",
+    hook: "Que te encuentren cerca",
     title: "Google Maps",
     body: "Tu ficha de negocio creada, verificada y optimizada para que te encuentren cerca. Incluida desde el plan Estándar.",
     href: "/google-ads#maps",
@@ -52,6 +58,7 @@ export const SERVICES = [
   },
   {
     key: "crm",
+    hook: "Ningún contacto se pierde",
     title: "CRM HubSpot",
     body: "Cada contacto registrado con su origen y su estado, para no perder a nadie. Desde $200 de implementación.",
     href: "/servicios#crm",
@@ -60,6 +67,7 @@ export const SERVICES = [
   },
   {
     key: "asesoria",
+    hook: "Primero el plan, luego el diseño",
     title: "Estrategia y asesoría",
     body: "Antes de producir, entendemos tu negocio: reunión, análisis de tu mercado y un plan que apruebas por escrito.",
     href: "/servicios#metodo",

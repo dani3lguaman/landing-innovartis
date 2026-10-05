@@ -1,9 +1,15 @@
 import Link from "next/link";
 
 // Cabecera de las páginas interiores: banda navy con migas, título y bajada (como AQUABEC v2).
-export default function PageHero({ kicker, title, children, crumb }) {
+export default function PageHero({ kicker, title, children, crumb, img }) {
   return (
     <section className="bg-navy text-white relative overflow-hidden">
+      {img && (
+        <>
+          <img src={img} alt="" aria-hidden="true" className="absolute inset-y-0 right-0 w-full md:w-[60%] h-full object-cover opacity-40 md:opacity-70" />
+          <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-r from-navy via-navy/95 md:via-navy/80 to-navy/40" />
+        </>
+      )}
       <div
         aria-hidden="true"
         className="absolute inset-0 opacity-[0.07] bg-[linear-gradient(#fff_1px,transparent_1px),linear-gradient(90deg,#fff_1px,transparent_1px)] bg-[size:48px_48px]"

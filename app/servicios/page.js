@@ -16,7 +16,7 @@ export const metadata = {
 export default function ServiciosPage() {
   return (
     <Shell>
-      <PageHero kicker="Servicios" title="Mucho más que piezas gráficas">
+      <PageHero img="/evidencia/foto-revision-toma.jpg" kicker="Servicios" title="Mucho más que piezas gráficas">
         <p>Estrategia, contenido, campañas y herramientas para que cada contacto termine en una venta.</p>
       </PageHero>
       <ServiceCards kicker="Soluciones" title="Elige lo que necesitas, o todo junto" bg={false} />

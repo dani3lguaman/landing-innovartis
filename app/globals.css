@@ -298,3 +298,72 @@ button.card:hover,
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
+
+/* ---- Tarjetas que giran (5-oct-2026, pedido de Daniel) ----
+   Escritorio: giran al pasar el mouse o con el teclado (foco). Celular: giran al tocar. */
+.flip {
+  perspective: 1200px;
+}
+
+.flip-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.7s cubic-bezier(0.2, 0.75, 0.25, 1);
+}
+
+@media (hover: hover) {
+  .flip:hover .flip-inner {
+    transform: rotateY(180deg);
+  }
+}
+
+.flip:focus-within .flip-inner,
+.flip.is-flipped .flip-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-face {
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.flip-back {
+  transform: rotateY(180deg);
+}
+
+.flip-hint {
+  animation: flip-hint 2.4s ease-in-out infinite;
+}
+
+@keyframes flip-hint {
+  0%, 70%, 100% { transform: rotate(0); }
+  80% { transform: rotate(-35deg); }
+  90% { transform: rotate(25deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .flip-inner {
+    transition: none;
+  }
+  .flip-hint {
+    animation: none;
+  }
+}
+
+/* Inclinación 3D que sigue al mouse */
+.tilt {
+  transition: transform 0.25s ease;
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: none; }
+}

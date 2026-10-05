@@ -14,7 +14,7 @@ export const metadata = {
 export default function WebsPage() {
   return (
     <Shell>
-      <PageHero kicker="Páginas web" title="Tu negocio en internet, listo para recibir clientes">
+      <PageHero img="/portafolio/webs/colores-y-sabores-escritorio.webp" kicker="Páginas web" title="Tu negocio en internet, listo para recibir clientes">
         <p>
           Páginas rápidas, hechas para celular y con botón directo a tu WhatsApp. El dominio se registra a tu nombre:
           la página es tuya.

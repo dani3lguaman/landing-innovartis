@@ -3,6 +3,7 @@ import PageHero from "@/components/PageHero";
 import SectionTitle from "@/components/SectionTitle";
 import Reveal from "@/components/Reveal";
 import FinalCTA from "@/components/FinalCTA";
+import FlipCard from "@/components/FlipCard";
 import { Icon } from "@/components/services-data";
 import { WA_NUMBER } from "@/components/constants";
 
@@ -33,7 +34,7 @@ const VS = [
 export default function GoogleAdsPage() {
   return (
     <Shell>
-      <PageHero kicker="Nuevo servicio" title="Google Ads: aparece cuando te están buscando">
+      <PageHero img="/evidencia/foto-set-fabrica.jpg" kicker="Nuevo servicio" title="Google Ads: aparece cuando te están buscando">
         <p>
           Cuando alguien escribe &quot;fisioterapia a domicilio en Quito&quot; o &quot;pérgolas de aluminio precio&quot;, ya
           decidió que lo necesita. Con Google Ads tu negocio sale arriba en ese momento, y el clic llega a tu WhatsApp.
@@ -76,12 +77,24 @@ export default function GoogleAdsPage() {
           <SectionTitle kicker="Cómo trabajamos" title="Qué hacemos en tu cuenta de Google Ads" />
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {STEPS.map((s, i) => (
-              <Reveal key={s.t} delay={(i % 3) * 80} className="h-full">
-                <div className="card p-6 h-full">
-                  <span className="display-num text-[30px] text-accent leading-none">{String(i + 1).padStart(2, "0")}</span>
-                  <h3 className="text-navy font-bold text-[17px] mt-3 mb-2">{s.t}</h3>
-                  <p className="text-[14px] leading-[1.7] text-ink-soft">{s.b}</p>
-                </div>
+              <Reveal key={s.t} delay={(i % 3) * 80}>
+                <FlipCard
+                  height="h-[210px]"
+                  label={`${s.t}: ver detalle`}
+                  front={
+                    <div className="card h-full p-6 flex flex-col">
+                      <span className="display-num text-[44px] text-accent leading-none">{String(i + 1).padStart(2, "0")}</span>
+                      <h3 className="text-navy font-extrabold text-[18px] mt-3 flex-1">{s.t}</h3>
+                      <span className="text-[12px] text-ink-soft"><span className="flip-hint inline-block">↻</span> Ver cómo</span>
+                    </div>
+                  }
+                  back={
+                    <div className="h-full p-6 bg-navy text-white rounded-[14px] flex flex-col justify-center">
+                      <p className="kicker !text-[10.5px] mb-2">Paso {i + 1}</p>
+                      <p className="text-[15px] leading-[1.7] text-white/90">{s.b}</p>
+                    </div>
+                  }
+                />
               </Reveal>
             ))}
           </div>

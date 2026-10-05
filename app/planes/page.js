@@ -15,7 +15,7 @@ export const metadata = {
 export default function PlanesPage() {
   return (
     <Shell>
-      <PageHero kicker="Planes" title="Planes claros, con contrato y entregables">
+      <PageHero img="/evidencia/foto-sesion-salon.jpg" kicker="Planes" title="Planes claros, con contrato y entregables">
         <p>50 % al inicio y 50 % al cerrar el mes. La pauta la pagas tú directo a Meta o Google.</p>
       </PageHero>
       <OfertaMes />

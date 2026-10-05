@@ -18,7 +18,7 @@ const CHANNELS = [
 export default function ContactoPage() {
   return (
     <Shell>
-      <PageHero kicker="Contacto" title="Organicemos una reunión y conozcámonos">
+      <PageHero img="/evidencia/foto-rodaje-local.jpg" kicker="Contacto" title="Organicemos una reunión y conozcámonos">
         <p>
           Lo importante es que tengas toda la información para decidir. Cuéntanos de tu negocio y te mostramos cómo
           trabajamos.

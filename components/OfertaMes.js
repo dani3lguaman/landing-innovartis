@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import SectionTitle from "./SectionTitle";
+import Tilt from "./Tilt";
 import { WA_NUMBER } from "./constants";
 
 // Oferta del mes (fuente: agencia/comercial/proforma/oferta-vigente.md).
@@ -27,14 +28,14 @@ const CARDS = [
     tag: "Nuevo servicio",
     title: "Google Ads",
     body: "Aparece cuando te buscan en Google. Campañas de búsqueda que llevan a tu WhatsApp o a una llamada.",
-    img: "/evidencia/foto-set-fabrica.jpg",
+    img: "/portafolio/webs/fisioclub-quito-escritorio.webp",
     href: "/google-ads",
   },
   {
     tag: "Plan más pedido",
     title: "Básico: USD 130 / 160",
     body: "2 reels, 2 posts y 1 carrusel al mes, con 2 campañas en Meta Ads hacia tu WhatsApp.",
-    img: "/evidencia/foto-sesion-salon.jpg",
+    img: "/portafolio/medcentral/d-post-1.webp",
     href: "/planes",
   },
   {
@@ -78,8 +79,8 @@ export default function OfertaMes({ id = "oferta" }) {
         </SectionTitle>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
           {cards.map((c) => (
+            <Tilt key={c.title}>
             <a
-              key={c.title}
               href={c.href}
               target={c.href.startsWith("http") ? "_blank" : undefined}
               rel={c.href.startsWith("http") ? "noopener noreferrer" : undefined}
@@ -98,6 +99,7 @@ export default function OfertaMes({ id = "oferta" }) {
                 <p className="text-[13.5px] leading-[1.6] text-white/85">{c.body}</p>
               </div>
             </a>
+            </Tilt>
           ))}
         </div>
       </div>

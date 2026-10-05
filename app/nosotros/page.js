@@ -14,7 +14,7 @@ export const metadata = {
 export default function NosotrosPage() {
   return (
     <Shell>
-      <PageHero kicker="Nosotros" title="Estrategas de marketing, no una fábrica de contenido">
+      <PageHero img="/evidencia/foto-demo-producto.jpg" kicker="Nosotros" title="Estrategas de marketing, no una fábrica de contenido">
         <p>Somos una agencia de Quito que acompaña a negocios reales con campañas, datos y contenido hecho por personas.</p>
       </PageHero>
       <WhyUs />
