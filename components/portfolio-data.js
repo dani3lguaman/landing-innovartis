@@ -3,9 +3,28 @@
 // Vetados en la web: Tokilla, Surty, Óptica, Aquabec.
 // type: "img" | "video" · metric opcional: { value, label, date }
 
-export const RUBROS = ["Todos", "Belleza", "Limpieza", "Mascotas", "Industria", "Gastronomía"];
+export const RUBROS = ["Todos", "Belleza", "Limpieza", "Industria", "Alimentos", "Mascotas", "Gastronomía"];
 
+// href: enlace a la publicación real (la captura muestra los números tal como estaban ese día).
 export const PORTFOLIO = [
+  {
+    src: "/portafolio/inyecpro/reel-vasos-1mil.webp",
+    type: "img",
+    client: "InyecPro · fábrica de plásticos",
+    rubro: "Industria",
+    piece: "Reel · captura de Facebook, 5-oct-2026",
+    metric: { value: "1 mil", label: "me gusta · 99 comentarios · 36 compartidos" },
+    href: "https://www.facebook.com/reel/1374759481081194",
+  },
+  {
+    src: "/portafolio/damavid/reel-62mil.webp",
+    type: "img",
+    client: "Damavid Aqua · agua purificada",
+    rubro: "Alimentos",
+    piece: "Reel · captura de Facebook, 5-oct-2026",
+    metric: { value: "62 mil", label: "reproducciones · 576 me gusta · 33 compartidos" },
+    href: "https://www.facebook.com/reel/4297411207210341",
+  },
   {
     src: "/portafolio/pachy/post-1.webp",
     type: "img",

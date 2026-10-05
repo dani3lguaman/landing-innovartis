@@ -95,7 +95,7 @@ export default function Portfolio() {
               <p className="text-[12px] text-ink-soft">{p.piece}</p>
               {p.metric && (
                 <p className="mt-1.5 text-[12px] text-accent-deep">
-                  <span className="display-num text-[18px]">{p.metric.value.toLocaleString("es-EC")}</span> {p.metric.label}
+                  <span className="display-num text-[18px]">{typeof p.metric.value === "number" ? p.metric.value.toLocaleString("es-EC") : p.metric.value}</span> {p.metric.label}
                 </p>
               )}
             </div>
@@ -130,6 +130,16 @@ export default function Portfolio() {
             <p className="text-[13px] text-white/75">
               {current.piece} · {open + 1} de {items.length}
             </p>
+            {current.href && (
+              <a
+                href={current.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block mt-2 text-[13px] text-accent underline underline-offset-4"
+              >
+                Ver la publicación original
+              </a>
+            )}
           </div>
           <button onClick={close} aria-label="Cerrar" className="absolute top-4 right-5 text-white text-[32px] leading-none">×</button>
           {items.length > 1 && (
