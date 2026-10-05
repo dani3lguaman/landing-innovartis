@@ -18,12 +18,14 @@ const PLANS = [
       "2 artes estáticos + 2 videos cortos",
       "1 carrusel estratégico (hasta 3 imágenes)",
       "2 campañas activas en Meta Ads",
-      "Instagram, Facebook y TikTok",
+      "Instagram y Facebook",
       "Copys de venta y reporte mensual",
     ],
     // Lo que cambia según haya o no grabación:
     sinGrabacion: "Tú nos envías el material y nosotros lo editamos",
     conGrabacion: "1 hora de grabación en tu negocio — luz, micrófono y movilización incluidos",
+    // Promo octubre 2026 (Daniel, 2-oct): web de regalo SOLO con grabación; reemplaza los 3 posts. Se apaga sola el 1-nov.
+    promo: { until: "2026-10-31", text: "Octubre: tu página web de regalo con el plan con grabación" },
     highlight: false,
   },
   {
@@ -209,6 +211,11 @@ export default function PlansSection() {
         <span className="display-num text-navy text-[38px]">${priceOf(p)}</span>
         <span className="text-[13px] text-ink-soft">/mes</span>
       </p>
+      {p.promo && conGrabacion && new Date() <= new Date(`${p.promo.until}T23:59:59-05:00`) && (
+        <p className="mb-4 text-[12.5px] font-semibold text-accent-deep border border-accent/50 bg-accent/10 px-3 py-2">
+          {p.promo.text}
+        </p>
+      )}
       <p className="text-[13.5px] leading-[1.65] text-ink-soft mb-5">{p.focus}</p>
       <ul className="text-[13px] leading-[1.9] text-ink-soft mt-auto">
         {p.features.map((f) => (
