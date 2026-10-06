@@ -30,9 +30,51 @@ export const metadata = {
   },
 };
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "MarketingAgency",
+  name: "INNOVARTIS",
+  url: "https://www.innovartis.lat",
+  logo: "https://www.innovartis.lat/logo-innovartis.jpg",
+  description:
+    "Agencia de marketing estratégico en Quito, Ecuador. Campañas, datos, CRM y automatización. También páginas web desde $60, pago único; la Profesional ($120) con el dominio .com registrado a nombre del cliente.",
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Quito",
+    addressRegion: "Pichincha",
+    addressCountry: "EC",
+  },
+  contactPoint: {
+    "@type": "ContactPoint",
+    telephone: "+593-99-862-0536",
+    contactType: "customer service",
+    availableLanguage: "Spanish",
+  },
+  sameAs: [
+    "https://www.instagram.com/innovartis.ec",
+    "https://www.tiktok.com/@innovartis.ec",
+    "https://www.facebook.com/innovartis.ec",
+  ],
+  areaServed: { "@type": "City", name: "Quito" },
+  serviceType: [
+    "Marketing Digital",
+    "Meta Ads",
+    "TikTok Ads",
+    "Producción de Contenido",
+    "Diseño Web",
+    "Google Maps",
+  ],
+};
+
 export default function RootLayout({ children }) {
   return (
     <html lang="es">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body className={`${cormorant.variable} ${lora.variable} antialiased`}>
         {children}
       </body>
