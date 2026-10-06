@@ -7,7 +7,7 @@ export const WA_ASESORIA = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent
   "Hola InnovArtis, quiero mi asesoría gratis de 10 minutos para mi negocio."
 )}`;
 
-export const SITE_URL = "https://www.innovartis.lat";
+export const SITE_URL = "https://innovartis.lat";
 
 // Páginas del sitio (cabecera, pie y sitemap).
 export const NAV = [

@@ -31,8 +31,8 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "MarketingAgency",
   name: "INNOVARTIS",
-  url: "https://www.innovartis.lat",
-  logo: "https://www.innovartis.lat/logo-innovartis.jpg",
+  url: "https://innovartis.lat",
+  logo: "https://innovartis.lat/logo-innovartis.jpg",
   description:
     "Agencia de marketing estratégico en Quito, Ecuador. Campañas, datos, CRM y automatización. También páginas web desde $60, pago único; la Profesional ($120) con el dominio .com registrado a nombre del cliente.",
   address: {
