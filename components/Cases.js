@@ -6,8 +6,8 @@ const cases = [
     img: "/img/caso-remy.webp",
     kicker: "Extensiones de cabello · Gestión de redes",
     name: "Cabello Remy EC",
-    body: "Estrategia de contenido y crecimiento sostenido en Instagram para un negocio de extensiones con locales en Quito y Guayaquil.",
-    metric: { value: 6991, suffix: "", label: "seguidores en Instagram" },
+    body: "Contenido y campañas a WhatsApp para un negocio de extensiones con locales en Quito y Guayaquil: cada mensaje es una clienta preguntando por su servicio.",
+    metric: { value: 9512, suffix: "", label: "conversaciones por WhatsApp en 12 meses, desde $0,32 c/u" },
     link: { href: "https://instagram.com/cabelloremyuio", label: "@cabelloremyuio" },
   },
   {
@@ -15,14 +15,14 @@ const cases = [
     kicker: "Veterinaria · De cero a redes activas",
     name: "Clínica Veterinaria Metrópolis",
     body: "20 años y 5 locales en Quito, sin presencia digital. La construimos desde cero y la hicimos brillar con atención real al cliente.",
-    metric: { value: 26, suffix: "", label: "likes · 2 comentarios respondidos por el negocio" },
+    metric: { value: 78, suffix: "", label: "conversaciones por WhatsApp con su primera campaña" },
   },
   {
     img: "/img/caso-idefix.webp",
     kicker: "Plastics Ide · Marca creada desde cero",
     name: "Idefix",
     body: "Creamos la marca completa y producimos reels mostrando producto y aplicaciones reales.",
-    metric: { value: 204, suffix: "", label: "likes en reels de producto (118 y 204)" },
+    metric: { value: 1000, suffix: "+", label: "reproducciones en un reel de producto" },
   },
   {
     img: "/img/caso-abbysal.webp",

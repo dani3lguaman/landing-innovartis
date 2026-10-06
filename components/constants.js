@@ -3,3 +3,6 @@ export const WA_NUMBER_DISPLAY = "+593 99 862 0536";
 export const WA_LINK = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(
   "Hola InnovArtis, vi su página web y quiero más información."
 )}`;
+export const WA_ASESORIA = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(
+  "Hola InnovArtis, quiero mi asesoría gratis de 10 minutos para mi negocio."
+)}`;

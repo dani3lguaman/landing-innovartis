@@ -1,6 +1,6 @@
 import Reveal from "./Reveal";
 import Counter from "./Counter";
-import { WA_LINK } from "./constants";
+import { WA_ASESORIA } from "./constants";
 
 const stats = [
   { value: 3, suffix: "", label: "años construyendo marcas" },
@@ -33,8 +33,8 @@ export default function Hero() {
           </Reveal>
           <Reveal delay={360}>
             <div className="flex flex-wrap gap-4">
-              <a href={WA_LINK} target="_blank" rel="noopener noreferrer" className="btn-solid">
-                Hablemos por WhatsApp
+              <a href={WA_ASESORIA} target="_blank" rel="noopener noreferrer" className="btn-solid">
+                Quiero mi asesoría gratis
               </a>
               <a href="#casos" className="btn-outline">
                 Ver resultados reales

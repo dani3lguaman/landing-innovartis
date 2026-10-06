@@ -15,10 +15,10 @@ const PLANS = [
     price: { sin: 130, con: 160 },
     focus: "El punto de partida para una presencia sólida.",
     features: [
-      "2 artes estáticos + 2 videos cortos",
-      "1 carrusel estratégico (hasta 3 imágenes)",
-      "2 campañas activas en Meta Ads",
-      "Instagram, Facebook y TikTok",
+      "Asesoría con nuestra estratega: reunión + análisis de mercado + brief",
+      "2 videos cortos (reels) + 2 posts + 1 carrusel",
+      "2 campañas activas en Meta Ads, directo a tu WhatsApp",
+      "Facebook e Instagram",
       "Copys de venta y reporte mensual",
     ],
     // Lo que cambia según haya o no grabación:
@@ -91,7 +91,7 @@ const HIGH_VOLUME = [
     id: "gold",
     name: "Gold",
     price: { sin: 480, con: 510 },
-    resumen: "26 piezas · todo lo del Plus + agente IA de WhatsApp 24/7",
+    resumen: "26 piezas · todo lo del Plus + asistente automático de WhatsApp 24/7",
   },
   {
     id: "diamante",
@@ -112,7 +112,7 @@ const CORPORATE = {
     "Estrategia y acompañamiento dedicados",
     "Campañas Meta + TikTok + Google",
     "CRM HubSpot con embudo completo",
-    "Automatización y agentes IA",
+    "Automatización y asistentes automáticos de WhatsApp",
     "Producción audiovisual a la escala que necesites",
   ],
 };
@@ -289,11 +289,12 @@ export default function PlansSection() {
         <div className="mt-6 border border-accent bg-accent/5 px-7 py-5 flex flex-wrap items-center gap-x-4 gap-y-2">
           <span className="text-[20px]">🎁</span>
           <p className="text-[14.5px] leading-[1.7] text-ink flex-1 min-w-[280px]">
-            <strong>Si es tu primer mes con nosotros:</strong> te regalamos{" "}
-            <strong>3 publicaciones adicionales</strong>, sin costo, sobre lo que ya incluye tu plan.
+            <strong>Promoción de octubre:</strong> al contratar cualquier plan{" "}
+            <strong>con grabación</strong>, tu <strong>página web va de regalo</strong> (valor regular
+            $120). Se entrega después del primer pago completo.
           </p>
           <span className="text-[12.5px] text-ink-soft italic">
-            Beneficio de bienvenida para clientes nuevos.
+            Válida para quienes firman hasta el 31 de octubre de 2026.
           </span>
         </div>
       </Reveal>

@@ -4,6 +4,7 @@ import WhyUs from "@/components/WhyUs";
 import Cases from "@/components/Cases";
 import EnAccion from "@/components/EnAccion";
 import ReelsPortafolio from "@/components/ReelsPortafolio";
+import AsesoriaCTA from "@/components/AsesoriaCTA";
 import Services from "@/components/Services";
 import WebOffers from "@/components/WebOffers";
 import Method from "@/components/Method";
@@ -26,6 +27,7 @@ export default function Home() {
         <Cases />
         <hr className="hairline max-w-[1150px] mx-auto" />
         <ReelsPortafolio />
+        <AsesoriaCTA />
         <hr className="hairline max-w-[1150px] mx-auto" />
         <EnAccion />
         <hr className="hairline max-w-[1150px] mx-auto" />
@@ -33,6 +35,7 @@ export default function Home() {
         <WebOffers />
         <Method />
         <PlansSection />
+        <AsesoriaCTA titulo="¿No sabes qué plan te conviene?" texto="Cuéntanos de tu negocio en una llamada de 10 minutos y te recomendamos el plan exacto, sin pagar de más." />
         <hr className="hairline max-w-[1150px] mx-auto" />
         <Discovery />
         <Team />

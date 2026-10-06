@@ -52,7 +52,7 @@ export default function Header() {
             </a>
           ))}
           <a href="#conocerte" className="btn-outline !py-2 !px-6">
-            Hablemos
+            Asesoría gratis
           </a>
         </nav>
 
@@ -78,7 +78,7 @@ export default function Header() {
             </a>
           ))}
           <a href="#conocerte" onClick={() => setOpen(false)} className="btn-outline w-fit">
-            Hablemos
+            Asesoría gratis
           </a>
         </nav>
       )}
