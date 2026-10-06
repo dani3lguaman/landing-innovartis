@@ -1,7 +1,11 @@
 "use client";
 
+import Link from "next/link";
 import { useState } from "react";
 import Reveal from "./Reveal";
+
+// Los 4 que se muestran en el inicio (modo compacto).
+const DESTACADOS = ["4432547613735861", "1553476923171882", "1374759481081194", "1700538284521006"];
 
 // Reels reales publicados en las páginas de nuestros clientes.
 // Cifras leídas en Facebook el 6-oct-2026 (reproducciones / reacciones públicas de cada reel).
@@ -83,11 +87,13 @@ function embedUrl(id) {
   return `https://www.facebook.com/plugins/video.php?href=${href}&show_text=false&width=270&height=480`;
 }
 
-function ReelCard({ reel }) {
+function ReelCard({ reel, compact }) {
   const [playing, setPlaying] = useState(false);
 
   return (
-    <figure className="flex-none w-[240px] md:w-[270px] snap-start m-0">
+    <figure
+      className={`flex-none w-[240px] snap-start m-0 ${compact ? "md:w-auto" : "md:w-[270px]"}`}
+    >
       <div className="aspect-[9/16] bg-navy-deep border border-line overflow-hidden relative">
         {playing ? (
           <iframe
@@ -133,38 +139,53 @@ function ReelCard({ reel }) {
   );
 }
 
-export default function ReelsPortafolio() {
+export default function ReelsPortafolio({ compact = false }) {
+  const lista = compact ? reels.filter((r) => DESTACADOS.includes(r.id)) : reels;
+
   return (
     <section id="portafolio-videos" className="section-y overflow-hidden">
-      <div className="max-w-[1150px] mx-auto px-6">
+      <div className="max-w-[1150px] mx-auto px-4 md:px-6">
         <Reveal>
           <p className="kicker mb-4">Portafolio en video</p>
         </Reveal>
         <Reveal mask delay={80}>
           <h2 className="font-heading text-navy text-heading mb-4 max-w-[680px]">
-            Videos reales, publicados en las páginas de nuestros clientes.
+            {compact
+              ? "Contenido humano, grabado en el negocio de cada cliente."
+              : "Videos reales, publicados en las páginas de nuestros clientes."}
           </h2>
         </Reveal>
         <Reveal delay={160}>
           <p className="text-[16px] leading-[1.8] text-ink-soft max-w-[640px] mb-10">
             Fábricas, clínicas, servicios a domicilio: grabamos en el negocio de cada cliente, lo
-            editamos y lo ponemos en campañas. Dele play y véalos como los vio su público.
+            editamos y lo ponemos en campañas. Dale play y míralos como los vio su público.
           </p>
         </Reveal>
       </div>
 
-      <div className="max-w-[1150px] mx-auto px-6">
+      <div className="max-w-[1150px] mx-auto px-4 md:px-6">
         <div
-          className="flex gap-4 overflow-x-auto pb-4 snap-x snap-mandatory"
+          className={`flex gap-4 overflow-x-auto pb-4 snap-x snap-mandatory ${
+            compact ? "md:grid md:grid-cols-4 md:overflow-visible" : ""
+          }`}
           style={{ WebkitOverflowScrolling: "touch" }}
         >
-          {reels.map((r) => (
-            <ReelCard key={r.id} reel={r} />
+          {lista.map((r) => (
+            <ReelCard key={r.id} reel={r} compact={compact} />
           ))}
         </div>
-        <p className="mt-4 text-[13px] text-ink-soft">
-          Deslice para ver más · cifras públicas de cada reel al 6 de octubre de 2026.
-        </p>
+        <div className="mt-4 flex flex-col md:flex-row md:items-center justify-between gap-4">
+          <p className="text-[13px] text-ink-soft">
+            {compact
+              ? "Cifras públicas de cada reel al 6 de octubre de 2026."
+              : "Desliza para ver más · cifras públicas de cada reel al 6 de octubre de 2026."}
+          </p>
+          {compact && (
+            <Link href="/portafolio" className="btn-outline self-start md:self-auto">
+              Ver los {reels.length} videos
+            </Link>
+          )}
+        </div>
       </div>
     </section>
   );

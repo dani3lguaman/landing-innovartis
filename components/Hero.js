@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Reveal from "./Reveal";
 import Counter from "./Counter";
 import { WA_ASESORIA } from "./constants";
@@ -11,7 +12,7 @@ const stats = [
 
 export default function Hero() {
   return (
-    <section className="max-w-[1150px] mx-auto px-6 pt-16 md:pt-24 pb-14">
+    <section className="max-w-[1150px] mx-auto px-4 md:px-6 pt-16 md:pt-24 pb-14">
       <div className="grid md:grid-cols-[1.15fr_0.85fr] gap-12 items-center">
         <div>
           <Reveal>
@@ -25,7 +26,8 @@ export default function Hero() {
           </Reveal>
           <Reveal delay={240}>
             <p className="text-[17px] leading-[1.75] text-ink-soft max-w-[520px] mb-9">
-              No te cobramos por una imagen bonita. Te acompañamos con{" "}
+              No pagas por la imagen ni por el video: pagas por la estrategia, el acompañamiento y
+              los resultados. Trabajamos con{" "}
               <strong className="text-ink">campañas, datos, CRM y automatización</strong> para que tu
               negocio consiga clientes reales. Somos estrategas de marketing — no una fábrica de
               contenido.
@@ -36,9 +38,9 @@ export default function Hero() {
               <a href={WA_ASESORIA} target="_blank" rel="noopener noreferrer" className="btn-solid">
                 Quiero mi asesoría gratis
               </a>
-              <a href="#casos" className="btn-outline">
+              <Link href="/portafolio" className="btn-outline">
                 Ver resultados reales
-              </a>
+              </Link>
             </div>
           </Reveal>
         </div>

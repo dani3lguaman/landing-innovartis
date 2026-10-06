@@ -230,7 +230,7 @@ export default function PlansSection() {
   );
 
   return (
-    <section id="planes" className="max-w-[1150px] mx-auto px-6 section-y">
+    <section id="planes" className="max-w-[1150px] mx-auto px-4 md:px-6 section-y">
       <Reveal>
         <p className="kicker mb-4">Planes y calculadora</p>
       </Reveal>

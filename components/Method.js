@@ -26,7 +26,7 @@ const steps = [
 export default function Method() {
   return (
     <section id="metodo" className="bg-navy-deep section-y">
-      <div className="max-w-[1150px] mx-auto px-6">
+      <div className="max-w-[1150px] mx-auto px-4 md:px-6">
         <Reveal>
           <p className="kicker mb-4">Cómo trabajamos</p>
         </Reveal>

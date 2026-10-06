@@ -14,7 +14,7 @@ const playfair = Playfair_Display({
 });
 
 export const metadata = {
-  title: "Remy Ecuador — Extensiones de cabello 100% naturales",
+  title: { absolute: "Remy Ecuador — Extensiones de cabello 100% naturales" },
   description:
     "Extensiones de cabello 100% humano y extensiones de pestañas premium (solo Remy Sur). Quito y Guayaquil. WhatsApp, Instagram, TikTok y ubicaciones.",
   openGraph: {

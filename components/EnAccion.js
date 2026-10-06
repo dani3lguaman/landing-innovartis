@@ -42,7 +42,7 @@ const shots = [
 export default function EnAccion() {
   return (
     <section id="en-accion" className="section-y overflow-hidden">
-      <div className="max-w-[1150px] mx-auto px-6">
+      <div className="max-w-[1150px] mx-auto px-4 md:px-6">
         <Reveal>
           <p className="kicker mb-4">Así trabajamos</p>
         </Reveal>
@@ -59,7 +59,7 @@ export default function EnAccion() {
         </Reveal>
       </div>
 
-      <div className="max-w-[1150px] mx-auto px-6">
+      <div className="max-w-[1150px] mx-auto px-4 md:px-6">
         <div
           className="flex gap-4 overflow-x-auto pb-4 snap-x snap-mandatory"
           style={{ WebkitOverflowScrolling: "touch" }}

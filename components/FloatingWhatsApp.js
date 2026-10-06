@@ -1,12 +1,12 @@
-import { WA_LINK } from "./constants";
+import { WA_ASESORIA } from "./constants";
 
 export default function FloatingWhatsApp() {
   return (
     <a
-      href={WA_LINK}
+      href={WA_ASESORIA}
       target="_blank"
       rel="noopener noreferrer"
-      aria-label="Escríbenos por WhatsApp"
+      aria-label="Quiero mi asesoría gratis por WhatsApp"
       className="fixed bottom-6 right-6 z-50 w-[54px] h-[54px] rounded-full bg-wa flex items-center justify-center shadow-lg hover:scale-105 transition-transform"
     >
       <svg viewBox="0 0 24 24" fill="#ffffff" className="w-7 h-7">

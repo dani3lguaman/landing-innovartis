@@ -35,7 +35,7 @@ const team = [
 
 export default function Team() {
   return (
-    <section id="equipo" className="max-w-[1150px] mx-auto px-6 section-y">
+    <section id="equipo" className="max-w-[1150px] mx-auto px-4 md:px-6 section-y">
       <Reveal>
         <p className="kicker mb-4">Equipo</p>
       </Reveal>
@@ -70,8 +70,8 @@ export default function Team() {
       </div>
       <Reveal>
         <p className="mt-12 text-[14.5px] italic text-ink-soft max-w-[520px]">
-          Contamos con equipo propio — iPhone, micrófono y luz — para garantizar un trabajo de
-          calidad. Nada de contenido masivo ni genérico: todo se graba y se dirige a mano.
+          Contamos con equipo propio — iPhone, micrófono y luz — para cuidar la calidad de cada
+          trabajo. Nada de contenido masivo ni genérico: todo se graba y se dirige a mano.
         </p>
       </Reveal>
     </section>

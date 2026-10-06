@@ -2,7 +2,7 @@ import Reveal from "./Reveal";
 
 export default function WhyUs() {
   return (
-    <section className="max-w-[1150px] mx-auto px-6 section-y">
+    <section className="max-w-[1150px] mx-auto px-4 md:px-6 section-y">
       <div className="grid md:grid-cols-2 gap-12 items-start">
         <div>
           <Reveal>
@@ -17,7 +17,7 @@ export default function WhyUs() {
         <Reveal delay={120}>
           <div className="text-[16px] leading-[1.85] text-ink-soft space-y-5 md:pt-2">
             <p>
-              Hoy cualquiera arma imágenes con inteligencia artificial. Nosotros hacemos otra cosa:{" "}
+              Hoy cualquiera arma imágenes genéricas en minutos. Nosotros hacemos otra cosa:{" "}
               <strong className="text-ink">todo nuestro contenido es humano</strong>, producido bajo
               dirección y planificación real — y si algo no está bien, lo corregimos. No vendemos
               fotos y videos por montones; ese no es nuestro mercado.

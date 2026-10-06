@@ -166,7 +166,7 @@ export default function Discovery() {
 
   return (
     <section id="conocerte" className="bg-paper-soft section-y border-y border-line">
-      <div className="max-w-[1150px] mx-auto px-6 grid md:grid-cols-[0.85fr_1.15fr] gap-12 items-start">
+      <div className="max-w-[1150px] mx-auto px-4 md:px-6 grid md:grid-cols-[0.85fr_1.15fr] gap-12 items-start">
         <div className="md:sticky md:top-28">
           <Reveal>
             <p className="kicker mb-4">Antes de venderte nada</p>

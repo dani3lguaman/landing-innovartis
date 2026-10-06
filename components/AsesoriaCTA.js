@@ -4,7 +4,7 @@ import { WA_ASESORIA } from "./constants";
 // Franja de captación: el visitante que ya vio resultados pide hablar con alguien.
 export default function AsesoriaCTA({ titulo, texto }) {
   return (
-    <section className="max-w-[1150px] mx-auto px-6 py-12">
+    <section className="max-w-[1150px] mx-auto px-4 md:px-6 py-12">
       <Reveal>
         <div className="border border-accent bg-accent/5 px-8 py-8 md:px-10 flex flex-col md:flex-row md:items-center gap-6">
           <div className="flex-1">
