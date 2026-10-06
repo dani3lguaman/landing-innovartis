@@ -4,7 +4,8 @@ export const CLIENTS = [
   "Remy EC", "Pachy Limpieza", "InyecPro", "Damavid Aqua", "Metallum", "Controlfrío",
   "SERTEC Generación", "Enquality", "KYA Ecuador", "FisioClub Quito", "Deco Mundo",
   "Auto Spa Ecuador", "Climbing Tours", "Grúas Joel Trans", "Colores y Sabores", "Serenité", "Solugraf",
-  "MedCentral", "Vet. Metrópolis", "Idefix", "Abbysal",
+  "MedCentral", "Vet. Metrópolis", "Idefix", "Abbysal", "Contaservis", "Hampi Andina",
+  "Inyecto Bien", "Las Humitas de la Loma", "Emily Garcés · Ikigai",
 ];
 
 export default function ClientsStrip() {

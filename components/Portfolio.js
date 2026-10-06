@@ -7,12 +7,23 @@ import { PORTFOLIO, RUBROS } from "./portfolio-data";
 
 // Portafolio filtrable por rubro + visor en grande (flechas, Esc, deslizar en celular).
 // El visor recorre solo lo que deja ver el filtro activo.
+// En "Todos" se intercalan los clientes (una pieza de cada uno por vuelta) para que se vea la variedad.
+const MIXED = (() => {
+  const groups = new Map();
+  PORTFOLIO.forEach((p) => groups.set(p.client, [...(groups.get(p.client) || []), p]));
+  const lists = [...groups.values()];
+  const out = [];
+  for (let k = 0; out.length < PORTFOLIO.length; k++) lists.forEach((l) => l[k] && out.push(l[k]));
+  return out;
+})();
+
 export default function Portfolio() {
   const [rubro, setRubro] = useState("Todos");
   const [open, setOpen] = useState(null); // índice dentro de `items` o null
   const [touchX, setTouchX] = useState(null);
+  const [visible, setVisible] = useState(24); // se muestran de a 24 para no cargar 90 piezas de golpe
 
-  const items = rubro === "Todos" ? PORTFOLIO : PORTFOLIO.filter((p) => p.rubro === rubro);
+  const items = rubro === "Todos" ? MIXED : PORTFOLIO.filter((p) => p.rubro === rubro);
   const rubros = RUBROS.filter((r) => r === "Todos" || PORTFOLIO.some((p) => p.rubro === r));
 
   const close = useCallback(() => setOpen(null), []);
@@ -61,7 +72,10 @@ export default function Portfolio() {
             key={r}
             role="tab"
             aria-selected={rubro === r}
-            onClick={() => setRubro(r)}
+            onClick={() => {
+              setRubro(r);
+              setVisible(24);
+            }}
             className={`px-4 py-2 text-[13.5px] border transition-colors ${
               rubro === r
                 ? "bg-navy text-white border-navy"
@@ -74,7 +88,7 @@ export default function Portfolio() {
       </div>
 
       <div className="columns-2 md:columns-3 gap-4 [&>*]:mb-4">
-        {items.map((p, i) => (
+        {items.slice(0, visible).map((p, i) => (
           <Tilt key={p.src} max={6} className="break-inside-avoid">
           <button
             onClick={() => setOpen(i)}
@@ -104,6 +118,14 @@ export default function Portfolio() {
           </Tilt>
         ))}
       </div>
+
+      {visible < items.length && (
+        <div className="text-center mt-10">
+          <button onClick={() => setVisible((v) => v + 24)} className="btn-outline">
+            Ver más trabajos ({items.length - visible} más)
+          </button>
+        </div>
+      )}
 
       {current && (
         <div
