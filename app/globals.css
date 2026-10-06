@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 @theme inline {
-  --color-paper: #f3f2f2;
-  --color-paper-soft: #eceae8;
+  --color-paper: #ffffff;
+  --color-paper-soft: #f4f7fa;
   --color-ink: #23303b;
   --color-ink-soft: #4d5d6b;
   --color-navy: #2c4a63;
@@ -10,10 +10,10 @@
   --color-navy-darker: #1b2d3c;
   --color-accent: #ee7b4d;
   --color-accent-deep: #c85f35;
-  --color-line: #d8d4d0;
+  --color-line: #e2e8ee;
   --color-wa: #25d366;
-  --font-heading: var(--font-cormorant), Georgia, serif;
-  --font-body: var(--font-lora), Georgia, serif;
+  --font-heading: var(--font-montserrat), Arial, sans-serif;
+  --font-body: var(--font-montserrat), Arial, sans-serif;
 }
 
 html {
@@ -21,27 +21,29 @@ html {
 }
 
 body {
-  background-color: #f3f2f2;
+  background-color: #ffffff;
   color: #23303b;
-  font-family: var(--font-lora), Georgia, serif;
+  font-family: var(--font-montserrat), Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 
 /* ---- Tipografía editorial ---- */
 .font-heading {
-  font-family: var(--font-cormorant), Georgia, serif;
+  font-family: var(--font-montserrat), Arial, sans-serif;
+  font-weight: 800;
+  letter-spacing: -0.015em;
 }
 
 /* ---- Escala tipográfica fluida (Fase 4: tokens, skill agency-web §1) ---- */
 .text-display {
-  font-size: clamp(36px, 3vw + 24px, 96px);
-  line-height: 1.05;
+  font-size: clamp(32px, 2.2vw + 20px, 60px);
+  line-height: 1.1;
   letter-spacing: -0.02em;
 }
 
 .text-heading {
-  font-size: clamp(28px, 1.8vw + 22px, 44px);
-  line-height: 1.12;
+  font-size: clamp(26px, 1.2vw + 18px, 38px);
+  line-height: 1.18;
   letter-spacing: -0.01em;
 }
 
@@ -53,31 +55,34 @@ body {
 
 @media (min-width: 768px) {
   .section-y {
-    padding-top: 144px;
-    padding-bottom: 144px;
+    padding-top: 96px;
+    padding-bottom: 96px;
   }
 }
 
 .kicker {
-  font-family: var(--font-lora), Georgia, serif;
+  font-family: var(--font-montserrat), Arial, sans-serif;
   font-size: 12px;
-  font-weight: 600;
-  letter-spacing: 0.22em;
+  font-weight: 700;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
   color: #ee7b4d;
 }
 
 .display-num {
-  font-family: var(--font-cormorant), Georgia, serif;
+  font-family: var(--font-montserrat), Arial, sans-serif;
   font-variant-numeric: tabular-nums;
-  letter-spacing: 0.04em;
+  font-weight: 800;
+  letter-spacing: -0.01em;
 }
 
 /* ---- Imagen tipo lámina (plate) ---- */
 .plate {
   background: #ffffff;
-  border: 1px solid #d8d4d0;
-  padding: 10px;
+  border: 1px solid #e2e8ee;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(44, 74, 99, 0.08);
 }
 
 .plate img {
@@ -89,7 +94,7 @@ body {
 /* ---- Reglas finas ---- */
 .hairline {
   border: 0;
-  border-top: 1px solid #d8d4d0;
+  border-top: 1px solid #e2e8ee;
 }
 
 /* ---- Botones editoriales ----
@@ -103,6 +108,8 @@ body {
   gap: 8px;
   padding: 13px 28px;
   border: 1px solid #ee7b4d;
+  border-radius: 8px;
+  font-weight: 600;
   font-size: 14px;
   letter-spacing: 0.02em;
   cursor: pointer;
@@ -250,7 +257,118 @@ textarea::placeholder {
 .typing-dot:nth-child(2) { animation-delay: 0.15s; }
 .typing-dot:nth-child(3) { animation-delay: 0.3s; }
 
-/* ---- Utilidades de la web multipágina ---- */
+/* ---- Estilo AQUABEC v2 (5-oct-2026): tarjetas redondeadas con sombra suave ---- */
+.card {
+  background: #ffffff;
+  border: 1px solid #e2e8ee;
+  border-radius: 14px;
+  box-shadow: 0 4px 18px rgba(44, 74, 99, 0.06);
+  transition: box-shadow 0.2s ease, transform 0.2s ease, border-color 0.2s ease;
+}
+
+a.card:hover,
+button.card:hover,
+.card-hover:hover {
+  box-shadow: 0 12px 32px rgba(44, 74, 99, 0.14);
+  border-color: #f5ad8d;
+  transform: translateY(-2px);
+}
+
+.title-bar::after {
+  content: "";
+  display: block;
+  width: 56px;
+  height: 3px;
+  margin-top: 14px;
+  background: #ee7b4d;
+  border-radius: 2px;
+}
+
+.title-bar.center::after {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* ---- Tarjetas que giran (5-oct-2026, pedido de Daniel) ----
+   Escritorio: giran al pasar el mouse o con el teclado (foco). Celular: giran al tocar. */
+.flip {
+  perspective: 1200px;
+}
+
+.flip-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.7s cubic-bezier(0.2, 0.75, 0.25, 1);
+}
+
+@media (hover: hover) {
+  .flip:hover .flip-inner {
+    transform: rotateY(180deg);
+  }
+}
+
+.flip:focus-within .flip-inner,
+.flip.is-flipped .flip-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-face {
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.flip-back {
+  transform: rotateY(180deg);
+}
+
+.flip-hint {
+  animation: flip-hint 2.4s ease-in-out infinite;
+}
+
+@keyframes flip-hint {
+  0%, 70%, 100% { transform: rotate(0); }
+  80% { transform: rotate(-35deg); }
+  90% { transform: rotate(25deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .flip-inner {
+    transition: none;
+  }
+  .flip-hint {
+    animation: none;
+  }
+}
+
+/* Inclinación 3D que sigue al mouse */
+.tilt {
+  transition: transform 0.25s ease;
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: none; }
+}
+
+/* ---- Utilidades (de la rama web-multipágina) ---- */
 .sr-only {
   position: absolute;
   width: 1px;
@@ -261,58 +379,6 @@ textarea::placeholder {
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border: 0;
-}
-
-/* Las anclas no quedan tapadas por el header fijo */
-[id] {
-  scroll-margin-top: 84px;
-}
-
-/* ---- Tarjetas que se voltean (servicios) ---- */
-.flip {
-  perspective: 1400px;
-}
-
-.flip-inner {
-  display: grid;
-  transform-style: preserve-3d;
-  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.flip-inner > * {
-  grid-area: 1 / 1;
-  backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
-}
-
-.flip-back {
-  transform: rotateY(180deg);
-}
-
-.flip.is-flipped .flip-inner {
-  transform: rotateY(180deg);
-}
-
-/* Sin animación: la cara cambia en seco, sin giro */
-@media (prefers-reduced-motion: reduce) {
-  .flip-inner,
-  .flip.is-flipped .flip-inner {
-    transform: none;
-    transition: none;
-  }
-
-  .flip-back {
-    transform: none;
-    visibility: hidden;
-  }
-
-  .flip.is-flipped .flip-back {
-    visibility: visible;
-  }
-
-  .flip.is-flipped .flip-front {
-    visibility: hidden;
-  }
 }
 
 /* ---- Cuerpo de las guías del blog ---- */
@@ -327,10 +393,11 @@ textarea::placeholder {
 }
 
 .articulo h2 {
-  font-family: var(--font-cormorant), Georgia, serif;
+  font-family: var(--font-heading);
+  font-weight: 800;
   color: #2c4a63;
-  font-size: clamp(26px, 1.2vw + 20px, 34px);
-  line-height: 1.15;
+  font-size: clamp(24px, 1.2vw + 18px, 30px);
+  line-height: 1.2;
   margin-top: 2em;
 }
 

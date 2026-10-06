@@ -1,33 +1,27 @@
-import Reveal from "./Reveal";
-import { WA_ASESORIA } from "./constants";
+import Link from "next/link";
 
-// Cabecera de las páginas internas: kicker + H1 + bajada + el único llamado de la web.
-export default function PageHero({ kicker, titulo, texto, children, cta = true }) {
+// Cabecera de las páginas interiores: banda navy con migas, título y bajada (como AQUABEC v2).
+export default function PageHero({ kicker, title, children, crumb, img }) {
   return (
-    <section className="max-w-[1150px] mx-auto px-4 md:px-6 pt-12 md:pt-20 pb-10 md:pb-14">
-      <Reveal>
-        <p className="kicker mb-5">{kicker}</p>
-      </Reveal>
-      <Reveal delay={100}>
-        <h1 className="font-heading text-navy text-display mb-6 max-w-[860px]">{titulo}</h1>
-      </Reveal>
-      {texto && (
-        <Reveal delay={200}>
-          <p className="text-[17px] leading-[1.75] text-ink-soft max-w-[640px]">{texto}</p>
-        </Reveal>
+    <section className="bg-navy text-white relative overflow-hidden">
+      {img && (
+        <>
+          <img src={img} alt="" aria-hidden="true" className="absolute inset-y-0 right-0 w-full md:w-[60%] h-full object-cover opacity-40 md:opacity-70" />
+          <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-r from-navy via-navy/95 md:via-navy/80 to-navy/40" />
+        </>
       )}
-      {(cta || children) && (
-        <Reveal delay={300}>
-          <div className="mt-8 flex flex-wrap gap-4">
-            {cta && (
-              <a href={WA_ASESORIA} target="_blank" rel="noopener noreferrer" className="btn-solid">
-                Quiero mi asesoría gratis
-              </a>
-            )}
-            {children}
-          </div>
-        </Reveal>
-      )}
+      <div
+        aria-hidden="true"
+        className="absolute inset-0 opacity-[0.07] bg-[linear-gradient(#fff_1px,transparent_1px),linear-gradient(90deg,#fff_1px,transparent_1px)] bg-[size:48px_48px]"
+      />
+      <div className="relative max-w-[1200px] mx-auto px-6 py-14 md:py-20">
+        <p className="text-[12.5px] text-white/60 mb-5">
+          <Link href="/" className="hover:text-white">Inicio</Link> <span className="mx-1.5">/</span> {crumb || title}
+        </p>
+        {kicker && <p className="kicker mb-4">{kicker}</p>}
+        <h1 className="font-heading text-display max-w-[820px]">{title}</h1>
+        {children && <div className="mt-5 text-[17px] leading-[1.75] text-white/80 max-w-[680px]">{children}</div>}
+      </div>
     </section>
   );
 }

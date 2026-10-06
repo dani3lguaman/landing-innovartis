@@ -1,20 +1,19 @@
-import { NAV_LINKS, SITE_URL } from "@/components/constants";
+import { NAV, SITE_URL } from "@/components/constants";
 import { POSTS } from "@/components/blog/posts";
 
+// Todas las páginas del menú + cada guía del blog.
 export default function sitemap() {
-  const paginas = [...NAV_LINKS.map((l) => l.href), "/contacto"].map((href) => ({
-    url: href === "/" ? SITE_URL : `${SITE_URL}${href}`,
+  const pages = NAV.map(({ href }) => ({
+    url: `${SITE_URL}${href === "/" ? "" : href}`,
     lastModified: new Date(),
     changeFrequency: "monthly",
-    priority: href === "/" ? 1 : href === "/planes" || href === "/servicios" ? 0.9 : 0.7,
+    priority: href === "/" ? 1 : 0.8,
   }));
-
-  const guias = POSTS.map((p) => ({
+  const posts = POSTS.map((p) => ({
     url: `${SITE_URL}/blog/${p.slug}`,
-    lastModified: new Date(`${p.date}T12:00:00`),
+    lastModified: new Date(p.date),
     changeFrequency: "yearly",
     priority: 0.6,
   }));
-
-  return [...paginas, ...guias];
+  return [...pages, ...posts];
 }

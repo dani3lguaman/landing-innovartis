@@ -24,6 +24,8 @@ const PLANS = [
     // Lo que cambia según haya o no grabación:
     sinGrabacion: "Tú nos envías el material y nosotros lo editamos",
     conGrabacion: "1 hora de grabación en tu negocio — luz, micrófono y movilización incluidos",
+    // Promo octubre 2026 (Daniel, 2-oct): web de regalo SOLO con grabación; reemplaza los 3 posts. Se apaga sola el 1-nov.
+    promo: { until: "2026-10-31", text: "Octubre: tu página web de regalo con el plan con grabación" },
     highlight: false,
   },
   {
@@ -209,6 +211,11 @@ export default function PlansSection() {
         <span className="display-num text-navy text-[38px]">${priceOf(p)}</span>
         <span className="text-[13px] text-ink-soft">/mes</span>
       </p>
+      {p.promo && conGrabacion && new Date() <= new Date(`${p.promo.until}T23:59:59-05:00`) && (
+        <p className="mb-4 text-[12.5px] font-semibold text-accent-deep border border-accent/50 bg-accent/10 px-3 py-2">
+          {p.promo.text}
+        </p>
+      )}
       <p className="text-[13.5px] leading-[1.65] text-ink-soft mb-5">{p.focus}</p>
       <ul className="text-[13px] leading-[1.9] text-ink-soft mt-auto">
         {p.features.map((f) => (
@@ -230,7 +237,7 @@ export default function PlansSection() {
   );
 
   return (
-    <section id="planes" className="max-w-[1150px] mx-auto px-4 md:px-6 section-y">
+    <section id="planes" className="max-w-[1200px] mx-auto px-6 section-y">
       <Reveal>
         <p className="kicker mb-4">Planes y calculadora</p>
       </Reveal>
@@ -284,17 +291,17 @@ export default function PlansSection() {
         ))}
       </div>
 
-      {/* El gancho de cierre: solo para quien entra por primera vez */}
+      {/* El gancho de cierre. Octubre 2026: el regalo es la web, NO los 3 posts (no se suman).
+          Cambiar cada día 1 con la oferta vigente (agencia/comercial/proforma/oferta-vigente.md). */}
       <Reveal delay={80}>
-        <div className="mt-6 border border-accent bg-accent/5 px-7 py-5 flex flex-wrap items-center gap-x-4 gap-y-2">
+        <div className="mt-6 rounded-xl border border-accent bg-accent/5 px-7 py-5 flex flex-wrap items-center gap-x-4 gap-y-2">
           <span className="text-[20px]">🎁</span>
           <p className="text-[14.5px] leading-[1.7] text-ink flex-1 min-w-[280px]">
-            <strong>Promoción de octubre:</strong> al contratar cualquier plan{" "}
-            <strong>con grabación</strong>, tu <strong>página web va de regalo</strong> (valor regular
-            $120). Se entrega después del primer pago completo.
+            <strong>Promo de octubre:</strong> con el plan <strong>con grabación</strong>, tu{" "}
+            <strong>página web de regalo</strong> (valor regular USD 120). Se entrega después del primer pago completo.
           </p>
           <span className="text-[12.5px] text-ink-soft italic">
-            Válida para quienes firman hasta el 31 de octubre de 2026.
+            Válida para quien firma hasta el 31 de octubre de 2026.
           </span>
         </div>
       </Reveal>

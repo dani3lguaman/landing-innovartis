@@ -1,17 +1,11 @@
-import { Cormorant_Garamond, Lora } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import "./globals.css";
 
-const cormorant = Cormorant_Garamond({
+// Montserrat: tipografía del manual de marca (30-ago-2026) y de la web de AQUABEC v2.
+const montserrat = Montserrat({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-  variable: "--font-cormorant",
-});
-
-const lora = Lora({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-  style: ["normal", "italic"],
-  variable: "--font-lora",
+  weight: ["400", "500", "600", "700", "800"],
+  variable: "--font-montserrat",
 });
 
 export const metadata = {
@@ -64,6 +58,7 @@ const jsonLd = {
     "Meta Ads",
     "TikTok Ads",
     "Producción de Contenido",
+    "Google Ads",
     "Diseño Web",
     "Google Maps",
   ],
@@ -78,7 +73,7 @@ export default function RootLayout({ children }) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className={`${cormorant.variable} ${lora.variable} antialiased`}>
+      <body className={`${montserrat.variable} antialiased`}>
         {children}
       </body>
     </html>

@@ -154,7 +154,7 @@ function FlipCard({ s }) {
 
 export default function Services() {
   return (
-    <section id="servicios" className="max-w-[1150px] mx-auto px-4 md:px-6 pb-20 md:pb-28">
+    <section id="servicios" className="max-w-[1200px] mx-auto px-4 md:px-6 pb-20 md:pb-28">
       <Reveal>
         <p className="kicker mb-4">Servicios</p>
       </Reveal>

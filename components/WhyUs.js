@@ -2,7 +2,7 @@ import Reveal from "./Reveal";
 
 export default function WhyUs() {
   return (
-    <section className="max-w-[1150px] mx-auto px-4 md:px-6 section-y">
+    <section className="max-w-[1200px] mx-auto px-4 md:px-6 section-y">
       <div className="grid md:grid-cols-2 gap-12 items-start">
         <div>
           <Reveal>

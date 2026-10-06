@@ -9,12 +9,16 @@ export const WA_ASESORIA = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent
 
 export const SITE_URL = "https://www.innovartis.lat";
 
-// Navegación principal: la misma lista alimenta el header, el footer y el sitemap.
-export const NAV_LINKS = [
+// Páginas del sitio (cabecera, pie y sitemap).
+export const NAV = [
   { href: "/", label: "Inicio" },
   { href: "/servicios", label: "Servicios" },
-  { href: "/planes", label: "Planes" },
+  { href: "/google-ads", label: "Google Ads", badge: "Nuevo" },
+  { href: "/webs", label: "Páginas web" },
+  { href: "/resultados", label: "Resultados" },
   { href: "/portafolio", label: "Portafolio" },
+  { href: "/planes", label: "Planes" },
   { href: "/nosotros", label: "Nosotros" },
   { href: "/blog", label: "Blog" },
+  { href: "/contacto", label: "Contacto" },
 ];
