@@ -1,4 +1,5 @@
-import { NAV, WA_LINK, WA_NUMBER_DISPLAY } from "./constants";
+import { NAV, SOCIALS, WA_LINK, WA_NUMBER_DISPLAY } from "./constants";
+import SocialIcon from "./SocialIcon";
 
 export default function Footer() {
   return (
@@ -39,18 +40,20 @@ export default function Footer() {
               </a>
             </li>
             <li>Quito, Ecuador</li>
-            <li>
-              <a href="https://www.instagram.com/innovartis.ec" target="_blank" rel="noopener noreferrer" className="hover:text-white">
-                Instagram
-              </a>{" "}
-              ·{" "}
-              <a href="https://www.facebook.com/innovartis.ec" target="_blank" rel="noopener noreferrer" className="hover:text-white">
-                Facebook
-              </a>{" "}
-              ·{" "}
-              <a href="https://www.tiktok.com/@innovartis.ec" target="_blank" rel="noopener noreferrer" className="hover:text-white">
-                TikTok
-              </a>
+            <li className="flex gap-2 pt-2">
+              {SOCIALS.map((s) => (
+                <a
+                  key={s.id}
+                  href={s.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`${s.label} de InnovArtis`}
+                  title={s.label}
+                  className="!p-2.5 border border-white/15 hover:border-accent hover:text-white transition-colors"
+                >
+                  <SocialIcon id={s.id} className="w-[18px] h-[18px]" />
+                </a>
+              ))}
             </li>
           </ul>
         </div>

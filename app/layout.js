@@ -1,5 +1,6 @@
 import { Montserrat } from "next/font/google";
 import "./globals.css";
+import { SOCIALS } from "@/components/constants";
 
 // Montserrat: tipografía del manual de marca (30-ago-2026) y de la web de AQUABEC v2.
 const montserrat = Montserrat({
@@ -47,11 +48,7 @@ const jsonLd = {
     contactType: "customer service",
     availableLanguage: "Spanish",
   },
-  sameAs: [
-    "https://www.instagram.com/innovartis.ec",
-    "https://www.tiktok.com/@innovartis.ec",
-    "https://www.facebook.com/innovartis.ec",
-  ],
+  sameAs: SOCIALS.map((s) => s.href),
   areaServed: { "@type": "City", name: "Quito" },
   serviceType: [
     "Marketing Digital",

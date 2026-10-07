@@ -22,3 +22,35 @@ export const NAV = [
   { href: "/blog", label: "Blog" },
   { href: "/contacto", label: "Contacto" },
 ];
+
+// Redes oficiales de la agencia. Fuente única: pie, Contacto y JSON-LD leen de aquí.
+export const SOCIALS = [
+  {
+    id: "instagram",
+    label: "Instagram",
+    handle: "@innovartisgenciademarketing",
+    href: "https://www.instagram.com/innovartisgenciademarketing/",
+    note: "Nuestro trabajo del día a día y lo que publicamos para clientes.",
+  },
+  {
+    id: "tiktok",
+    label: "TikTok",
+    handle: "@innuevate",
+    href: "https://www.tiktok.com/@innuevate",
+    note: "Reels, grabaciones y detrás de cámaras.",
+  },
+  {
+    id: "linkedin",
+    label: "LinkedIn",
+    handle: "InnovArtis",
+    href: "https://www.linkedin.com/company/112360156/",
+    note: "La agencia, el equipo y los resultados para empresas.",
+  },
+  {
+    id: "facebook",
+    label: "Facebook",
+    handle: "InnovArtis",
+    href: "https://www.facebook.com/innovartis.ec",
+    note: "Novedades y ofertas del mes.",
+  },
+];
