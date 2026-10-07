@@ -8,20 +8,33 @@ export const CLIENTS = [
   "Inyecto Bien", "Las Humitas de la Loma", "Emily Garcés · Ikigai",
 ];
 
+// 7-oct-2026: de lista plana a cinta en movimiento (dos filas en sentidos opuestos).
+// Se detiene con el cursor encima y queda quieta con "movimiento reducido".
+const MITAD = Math.ceil(CLIENTS.length / 2);
+const FILAS = [CLIENTS.slice(0, MITAD), CLIENTS.slice(MITAD)];
+
 export default function ClientsStrip() {
   return (
-    <section className="max-w-[1200px] mx-auto px-6 py-10">
-      <div className="card px-6 py-6 md:flex items-center gap-8">
-        <p className="text-[12px] font-bold uppercase tracking-[0.14em] text-ink-soft shrink-0 mb-4 md:mb-0">
-          Negocios que confían en nosotros
-        </p>
-        <ul className="flex flex-wrap gap-x-6 gap-y-2.5">
-          {CLIENTS.map((c) => (
-            <li key={c} className="text-[14px] font-bold text-navy/80 whitespace-nowrap">
-              {c}
-            </li>
-          ))}
-        </ul>
+    <section className="py-12 overflow-hidden" aria-label="Negocios que confían en nosotros">
+      <p className="text-center text-[12px] font-bold uppercase tracking-[0.14em] text-ink-soft mb-6 px-6">
+        Negocios que confían en nosotros
+      </p>
+      <div className="marquee-wrap space-y-3">
+        {FILAS.map((fila, k) => (
+          <div key={k} className="marquee">
+            <ul className={`marquee-track ${k === 1 ? "marquee-track--rev" : ""}`}>
+              {[...fila, ...fila].map((c, i) => (
+                <li
+                  key={c + i}
+                  aria-hidden={i >= fila.length ? "true" : undefined}
+                  className="marquee-chip"
+                >
+                  {c}
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
       </div>
     </section>
   );
