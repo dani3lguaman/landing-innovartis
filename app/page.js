@@ -1,4 +1,5 @@
 import Shell from "@/components/Shell";
+import BrandBanner from "@/components/BrandBanner";
 import HomeHero from "@/components/HomeHero";
 import TrustStrip from "@/components/TrustStrip";
 import OfertaMes from "@/components/OfertaMes";
@@ -15,6 +16,7 @@ import FinalCTA from "@/components/FinalCTA";
 export default function Home() {
   return (
     <Shell>
+      <BrandBanner />
       <HomeHero />
       <TrustStrip />
       <OfertaMes />

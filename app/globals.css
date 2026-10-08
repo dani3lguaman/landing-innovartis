@@ -464,3 +464,14 @@ button.card:hover,
   .marquee { -webkit-mask-image: none; mask-image: none; }
   .marquee-chip[aria-hidden="true"] { display: none; }
 }
+
+/* Banner de marca (BrandBanner, 8-oct-2026) */
+.brand-banner__curvas { position: absolute; inset: 0; width: 100%; height: 100%; }
+.brand-banner__ia { animation: banner-ia 0.9s cubic-bezier(.2,.7,.2,1) both; }
+.brand-banner__nombre { animation: banner-sube 0.8s cubic-bezier(.2,.7,.2,1) 0.2s both; }
+.brand-banner__tag { animation: banner-sube 0.8s cubic-bezier(.2,.7,.2,1) 0.4s both; }
+@keyframes banner-ia { from { opacity: 0; transform: translateY(-14px) scale(0.85); } to { opacity: 1; transform: none; } }
+@keyframes banner-sube { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: reduce) {
+  .brand-banner__ia, .brand-banner__nombre, .brand-banner__tag { animation: none; }
+}
