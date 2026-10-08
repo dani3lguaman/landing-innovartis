@@ -1,35 +1,36 @@
 import Reveal from "./Reveal";
+// 8-oct-2026: las cinco fotos con el mismo recorte (cara centrada, cabeza y hombros) y el mismo fondo azul.
 
 const team = [
   {
     name: "Daniel Guamán",
     role: "CEO · Especialista en publicidad digital",
     body: "Maneja los anuncios y la asesoría comercial. Es la cara del proyecto y quien te entrega las cuentas.",
-    img: "/img/equipo-daniel.webp",
+    img: "/img/equipo-daniel-circulo.webp",
   },
   {
     name: "Sofía",
     role: "Community Manager",
     body: "Gestiona el día a día y la atención al detalle para la satisfacción de cada cliente.",
-    img: "/img/equipo-sofia.webp",
+    img: "/img/equipo-sofia-circulo.webp",
   },
   {
     name: "Vanessa",
     role: "Diseñadora multimedia",
     body: "Diseña artes, carruseles y portadas, y edita los videos de cada cliente.",
-    img: "/img/equipo-vanessa-nueva.jpg",
+    img: "/img/equipo-vanessa-circulo.webp",
   },
   {
     name: "Martina",
     role: "Estratega de contenido",
     body: "Se reúne contigo, analiza tu mercado y escribe el brief que apruebas antes de producir.",
-    img: "/img/equipo-martina.jpg",
+    img: "/img/equipo-martina-circulo.webp",
   },
   {
     name: "Joel",
     role: "Filmmaker",
     body: "Va a tu negocio a grabar con cámara, luz y micrófono, y edita los videos.",
-    img: null,
+    img: "/img/equipo-joel-circulo.webp",
   },
 ];
 
