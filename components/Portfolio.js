@@ -21,7 +21,7 @@ export default function Portfolio() {
   const [rubro, setRubro] = useState("Todos");
   const [open, setOpen] = useState(null); // índice dentro de `items` o null
   const [touchX, setTouchX] = useState(null);
-  const [visible, setVisible] = useState(24); // se muestran de a 24 para no cargar 90 piezas de golpe
+  const [visible, setVisible] = useState(24); // se muestran de a 24 para no cargar todas las piezas de golpe
 
   const items = rubro === "Todos" ? MIXED : PORTFOLIO.filter((p) => p.rubro === rubro);
   const rubros = RUBROS.filter((r) => r === "Todos" || PORTFOLIO.some((p) => p.rubro === r));

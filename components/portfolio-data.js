@@ -3,7 +3,7 @@
 // Vetados en la web: Tokilla, Surty, Óptica, Aquabec.
 // type: "img" | "video" · metric opcional: { value, label, date }
 
-export const RUBROS = ["Todos", "Belleza", "Limpieza", "Industria", "Alimentos", "Mascotas", "Gastronomía", "Educación", "Salud", "Servicios"];
+export const RUBROS = ["Todos", "Belleza", "Limpieza", "Industria", "Alimentos", "Gastronomía", "Educación", "Salud"];
 
 // href: enlace a la publicación real (la captura muestra los números tal como estaban ese día).
 export const PORTFOLIO = [
@@ -17,14 +17,6 @@ export const PORTFOLIO = [
     href: "https://www.facebook.com/reel/1374759481081194",
   },
   {
-    src: "/portafolio/ads/inyecpro-may-oct.webp",
-    type: "img",
-    client: "InyecPro · fábrica de plásticos",
-    rubro: "Industria",
-    piece: "Ads Manager · 5-may al 4-oct-2026",
-    metric: { value: 1729, label: "conversaciones por WhatsApp a $0,57 c/u" },
-  },
-  {
     src: "/portafolio/damavid/reel-62mil.webp",
     type: "img",
     client: "Damavid Aqua · agua purificada",
@@ -34,28 +26,12 @@ export const PORTFOLIO = [
     href: "https://www.facebook.com/reel/4297411207210341",
   },
   {
-    src: "/portafolio/ads/damavid-jun-oct.webp",
-    type: "img",
-    client: "Damavid Aqua · agua purificada",
-    rubro: "Alimentos",
-    piece: "Ads Manager · 1-jun al 4-oct-2026",
-    metric: { value: 329, label: "conversaciones por WhatsApp a $0,95 c/u" },
-  },
-  {
     src: "/portafolio/pachy/post-1.webp",
     type: "img",
     client: "Pachy Limpieza Profesional",
     rubro: "Limpieza",
     piece: "Post · limpieza industrial",
     metric: { value: 3548, label: "conversaciones por WhatsApp en 12 meses, desde $0,44 c/u" },
-  },
-  {
-    src: "/portafolio/ads/pachy-2026.webp",
-    type: "img",
-    client: "Pachy Limpieza Profesional",
-    rubro: "Limpieza",
-    piece: "Ads Manager · 1-ene al 4-oct-2026",
-    metric: { value: 2508, label: "conversaciones por WhatsApp a $0,68 c/u" },
   },
   {
     src: "/portafolio/pachy/post-2.webp",
@@ -123,33 +99,11 @@ export const PORTFOLIO = [
     piece: "Carrusel · lámina 3",
   },
   {
-    src: "/portafolio/remy/cliente-antes-extensiones.jpg",
-    type: "img",
-    client: "Cabello Remy EC",
-    rubro: "Belleza",
-    piece: "Antes",
-  },
-  {
-    src: "/portafolio/remy/cliente-despues-extensiones.jpg",
-    type: "img",
-    client: "Cabello Remy EC",
-    rubro: "Belleza",
-    piece: "Después",
-  },
-  {
     src: "/portafolio/remy/arte-pestanas-remy-sur.jpg",
     type: "img",
     client: "Cabello Remy EC",
     rubro: "Belleza",
     piece: "Arte · local del sur",
-  },
-  {
-    src: "/portafolio/ads/metallum-30d.webp",
-    type: "img",
-    client: "Metallum · pérgolas y estructuras",
-    rubro: "Industria",
-    piece: "Ads Manager · 5-sep al 4-oct-2026",
-    metric: { value: 239, label: "clientes potenciales (formulario) a $0,41 c/u" },
   },
   {
     src: "/portafolio/controlfrio/servicios.webp",
@@ -222,14 +176,6 @@ export const PORTFOLIO = [
     piece: "Carrusel · lámina 3",
   },
   {
-    src: "/portafolio/ads/kya-ago.webp",
-    type: "img",
-    client: "KYA Ecuador · capacitación ISO",
-    rubro: "Educación",
-    piece: "Ads Manager · 25-jul al 30-ago-2026",
-    metric: { value: 347, label: "clientes potenciales (formulario) a $0,55 c/u" },
-  },
-  {
     src: "/portafolio/metallum/d-post-propuesta.webp",
     type: "img",
     client: "Metallum · pérgolas y estructuras",
@@ -291,20 +237,6 @@ export const PORTFOLIO = [
     client: "MedCentral · centro médico",
     rubro: "Salud",
     piece: "Carrusel · lámina 3",
-  },
-  {
-    src: "/portafolio/serenite/d-antes-despues.webp",
-    type: "img",
-    client: "Serenité · uñas y belleza",
-    rubro: "Belleza",
-    piece: "Antes y después",
-  },
-  {
-    src: "/portafolio/vet-metropolis/d-portada-fb.webp",
-    type: "img",
-    client: "Clínica Veterinaria Metrópolis",
-    rubro: "Mascotas",
-    piece: "Portada de Facebook",
   },
   {
     src: "/portafolio/sertec/d-mateo-carrusel-1.webp",
@@ -426,55 +358,6 @@ export const PORTFOLIO = [
     piece: "Post · San Valentín",
   },
   {
-    src: "/portafolio/contaservis/m-j4.webp",
-    type: "img",
-    client: "Contaservis · servicios contables",
-    rubro: "Servicios",
-    piece: "Anuncio · florícolas y exportadores",
-  },
-  {
-    src: "/portafolio/contaservis/m-j8.webp",
-    type: "img",
-    client: "Contaservis · servicios contables",
-    rubro: "Servicios",
-    piece: "Anuncio · servicios de contabilidad",
-  },
-  {
-    src: "/portafolio/contaservis/m-j9.webp",
-    type: "img",
-    client: "Contaservis · servicios contables",
-    rubro: "Servicios",
-    piece: "Anuncio · servicios contables",
-  },
-  {
-    src: "/portafolio/solugraf/m-s1.webp",
-    type: "img",
-    client: "Solugraf · imprenta y empaques",
-    rubro: "Industria",
-    piece: "Anuncio · empaques para comida rápida",
-  },
-  {
-    src: "/portafolio/solugraf/m-s9.webp",
-    type: "img",
-    client: "Solugraf · imprenta y empaques",
-    rubro: "Industria",
-    piece: "Anuncio · empaques delivery",
-  },
-  {
-    src: "/portafolio/solugraf/m-s3.webp",
-    type: "img",
-    client: "Solugraf · imprenta y empaques",
-    rubro: "Industria",
-    piece: "Anuncio · Black Friday carpetas",
-  },
-  {
-    src: "/portafolio/solugraf/m-s10.webp",
-    type: "img",
-    client: "Solugraf · imprenta y empaques",
-    rubro: "Industria",
-    piece: "Anuncio · promoción tricolor",
-  },
-  {
     src: "/portafolio/hampi-andina/m-h3.webp",
     type: "img",
     client: "Hampi Andina · medicina ancestral",
@@ -494,48 +377,6 @@ export const PORTFOLIO = [
     client: "Hampi Andina · medicina ancestral",
     rubro: "Salud",
     piece: "Anuncio · webinar medicina andina",
-  },
-  {
-    src: "/portafolio/inyecto-bien/m-an9.webp",
-    type: "img",
-    client: "Inyecto Bien · cursos de inyectología",
-    rubro: "Educación",
-    piece: "Anuncio · curso de toxina botulínica",
-  },
-  {
-    src: "/portafolio/inyecto-bien/m-an1.webp",
-    type: "img",
-    client: "Inyecto Bien · cursos de inyectología",
-    rubro: "Educación",
-    piece: "Anuncio · curso de plasma rico en plaquetas",
-  },
-  {
-    src: "/portafolio/inyecto-bien/m-an10.webp",
-    type: "img",
-    client: "Inyecto Bien · cursos de inyectología",
-    rubro: "Educación",
-    piece: "Anuncio · curso de inyectología",
-  },
-  {
-    src: "/portafolio/las-humitas/m-g8.webp",
-    type: "img",
-    client: "Las Humitas de la Loma",
-    rubro: "Alimentos",
-    piece: "Anuncio · 100 % choclo",
-  },
-  {
-    src: "/portafolio/las-humitas/m-g7.webp",
-    type: "img",
-    client: "Las Humitas de la Loma",
-    rubro: "Alimentos",
-    piece: "Anuncio · 4 x $1",
-  },
-  {
-    src: "/portafolio/jorge-murillo/m-jm1.webp",
-    type: "img",
-    client: "Jorge Murillo · seguros",
-    rubro: "Servicios",
-    piece: "Anuncio · reembolso en línea",
   },
   {
     src: "/portafolio/abbysal/m-a3.webp",
@@ -627,22 +468,6 @@ export const PORTFOLIO = [
     client: "KYA Ecuador · capacitación ISO",
     rubro: "Educación",
     piece: "Anuncio · curso gratis ISO",
-  },
-  {
-    src: "/img/caso-metropolis.webp",
-    type: "img",
-    client: "Clínica Veterinaria Metrópolis",
-    rubro: "Mascotas",
-    piece: "Redes desde cero",
-    metric: { value: 26, label: "likes · 2 comentarios respondidos" },
-  },
-  {
-    src: "/img/caso-idefix.webp",
-    type: "img",
-    client: "Idefix · Plastics Ide",
-    rubro: "Industria",
-    piece: "Marca y reels de producto",
-    metric: { value: 204, label: "likes en un reel de producto" },
   },
   {
     src: "/img/caso-abbysal.webp",
