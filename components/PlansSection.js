@@ -81,6 +81,35 @@ const PLANS = [
   },
 ];
 
+// Plan de entrada (Daniel, 12-oct-2026): solo publicidad. Nace del caso Aliatum (contrato firmado
+// a USD 100): 2 videos cortos hechos con el material del cliente y campañas a WhatsApp, sin grabación
+// ni manejo de redes. Contenido: 1 video + 1 imagen (Daniel, 12-oct). Precio fijo: no cambia con el selector de grabación.
+const PAUTA = {
+  id: "pauta",
+  tier: "Para empezar",
+  name: "Plan Pauta",
+  price: { sin: 100, con: 100 },
+  fijo: true,
+  focus: "Solo publicidad: para el negocio que ya tiene producto y quiere que le escriban.",
+  features: [
+    "Campañas en Meta Ads que llegan directo a tu WhatsApp",
+    "1 video corto y 1 imagen para los anuncios, hechos con tus fotos y videos",
+    "Copys de venta para cada anuncio",
+    "Reporte semanal: cuánto invertiste y cuántos mensajes llegaron",
+  ],
+  nota: "Sin grabación ni manejo de redes. La pauta la pagas tú, directo a Facebook.",
+  // Caso real SIN nombre del cliente (no hay permiso escrito para nombrarlo). Cifras copiadas del
+  // Administrador de anuncios: anuncio 120250240100140109, activo desde el 9-oct-2026 (captura de Daniel, 12-oct).
+  caso: {
+    rubro: "Venta de lotes · sur de Quito",
+    pauta: "$9,77",
+    conversaciones: 33,
+    reproducciones: "6.209",
+    costo: "$0,30",
+    fecha: "octubre 2026",
+  },
+};
+
 // Volumen alto: se venden hablando, no por clic. Se muestran compactos.
 const HIGH_VOLUME = [
   {
@@ -119,7 +148,7 @@ const CORPORATE = {
   ],
 };
 
-const ALL_PLANS = [...PLANS, ...HIGH_VOLUME, CORPORATE];
+const ALL_PLANS = [PAUTA, ...PLANS, ...HIGH_VOLUME, CORPORATE];
 
 const EXTRA_GROUPS = [
   {
@@ -177,7 +206,7 @@ export default function PlansSection() {
     const lines = [
       "Hola InnovArtis, armé mi plan en la web:",
       `• Plan ${plan.name}${
-        planPrice != null ? ` ${modalidad} ($${planPrice}/mes)` : " (cotización personalizada)"
+        planPrice == null ? " (cotización personalizada)" : plan.fijo ? ` ($${planPrice}/mes)` : ` ${modalidad} ($${planPrice}/mes)`
       }`,
     ];
     COUNT_EXTRAS.forEach((e) => {
@@ -251,6 +280,62 @@ export default function PlansSection() {
           Precios claros, sin regateo: elige tu punto de partida y arma tu plan al instante. ¿Tu
           empresa necesita algo más grande? Los proyectos corporativos se cotizan a la medida.
         </p>
+      </Reveal>
+
+      {/* Plan de entrada: solo publicidad, precio fijo, fuera del selector de grabación */}
+      <Reveal>
+        <button
+          onClick={() => setSelected(PAUTA.id)}
+          className={`text-left w-full mb-10 bg-white border p-7 md:p-8 grid md:grid-cols-[0.8fr_1.2fr] gap-6 md:gap-10 transition-colors ${
+            selected === PAUTA.id
+              ? "border-accent shadow-[0_0_0_1px_#ee7b4d]"
+              : "border-line hover:border-accent/60"
+          }`}
+        >
+          <div>
+            <p className="kicker !text-[10px] mb-2">{PAUTA.tier}</p>
+            <h3 className="font-heading text-navy text-[27px] mb-1">{PAUTA.name}</h3>
+            <p className="mb-3">
+              <span className="display-num text-navy text-[38px]">${PAUTA.price.sin}</span>
+              <span className="text-[13px] text-ink-soft">/mes</span>
+            </p>
+            <p className="text-[13.5px] leading-[1.65] text-ink-soft">{PAUTA.focus}</p>
+          </div>
+          <div className="self-center">
+            <ul className="text-[13px] leading-[1.9] text-ink-soft">
+              {PAUTA.features.map((f) => (
+                <li key={f} className="flex gap-2">
+                  <span className="text-accent">›</span>
+                  <span>{f}</span>
+                </li>
+              ))}
+            </ul>
+            <p className="text-[12.5px] text-ink-soft mt-3 pt-3 border-t border-line">{PAUTA.nota}</p>
+            <div className="mt-4 bg-navy-deep text-white px-5 py-4">
+              <p className="text-[10.5px] uppercase tracking-[0.14em] text-accent font-semibold mb-2">
+                Caso real · {PAUTA.caso.rubro}
+              </p>
+              <div className="flex flex-wrap items-baseline gap-x-6 gap-y-2">
+                <p>
+                  <span className="display-num text-[30px] leading-none">{PAUTA.caso.conversaciones}</span>{" "}
+                  <span className="text-[12.5px] text-white/75">conversaciones de WhatsApp</span>
+                </p>
+                <p>
+                  <span className="display-num text-[22px] leading-none">{PAUTA.caso.pauta}</span>{" "}
+                  <span className="text-[12.5px] text-white/75">de pauta</span>
+                </p>
+                <p>
+                  <span className="display-num text-[22px] leading-none text-accent">{PAUTA.caso.costo}</span>{" "}
+                  <span className="text-[12.5px] text-white/75">por conversación</span>
+                </p>
+              </div>
+              <p className="text-[11px] text-white/55 mt-2">
+                {PAUTA.caso.reproducciones} reproducciones del video. Datos del Administrador de anuncios de Meta,{" "}
+                {PAUTA.caso.fecha}. Es un caso real, no una garantía: cada negocio tiene su propio resultado.
+              </p>
+            </div>
+          </div>
+        </button>
       </Reveal>
 
       {/* Un solo control cambia todos los precios: con o sin grabación */}

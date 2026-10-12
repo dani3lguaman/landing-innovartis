@@ -8,7 +8,7 @@ import FinalCTA from "@/components/FinalCTA";
 export const metadata = {
   title: "Planes y precios",
   description:
-    "Planes mensuales de marketing desde USD 130: contenido, Meta Ads, Google Ads y más. Oferta del mes, extras y diagnóstico sin costo.",
+    "Planes mensuales de marketing desde USD 100: solo publicidad, contenido, Meta Ads, Google Ads y más. Oferta del mes, extras y diagnóstico sin costo.",
   alternates: { canonical: "/planes" },
 };
 
