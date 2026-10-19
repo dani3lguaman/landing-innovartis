@@ -475,3 +475,49 @@ button.card:hover,
 @media (prefers-reduced-motion: reduce) {
   .brand-banner__ia, .brand-banner__nombre, .brand-banner__tag { animation: none; }
 }
+
+/* ---- Brief de "Aterrizamos tus ideas": impresión / guardar en PDF (una hoja, con la marca) ---- */
+@media print {
+  @page {
+    size: A4;
+    margin: 10mm;
+  }
+  body {
+    background: #fff !important;
+  }
+  body * {
+    visibility: hidden;
+  }
+  .print-area,
+  .print-area * {
+    visibility: visible;
+  }
+  .print-area {
+    position: absolute;
+    inset: 0 0 auto 0;
+    border: 0 !important;
+    padding: 0 !important;
+    font-size: 11px;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .brief-bloque {
+    margin-top: 8px !important;
+    padding-top: 6px !important;
+    break-inside: avoid;
+  }
+  .brief-ideas {
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 8px !important;
+  }
+  .brief-idea {
+    padding: 8px !important;
+    break-inside: avoid;
+  }
+  .brief-ref img {
+    max-height: 120px;
+  }
+}
