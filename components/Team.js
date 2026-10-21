@@ -1,4 +1,5 @@
 import Reveal from "./Reveal";
+// 21-oct-2026: Maura reemplaza a Sofía como ejecutiva de cuentas.
 // 8-oct-2026: las cinco fotos con el mismo recorte (cara centrada, cabeza y hombros) y el mismo fondo azul.
 
 const team = [
@@ -9,10 +10,10 @@ const team = [
     img: "/img/equipo-daniel-circulo.webp",
   },
   {
-    name: "Sofía",
-    role: "Community Manager",
-    body: "Gestiona el día a día y la atención al detalle para la satisfacción de cada cliente.",
-    img: "/img/equipo-sofia-circulo.webp",
+    name: "Maura",
+    role: "Coordinadora de Marketing · Ejecutiva de cuentas",
+    body: "Acompaña tu cuenta en el día a día, coordina al equipo y revisa cada pieza y cada campaña antes de que llegue a ti.",
+    img: "/img/equipo-maura-circulo.png",
   },
   {
     name: "Vanessa",
