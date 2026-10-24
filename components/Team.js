@@ -1,4 +1,5 @@
 import Reveal from "./Reveal";
+// 24-oct-2026: Martina sale del equipo.
 // 21-oct-2026: Maura reemplaza a Sofía como ejecutiva de cuentas.
 // 8-oct-2026: las cinco fotos con el mismo recorte (cara centrada, cabeza y hombros) y el mismo fondo azul.
 
@@ -22,12 +23,6 @@ const team = [
     img: "/img/equipo-vanessa-circulo.webp",
   },
   {
-    name: "Martina",
-    role: "Estratega de contenido",
-    body: "Se reúne contigo, analiza tu mercado y escribe el brief que apruebas antes de producir.",
-    img: "/img/equipo-martina-circulo.webp",
-  },
-  {
     name: "Joel",
     role: "Filmmaker",
     body: "Va a tu negocio a grabar con cámara, luz y micrófono, y edita los videos.",
@@ -46,7 +41,7 @@ export default function Team() {
           Personas reales detrás de cada resultado.
         </h2>
       </Reveal>
-      <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10">
+      <div className="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-10">
         {team.map((t, i) => (
           <Reveal key={t.name} delay={i * 120}>
             <div>

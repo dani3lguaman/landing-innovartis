@@ -35,7 +35,7 @@ const shots = [
   {
     type: "img",
     src: "/evidencia/foto-demo-producto.jpg",
-    caption: "Martina dirigiendo la demo de producto",
+    caption: "Dirigiendo la demo de producto",
   },
 ];
 

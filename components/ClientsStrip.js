@@ -6,6 +6,8 @@ export const CLIENTS = [
   "Auto Spa Ecuador", "Climbing Tours", "Grúas Joel Trans", "Colores y Sabores", "Serenité", "Solugraf",
   "MedCentral", "Vet. Metrópolis", "Idefix", "Abbysal", "Contaservis", "Hampi Andina",
   "Inyecto Bien", "Las Humitas de la Loma", "Emily Garcés · Ikigai",
+  // 24-oct-2026: clientes de octubre.
+  "Aliatum", "Èclat Ballet Studio", "Home Play", "Centro Psicológico Renacer", "TiaPam",
 ];
 
 // 7-oct-2026: de lista plana a cinta en movimiento (dos filas en sentidos opuestos).
