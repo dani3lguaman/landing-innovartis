@@ -4,12 +4,12 @@ import { useMemo, useState } from "react";
 import useDatosCifrados, { AvisoAcceso } from "./useDatosCifrados";
 import useNotas from "./useNotas";
 import { useYo, NotasDe, PanelNotas } from "./Notas";
-import { Chips, Tile, Pastilla, Cargando, fechaCorta, diasHasta } from "./ui";
+import { Chips, Tile, Pastilla, Cargando, fechaCorta, diasHasta, mesesProximos } from "./ui";
 
 const PERSONAS = ["Joel", "Mario", "Maura"];
-const RANGOS = [
+const rangos = () => [
   { valor: "14", texto: "Próximos 14 días" },
-  { valor: "30", texto: "Próximos 30 días" },
+  ...mesesProximos(3),
   { valor: "todo", texto: "Todo" },
   { valor: "pasadas", texto: "Ya pasaron" },
 ];
@@ -68,6 +68,7 @@ export default function CalendarioMaura() {
     () =>
       piezas
         .filter((p) => {
+          if (/^\d{4}-\d{2}$/.test(rango)) return String(p.fecha).startsWith(rango);
           if (rango === "pasadas") return p.dias !== null && p.dias < 0;
           if (rango !== "todo" && (p.dias === null || p.dias < 0 || p.dias > Number(rango))) return false;
           return true;
@@ -117,7 +118,7 @@ export default function CalendarioMaura() {
       </section>
 
       <section className="bg-white border border-line p-5 md:p-6 grid gap-5">
-        <Chips titulo="Cuándo" opciones={RANGOS} valor={rango} onChange={setRango} />
+        <Chips titulo="Cuándo" opciones={rangos()} valor={rango} onChange={setRango} />
         <Chips titulo="Estado" opciones={["Todos", ...estados]} valor={estado} onChange={setEstado} />
         <Chips titulo="Quién" opciones={["Todos", ...PERSONAS]} valor={persona} onChange={setPersona} />
         <Chips titulo="Cliente" opciones={["Todos", ...clientes]} valor={cliente} onChange={setCliente} />

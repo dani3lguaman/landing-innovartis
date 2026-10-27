@@ -4,7 +4,7 @@ import { useMemo, useState } from "react";
 import useDatosCifrados, { AvisoAcceso } from "./useDatosCifrados";
 import useNotas from "./useNotas";
 import { useYo, NotasDe, PanelNotas } from "./Notas";
-import { Chips, Tile, Pastilla, Cargando, fechaCorta, diasHasta, usd } from "./ui";
+import { Chips, Tile, Pastilla, Cargando, fechaCorta, diasHasta, usd, mesesProximos, hoyISO, sumarMes } from "./ui";
 
 const ALERTAS = [
   { valor: "todos", texto: "Todos" },
@@ -54,6 +54,69 @@ function Tarjeta({ c, api, yo }) {
   );
 }
 
+const NIVEL_TIPO = { Seguro: "ok", Condicionado: "naranja", "En duda": "rojo", "Si renueva": "neutro" };
+
+// Plata por cobrar mes a mes (lo que falta de cada período y, aparte, lo que entraría si renuevan al mismo precio).
+// Lo atrasado de meses anteriores se suma al mes en curso.
+function PlataPorCobrar({ contratos }) {
+  const meses = mesesProximos(3);
+  const [mes, setMes] = useState(meses[0].valor);
+  const hoy = hoyISO();
+  const items = useMemo(() => {
+    const out = [];
+    contratos.forEach((c) => {
+      if (Number(c.falta_usd) > 0 && c.cobro_fecha) {
+        out.push({ fecha: c.cobro_fecha, cliente: c.cliente, monto: Number(c.falta_usd), tipo: c.cobro_tipo || "Seguro", atrasado: c.cobro_fecha < hoy, nota: c.proximo_cobro });
+      }
+      if (c.mensual && /^\d{4}-\d{2}-\d{2}$/.test(String(c.fin)) && c.fin >= hoy && Number(c.precio_usd) > 0) {
+        const mitad = Number(c.precio_usd) / 2;
+        out.push({ fecha: c.fin, cliente: c.cliente, monto: mitad, tipo: "Si renueva", atrasado: false, nota: "50 % al iniciar el período siguiente" });
+        out.push({ fecha: sumarMes(c.fin), cliente: c.cliente, monto: mitad, tipo: "Si renueva", atrasado: false, nota: "50 % al cerrar el período siguiente" });
+      }
+    });
+    return out;
+  }, [contratos, hoy]);
+  const primero = meses[0].valor;
+  const delMes = items
+    .filter((i) => i.fecha.slice(0, 7) === mes || (mes === primero && i.fecha.slice(0, 7) < primero))
+    .sort((a, b) => a.fecha.localeCompare(b.fecha) || a.cliente.localeCompare(b.cliente));
+  const suma = (f) => delMes.filter(f).reduce((a, i) => a + i.monto, 0);
+  const contratado = suma((i) => i.tipo !== "Si renueva");
+  const nombreMes = (meses.find((m) => m.valor === mes) || {}).texto || "";
+  return (
+    <section className="bg-white border border-line p-5 md:p-6 grid gap-4">
+      <div className="flex flex-wrap items-end justify-between gap-3">
+        <div>
+          <p className="kicker mb-1">Plata por cobrar</p>
+          <p className="text-[13.5px] text-ink-soft max-w-[620px]">Lo que falta cobrar de cada período, mes a mes; lo atrasado se suma al mes en curso. Aparte, lo que entraría si los planes mensuales renuevan al mismo precio.</p>
+        </div>
+        <Chips titulo="Mes" opciones={meses} valor={mes} onChange={setMes} />
+      </div>
+      <div className="grid grid-cols-2 md:grid-cols-5 gap-3">
+        <Tile etiqueta={`Por cobrar en ${nombreMes}`} valor={usd(contratado)} tono="neutro" nota={suma((i) => i.atrasado) ? `de eso, ${usd(suma((i) => i.atrasado))} atrasado` : "nada atrasado"} />
+        <Tile etiqueta="Seguro" valor={usd(suma((i) => i.tipo === "Seguro"))} tono="ok" />
+        <Tile etiqueta="Condicionado a que entreguemos" valor={usd(suma((i) => i.tipo === "Condicionado"))} tono="naranja" />
+        <Tile etiqueta="En duda" valor={usd(suma((i) => i.tipo === "En duda"))} tono="rojo" />
+        <Tile etiqueta="Si renuevan al mismo precio" valor={usd(suma((i) => i.tipo === "Si renueva"))} tono="neutro" nota="no es plata segura" />
+      </div>
+      {delMes.length ? (
+        <div className="grid gap-1.5">
+          {delMes.map((i, n) => (
+            <div key={n} className="grid gap-1 grid-cols-[70px_1fr_auto] md:grid-cols-[90px_1fr_110px_auto] items-start border-b border-line py-2 text-[13.5px]">
+              <span className={`display-num ${i.atrasado ? "text-[#b42318]" : "text-navy"}`}>{fechaCorta(i.fecha, false)}</span>
+              <span className="min-w-0"><span className="font-semibold text-navy">{i.cliente.split(" (")[0]}</span><span className="block text-[12.5px] text-ink-soft">{i.atrasado ? "Atrasado · " : ""}{i.nota}</span></span>
+              <span className="display-num text-ink text-right">{usd(i.monto)}</span>
+              <span className="hidden md:block"><Pastilla nivel={NIVEL_TIPO[i.tipo] || "neutro"}>{i.tipo}</Pastilla></span>
+            </div>
+          ))}
+        </div>
+      ) : (
+        <p className="text-[13.5px] text-ink-soft">No hay cobros registrados para {nombreMes}.</p>
+      )}
+    </section>
+  );
+}
+
 export default function CobrosPame() {
   const { cargando, error, datos, clave } = useDatosCifrados("cobros");
   const api = useNotas("cobros", clave);
@@ -61,6 +124,7 @@ export default function CobrosPame() {
   const [alerta, setAlerta] = useState("todos");
   const [cargo, setCargo] = useState("Todos");
   const [plan, setPlan] = useState("Todos");
+  const [mesFiltro, setMesFiltro] = useState("Todos");
 
   // Días, vencidos y colores se recalculan con la fecha de hoy del navegador.
   const contratos = useMemo(
@@ -83,8 +147,9 @@ export default function CobrosPame() {
         .filter((c) => alerta === "todos" || c[alerta])
         .filter((c) => cargo === "Todos" || c.ejecutiva === cargo || c.disenador === cargo)
         .filter((c) => plan === "Todos" || Number(c.precio_usd) === Number(plan))
+        .filter((c) => mesFiltro === "Todos" || String(c.cobro_fecha || "").startsWith(mesFiltro) || String(c.fin).startsWith(mesFiltro))
         .sort((a, b) => (ORDEN_NIVEL[a.nivel] ?? 3) - (ORDEN_NIVEL[b.nivel] ?? 3) || (a.dias ?? 999) - (b.dias ?? 999) || a.cliente.localeCompare(b.cliente)),
-    [contratos, alerta, cargo, plan]
+    [contratos, alerta, cargo, plan, mesFiltro]
   );
 
   if (cargando) return <Cargando />;
@@ -104,13 +169,15 @@ export default function CobrosPame() {
   return (
     <div className="grid gap-8">
       <header className="grid gap-2">
-        <p className="kicker">Para Pame</p>
+        <p className="kicker">Para Pame y Daniel</p>
         <h1 className="font-heading text-heading text-navy">Cobros, renovaciones y planes</h1>
         <p className="text-[14.5px] text-ink-soft leading-[1.7] max-w-[780px]">
           Un renglón por cliente con el inicio y el fin de su contrato, lo cobrado, lo que falta y las alertas. Se actualiza con los pagos y lo que
           se dice en los WhatsApp; un pago cuenta como cobrado solo con el N.º de documento del banco. Actualizado: {datos.actualizado}.
         </p>
       </header>
+
+      <PlataPorCobrar contratos={contratos} />
 
       <section className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-3">
         <Tile etiqueta="Períodos vencidos" valor={cuenta("vencido")} tono="rojo" />
@@ -168,6 +235,7 @@ export default function CobrosPame() {
       </section>
 
       <section className="bg-white border border-line p-5 md:p-6 grid gap-5">
+        <Chips titulo="Mes del cobro o del fin del contrato" opciones={[{ valor: "Todos", texto: "Todos" }, ...mesesProximos(3)]} valor={mesFiltro} onChange={setMesFiltro} />
         <Chips titulo="Alerta" opciones={ALERTAS} valor={alerta} onChange={setAlerta} />
         <Chips titulo="A cargo" opciones={["Todos", ...personas]} valor={cargo} onChange={setCargo} />
         <Chips titulo="Plan" opciones={[{ valor: "Todos", texto: "Todos" }, ...precios.map((p) => ({ valor: String(p), texto: p ? usd(p) : "Sin pago (canje o socio)" }))]} valor={plan} onChange={setPlan} />

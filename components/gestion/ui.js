@@ -5,6 +5,31 @@ const DIAS = ["dom", "lun", "mar", "mié", "jue", "vie", "sáb"];
 
 export const usd = (n) => "$" + Number(n || 0).toLocaleString("es-EC", { maximumFractionDigits: 0 });
 
+const NOMBRES_MES = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+const dos = (n) => String(n).padStart(2, "0");
+
+// Este mes y los siguientes, como filtros: [{ valor: "2026-10", texto: "Octubre" }, …].
+export function mesesProximos(n = 3) {
+  const h = new Date();
+  return Array.from({ length: n }, (_, k) => {
+    const d = new Date(h.getFullYear(), h.getMonth() + k, 1);
+    return { valor: `${d.getFullYear()}-${dos(d.getMonth() + 1)}`, texto: NOMBRES_MES[d.getMonth()] };
+  });
+}
+
+export function hoyISO() {
+  const h = new Date();
+  return `${h.getFullYear()}-${dos(h.getMonth() + 1)}-${dos(h.getDate())}`;
+}
+
+// La misma fecha un mes después (si ese mes es más corto, el último día).
+export function sumarMes(iso) {
+  const [y, m, d] = iso.split("-").map(Number);
+  const t = new Date(Date.UTC(y, m, 1));
+  const ultimo = new Date(Date.UTC(t.getUTCFullYear(), t.getUTCMonth() + 1, 0)).getUTCDate();
+  return `${t.getUTCFullYear()}-${dos(t.getUTCMonth() + 1)}-${dos(Math.min(d, ultimo))}`;
+}
+
 // "2026-10-28" → "mié 28-oct"; si no es una fecha, devuelve el texto tal cual.
 export function fechaCorta(iso, conDia = true) {
   const m = /^(\d{4})-(\d{2})-(\d{2})/.exec(iso || "");
@@ -71,6 +96,7 @@ export const COLOR_NIVEL = {
   rojo: "text-[#b42318] bg-[#fef3f2] border-[#fecdca]",
   naranja: "text-[#b54708] bg-[#fffaeb] border-[#fedf89]",
   ok: "text-[#067647] bg-[#ecfdf3] border-[#abefc6]",
+  neutro: "text-navy bg-paper-soft border-line",
 };
 
 export function Pastilla({ children, nivel = "ok" }) {
