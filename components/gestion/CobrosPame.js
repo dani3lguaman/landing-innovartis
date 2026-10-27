@@ -2,6 +2,8 @@
 
 import { useMemo, useState } from "react";
 import useDatosCifrados, { AvisoAcceso } from "./useDatosCifrados";
+import useNotas from "./useNotas";
+import { useYo, NotasDe, PanelNotas } from "./Notas";
 import { Chips, Tile, Pastilla, Cargando, fechaCorta, diasHasta, usd } from "./ui";
 
 const ALERTAS = [
@@ -19,7 +21,7 @@ const HUBSPOT = "https://app.hubspot.com/contacts/48578869/record/0-3/";
 
 const textoDias = (d) => (d === null ? "Pago único" : d < 0 ? `Venció hace ${-d} ${-d === 1 ? "día" : "días"}` : d === 0 ? "Vence hoy" : `Faltan ${d} ${d === 1 ? "día" : "días"}`);
 
-function Tarjeta({ c }) {
+function Tarjeta({ c, api, yo }) {
   return (
     <article className="bg-white border border-line p-4 md:p-5 grid gap-3">
       <div className="flex flex-wrap items-start justify-between gap-2">
@@ -47,12 +49,15 @@ function Tarjeta({ c }) {
           <span>Sin negocio en HubSpot</span>
         )}
       </div>
+      <NotasDe refId={c.cliente} refTitulo={c.cliente} api={api} yo={yo} />
     </article>
   );
 }
 
 export default function CobrosPame() {
-  const { cargando, error, datos } = useDatosCifrados("cobros");
+  const { cargando, error, datos, clave } = useDatosCifrados("cobros");
+  const api = useNotas("cobros", clave);
+  const [yo, setYo] = useYo();
   const [alerta, setAlerta] = useState("todos");
   const [cargo, setCargo] = useState("Todos");
   const [plan, setPlan] = useState("Todos");
@@ -116,6 +121,8 @@ export default function CobrosPame() {
         <Tile etiqueta="Saldo por cobrar" valor={usd(porCobrar)} nota="de los períodos vigentes, con lo condicionado" />
       </section>
 
+      <PanelNotas api={api} yo={yo} setYo={setYo} />
+
       <section className="grid gap-4 lg:grid-cols-3">
         <div className="bg-white border border-line p-5 grid gap-3 content-start">
           <p className="kicker">Planes</p>
@@ -170,7 +177,7 @@ export default function CobrosPame() {
         <h2 className="font-heading text-[19px] text-navy">Contratos ({filtrados.length})</h2>
         {!filtrados.length && <p className="text-[14px] text-ink-soft">Ningún cliente con este filtro.</p>}
         <div className="grid gap-3 md:grid-cols-2 xl:grid-cols-3">
-          {filtrados.map((c) => <Tarjeta key={c.cliente} c={c} />)}
+          {filtrados.map((c) => <Tarjeta key={c.cliente} c={c} api={api} yo={yo} />)}
         </div>
       </section>
 

@@ -29,7 +29,7 @@ export default function useDatosCifrados(nombre) {
         const llave = await crypto.subtle.importKey("raw", deB64url(clave), "AES-GCM", false, ["decrypt"]);
         const plano = await crypto.subtle.decrypt({ name: "AES-GCM", iv: deB64(iv) }, llave, deB64(ct));
         const datos = JSON.parse(new TextDecoder().decode(plano));
-        if (vivo) setEstado({ cargando: false, error: null, datos });
+        if (vivo) setEstado({ cargando: false, error: null, datos, clave });
       } catch (e) {
         if (e && e.name === "OperationError") { try { localStorage.removeItem(memoria); } catch {} }
         if (vivo) setEstado({ cargando: false, error: e && e.message === "sin-clave" ? "sin-clave" : e && e.message === "sin-datos" ? "sin-datos" : "clave", datos: null });

@@ -2,6 +2,8 @@
 
 import { useMemo, useState } from "react";
 import useDatosCifrados, { AvisoAcceso } from "./useDatosCifrados";
+import useNotas from "./useNotas";
+import { useYo, NotasDe, PanelNotas } from "./Notas";
 import { Chips, Tile, Pastilla, Cargando, fechaCorta, diasHasta } from "./ui";
 
 const PERSONAS = ["Joel", "Mario", "Maura"];
@@ -50,7 +52,9 @@ function BriefNuevo() {
 }
 
 export default function CalendarioMaura() {
-  const { cargando, error, datos } = useDatosCifrados("calendario");
+  const { cargando, error, datos, clave } = useDatosCifrados("calendario");
+  const api = useNotas("calendario", clave);
+  const [yo, setYo] = useYo();
   const [rango, setRango] = useState("14");
   const [estado, setEstado] = useState("Todos");
   const [persona, setPersona] = useState("Todos");
@@ -103,6 +107,8 @@ export default function CalendarioMaura() {
 
       <BriefNuevo />
 
+      <PanelNotas api={api} yo={yo} setYo={setYo} />
+
       <section className="grid grid-cols-2 md:grid-cols-4 gap-3">
         <Tile etiqueta="Piezas con este filtro" valor={filtradas.length} />
         <Tile etiqueta="Por hacer" valor={piezas.filter((p) => p.estado === "Por hacer").length} tono="ok" />
@@ -141,7 +147,10 @@ export default function CalendarioMaura() {
                   {p.aviso && <p className="text-[12.5px] text-ink-soft italic">{p.aviso}</p>}
                 </div>
                 <div>
-                  <Pastilla nivel={p.estado === "En espera" ? "naranja" : p.estado === "Por hacer" ? "ok" : "ok"}>{p.estado}</Pastilla>
+                  <Pastilla nivel={p.estado === "En espera" ? "naranja" : "ok"}>{p.estado}</Pastilla>
+                </div>
+                <div className="md:col-span-3 border-t border-line pt-2">
+                  <NotasDe refId={p.id} refTitulo={`${p.cliente} · ${fechaCorta(p.fecha)} · ${p.formato}`} api={api} yo={yo} />
                 </div>
               </article>
             ))}
