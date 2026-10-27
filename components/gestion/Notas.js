@@ -67,7 +67,7 @@ function Nota({ n, yo, api }) {
   );
 }
 
-function Redactor({ yo, onEnviar }) {
+function Redactor({ yo, onEnviar, bloqueado }) {
   const [texto, setTexto] = useState("");
   const [estado, setEstado] = useState("");
   const enviar = async () => {
@@ -75,6 +75,7 @@ function Redactor({ yo, onEnviar }) {
     setEstado("guardando");
     try { await onEnviar(texto.trim()); setTexto(""); setEstado(""); } catch { setEstado("error"); }
   };
+  if (bloqueado) return <p className="text-[12.5px] text-[#b54708]">Las notas se activan cuando la web tenga su base de datos conectada (lo hace Daniel). Por ahora no se pueden escribir.</p>;
   if (!yo) return <p className="text-[12.5px] text-[#b54708]">Para escribir, elige arriba quién eres («Soy: …»).</p>;
   return (
     <div className="grid gap-2">
@@ -110,7 +111,7 @@ export function NotasDe({ refId, refTitulo, api, yo }) {
       {abierto && (
         <div className="grid gap-2.5 bg-paper-soft border border-line p-3">
           {mias.length ? mias.map((n) => <Nota key={n.id} n={n} yo={yo} api={api} />) : <p className="text-[12.5px] text-ink-soft">Todavía no hay notas aquí.</p>}
-          <Redactor yo={yo} onEnviar={(texto) => api.enviar({ ref: refId, refTitulo, autor: yo, texto })} />
+          <Redactor yo={yo} bloqueado={api.persistente === false} onEnviar={(texto) => api.enviar({ ref: refId, refTitulo, autor: yo, texto })} />
         </div>
       )}
     </div>
@@ -137,6 +138,11 @@ export function PanelNotas({ api, yo, setYo }) {
         <SelectorYo yo={yo} setYo={setYo} />
       </div>
       {api.error && <p className="text-[12.5px] text-[#b42318]">{api.error}</p>}
+      {api.persistente === false && (
+        <p className="text-[13px] text-[#b54708] bg-[#fffaeb] border border-[#fedf89] px-3 py-2">
+          Las notas todavía no se pueden guardar de forma permanente: falta conectar la base de datos de la web. En cuanto Daniel la conecte, se activan solas.
+        </p>
+      )}
       <div className="flex flex-wrap gap-2">
         {VISTAS.map((x) => (
           <button key={x.v} type="button" aria-pressed={vista === x.v} onClick={() => setVista(x.v)}
@@ -164,7 +170,7 @@ function NotasGenerales({ api, yo }) {
   return (
     <div className="grid gap-2.5">
       {generales.length ? generales.map((n) => <Nota key={n.id} n={n} yo={yo} api={api} />) : <p className="text-[13px] text-ink-soft">Sin notas generales todavía.</p>}
-      <Redactor yo={yo} onEnviar={(texto) => api.enviar({ ref: "general", refTitulo: "General", autor: yo, texto })} />
+      <Redactor yo={yo} bloqueado={api.persistente === false} onEnviar={(texto) => api.enviar({ ref: "general", refTitulo: "General", autor: yo, texto })} />
     </div>
   );
 }

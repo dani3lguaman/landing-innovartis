@@ -22,6 +22,7 @@ export default function useNotas(pagina, clave) {
   const [notas, setNotas] = useState([]);
   const [error, setError] = useState(null);
   const [llaves, setLlaves] = useState(null);
+  const [persistente, setPersistente] = useState(null); // false = la web no tiene base de datos: no se deja escribir
 
   // Llave AES de la página y token de acceso (SHA-256 de "innovartis-notas:" + clave).
   useEffect(() => {
@@ -52,7 +53,8 @@ export default function useNotas(pagina, clave) {
   const recargar = useCallback(async () => {
     if (!llaves) return;
     try {
-      const { notas: crudas } = await pedir("GET");
+      const { notas: crudas, persistente: p } = await pedir("GET");
+      setPersistente(p !== false);
       const abiertas = await Promise.all(
         (crudas || []).map(async (n) => {
           try {
@@ -90,5 +92,5 @@ export default function useNotas(pagina, clave) {
   const marcar = useCallback(async (id, hecho, por) => { await pedir("PATCH", { id, hecho, por }); await recargar(); }, [pedir, recargar]);
   const borrar = useCallback(async (id) => { await pedir("DELETE", { id }); await recargar(); }, [pedir, recargar]);
 
-  return { notas, error, listo: Boolean(llaves), enviar, marcar, borrar, recargar };
+  return { notas, error, listo: Boolean(llaves), persistente, enviar, marcar, borrar, recargar };
 }
