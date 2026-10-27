@@ -41,6 +41,16 @@ const CLIENTS = [
     ],
   },
   {
+    id: "horizonte-andino",
+    name: "Horizonte Andino",
+    rubro: "Venta de lotes · sur de Quito",
+    resultLabel: "Conversaciones por WhatsApp",
+    rango: "1 – 27 oct 2026",
+    fuente:
+      "Fuente: Administrador de anuncios de Meta del cliente, leído el 27 de octubre de 2026. Según la clienta, 4 lotes vendidos en ese mes.",
+    campaigns: [{ name: "Venta de lotes sur de Quito · octubre 2026", value: 194, cost: 0.27 }],
+  },
+  {
     id: "metallum",
     name: "Metallum",
     rubro: "Estructuras metálicas y pérgolas · Quito",
@@ -161,7 +171,7 @@ export default function AdsResults() {
             <p className="text-[12.5px] text-ink-soft">{c.rubro}</p>
           </div>
           <span className="text-[12px] text-ink-soft border border-line px-3 py-1.5">
-            1 oct 2025 – 3 oct 2026
+            {c.rango || "1 oct 2025 – 3 oct 2026"}
           </span>
         </div>
 
@@ -227,7 +237,7 @@ export default function AdsResults() {
               })}
             </ul>
             <p className="mt-7 text-[11.5px] text-ink-soft">
-              Fuente: Administrador de anuncios de Meta de cada cliente, leído el 5 de octubre de 2026.
+              {c.fuente || "Fuente: Administrador de anuncios de Meta de cada cliente, leído el 5 de octubre de 2026."}{" "}
               Atribución: 7 días tras clic o 1 día tras visualización.
             </p>
           </div>

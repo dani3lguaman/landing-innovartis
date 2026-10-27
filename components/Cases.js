@@ -72,6 +72,46 @@ export default function Cases() {
         </div>
       </Reveal>
 
+      {/* Caso real con captura del Administrador de anuncios (27-oct-2026). El importe gastado va tapado: es dato del cliente. */}
+      <Reveal>
+        <div className="mt-8 border border-accent bg-white grid md:grid-cols-[1fr_1.1fr]">
+          <div className="p-8 md:p-10 flex flex-col justify-center">
+            <p className="kicker mb-4">Caso real · Venta de lotes en el sur de Quito</p>
+            <h3 className="font-heading text-navy text-[28px] leading-tight mb-4">
+              4 lotes vendidos en un mes con campañas a WhatsApp
+            </h3>
+            <div className="flex items-baseline gap-6 mb-5">
+              <div>
+                <p className="display-num text-accent-deep text-[52px] leading-none">
+                  <Counter value={194} />
+                </p>
+                <p className="text-[13px] text-ink-soft mt-1">conversaciones por WhatsApp</p>
+              </div>
+              <div>
+                <p className="display-num text-accent-deep text-[52px] leading-none">$0,27</p>
+                <p className="text-[13px] text-ink-soft mt-1">por conversación</p>
+              </div>
+            </div>
+            <p className="text-[15px] leading-[1.8] text-ink-soft">
+              <strong className="text-ink">Horizonte Andino</strong> vende lotes en el sur de Quito. Con fotos reales
+              del terreno, su página web y una campaña directa a WhatsApp, del 1 al 27 de octubre llegaron 194
+              conversaciones y, según la clienta, <strong className="text-ink">4 lotes vendidos</strong>. Meta reporta un
+              costo por conversación <strong className="text-ink">56 % más bajo</strong> que el de anunciantes parecidos.
+            </p>
+          </div>
+          <figure className="plate !border-0 !border-l border-line m-0 flex flex-col justify-center">
+            <img
+              src="/portafolio/ads/horizonte-andino-oct.webp"
+              alt="Captura real del Administrador de anuncios: 194 conversaciones a $0,27 entre el 1 y el 27 de octubre de 2026"
+            />
+            <figcaption className="px-5 py-3 text-[11.5px] leading-relaxed text-ink-soft border-t border-line">
+              Captura del Administrador de anuncios del cliente, del 1 al 27 de octubre de 2026. Tapamos el importe
+              gastado: es dato del cliente.
+            </figcaption>
+          </figure>
+        </div>
+      </Reveal>
+
       <div className="mt-8 grid md:grid-cols-2 gap-6">
         {cases.map((c, i) => (
           <Reveal key={c.name} delay={i * 90}>

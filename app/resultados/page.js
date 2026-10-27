@@ -8,7 +8,7 @@ import FinalCTA from "@/components/FinalCTA";
 export const metadata = {
   title: "Resultados reales de nuestras campañas",
   description:
-    "Conversaciones por WhatsApp y clientes potenciales reales de Remy, Pachy, InyecPro, Metallum y más, tomados del Administrador de anuncios de cada cliente.",
+    "Conversaciones por WhatsApp y clientes potenciales reales de Remy, Pachy, Horizonte Andino, InyecPro, Metallum y más, tomados del Administrador de anuncios de cada cliente.",
   alternates: { canonical: "/resultados" },
 };
 
