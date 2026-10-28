@@ -1,4 +1,5 @@
 import Reveal from "./Reveal";
+// 28-oct-2026: Vanessa sale; entran Pame (administración y cobranzas) y Mario (sin foto todavía: sale su inicial).
 // 24-oct-2026: Martina sale del equipo.
 // 21-oct-2026: Maura reemplaza a Sofía como ejecutiva de cuentas.
 // 8-oct-2026: las cinco fotos con el mismo recorte (cara centrada, cabeza y hombros) y el mismo fondo azul.
@@ -17,16 +18,21 @@ const team = [
     img: "/img/equipo-maura-circulo.png",
   },
   {
-    name: "Vanessa",
-    role: "Diseñadora multimedia",
-    body: "Diseña artes, carruseles y portadas, y edita los videos de cada cliente.",
-    img: "/img/equipo-vanessa-circulo.webp",
+    name: "Pame",
+    role: "Administración y cobranzas",
+    body: "Lleva los contratos, las facturas y los pagos, para que todo lo acordado quede por escrito.",
+    img: "/img/equipo-pame-circulo.webp",
   },
   {
     name: "Joel",
     role: "Filmmaker",
     body: "Va a tu negocio a grabar con cámara, luz y micrófono, y edita los videos.",
     img: "/img/equipo-joel-circulo.webp",
+  },
+  {
+    name: "Mario",
+    role: "Creativo audiovisual",
+    body: "Diseña las piezas de cada cliente, graba en tu negocio y edita los videos junto con Joel.",
   },
 ];
 
@@ -41,7 +47,7 @@ export default function Team() {
           Personas reales detrás de cada resultado.
         </h2>
       </Reveal>
-      <div className="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-10">
+      <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10">
         {team.map((t, i) => (
           <Reveal key={t.name} delay={i * 120}>
             <div>
