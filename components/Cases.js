@@ -112,6 +112,45 @@ export default function Cases() {
         </div>
       </Reveal>
 
+      {/* Caso real con captura del Administrador de anuncios (28-oct-2026). El importe gastado va tapado: es dato del cliente. */}
+      <Reveal>
+        <div className="mt-8 border border-accent bg-white grid md:grid-cols-[1fr_1.1fr]">
+          <div className="p-8 md:p-10 flex flex-col justify-center">
+            <p className="kicker mb-4">Caso real · Tecnología a crédito en Quito</p>
+            <h3 className="font-heading text-navy text-[28px] leading-tight mb-4">
+              303 conversaciones por WhatsApp en 10 días
+            </h3>
+            <div className="flex items-baseline gap-6 mb-5">
+              <div>
+                <p className="display-num text-accent-deep text-[52px] leading-none">
+                  <Counter value={303} />
+                </p>
+                <p className="text-[13px] text-ink-soft mt-1">conversaciones por WhatsApp</p>
+              </div>
+              <div>
+                <p className="display-num text-accent-deep text-[52px] leading-none">$0,21</p>
+                <p className="text-[13px] text-ink-soft mt-1">por conversación</p>
+              </div>
+            </div>
+            <p className="text-[15px] leading-[1.8] text-ink-soft">
+              <strong className="text-ink">Home Play</strong> vende tecnología, línea blanca y motos a crédito, con pagos
+              semanales, en sus dos locales de Quito. Con dos piezas gráficas y una campaña directa a WhatsApp, del 19 al
+              28 de octubre llegaron <strong className="text-ink">303 conversaciones</strong>, a $0,21 cada una.
+            </p>
+          </div>
+          <figure className="plate !border-0 !border-l border-line m-0 flex flex-col justify-center">
+            <img
+              src="/portafolio/ads/home-play-oct.webp"
+              alt="Captura real del Administrador de anuncios: 303 conversaciones a $0,21 entre el 19 y el 28 de octubre de 2026"
+            />
+            <figcaption className="px-5 py-3 text-[11.5px] leading-relaxed text-ink-soft border-t border-line">
+              Captura del Administrador de anuncios del cliente, del 19 al 28 de octubre de 2026. Tapamos el importe
+              gastado: es dato del cliente.
+            </figcaption>
+          </figure>
+        </div>
+      </Reveal>
+
       <div className="mt-8 grid md:grid-cols-2 gap-6">
         {cases.map((c, i) => (
           <Reveal key={c.name} delay={i * 90}>

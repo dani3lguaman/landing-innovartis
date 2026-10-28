@@ -51,6 +51,18 @@ const CLIENTS = [
     campaigns: [{ name: "Venta de lotes sur de Quito · octubre 2026", value: 194, cost: 0.27 }],
   },
   {
+    id: "home-play",
+    name: "Home Play",
+    rubro: "Tecnología, línea blanca y motos a crédito · Quito",
+    resultLabel: "Conversaciones por WhatsApp",
+    rango: "19 – 28 oct 2026",
+    fuente: "Fuente: Administrador de anuncios de Meta del cliente, leído el 28 de octubre de 2026.",
+    campaigns: [
+      { name: "Campaña octubre 2026 · arte 2", value: 165, cost: 0.19 },
+      { name: "Campaña octubre 2026 · arte 1", value: 138, cost: 0.22 },
+    ],
+  },
+  {
     id: "metallum",
     name: "Metallum",
     rubro: "Estructuras metálicas y pérgolas · Quito",
