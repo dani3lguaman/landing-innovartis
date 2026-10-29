@@ -1,4 +1,5 @@
 import Reveal from "./Reveal";
+// 29-oct-2026: foto de Mario.
 // 28-oct-2026: Vanessa sale; entran Pame (administración y cobranzas) y Mario (sin foto todavía: sale su inicial).
 // 24-oct-2026: Martina sale del equipo.
 // 21-oct-2026: Maura reemplaza a Sofía como ejecutiva de cuentas.
@@ -33,6 +34,7 @@ const team = [
     name: "Mario",
     role: "Creativo audiovisual",
     body: "Diseña las piezas de cada cliente, graba en tu negocio y edita los videos junto con Joel.",
+    img: "/img/equipo-mario-circulo.webp",
   },
 ];
 
