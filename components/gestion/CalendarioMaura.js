@@ -63,6 +63,10 @@ export default function CalendarioMaura() {
   const piezas = useMemo(() => (datos?.piezas || []).map((p) => ({ ...p, dias: diasHasta(p.fecha) })), [datos]);
   const clientes = useMemo(() => [...new Set(piezas.map((p) => p.cliente))].sort((a, b) => a.localeCompare(b)), [piezas]);
   const estados = useMemo(() => [...new Set(piezas.map((p) => p.estado))], [piezas]);
+  const planes = useMemo(
+    () => (datos?.planes || []).map((p) => ({ ...p, dias: diasHasta(p.fin) })).filter((p) => p.dias !== null && p.dias <= 15).sort((a, b) => a.dias - b.dias),
+    [datos]
+  );
 
   const filtradas = useMemo(
     () =>
@@ -107,6 +111,24 @@ export default function CalendarioMaura() {
       </header>
 
       <BriefNuevo />
+
+      {planes.length > 0 && (
+        <section className="bg-white border border-line p-5 md:p-6 grid gap-3">
+          <div>
+            <p className="kicker mb-1.5">Fin de plan</p>
+            <p className="text-[14px] text-ink-soft leading-[1.65]">Antes de que se acabe, al cliente se le dan ideas y referencias, sin esperar a que renueve.</p>
+          </div>
+          <ul className="grid gap-2.5">
+            {planes.map((p) => (
+              <li key={p.cliente} className="border-t border-line pt-2.5 text-[13.5px] leading-[1.55]">
+                <span className="font-semibold text-navy">{p.cliente}</span>
+                <span className={p.dias < 0 ? "text-[#b42318]" : "text-ink-soft"}> · {fechaCorta(p.fin, false)}{p.dias < 0 ? ", ya pasó" : ""}</span>
+                <span className="block text-ink-soft">{p.incluye}</span>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
 
       <PanelNotas api={api} yo={yo} setYo={setYo} />
 

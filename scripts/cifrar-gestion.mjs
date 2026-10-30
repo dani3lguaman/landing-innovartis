@@ -44,8 +44,13 @@ const contratos = leer("contratos.json").map((c) => {
 });
 const cobros = leer("cobros.json");
 
+// Para Maura: fin de plan y qué incluye cada cliente, sin montos.
+const planes = contratos
+  .filter((c) => /^\d{4}-\d{2}-\d{2}$/.test(c.fin) && Number(c.precio_usd) > 0)
+  .map((c) => ({ cliente: c.cliente.split(" (")[0], fin: c.fin, incluye: c.incluye }));
+
 mkdirSync(salida, { recursive: true });
-writeFileSync(path.join(salida, "calendario.enc.json"), JSON.stringify(cifrar({ actualizado: ahora, piezas }, claves.calendario)) + "\n");
+writeFileSync(path.join(salida, "calendario.enc.json"), JSON.stringify(cifrar({ actualizado: ahora, piezas, planes }, claves.calendario)) + "\n");
 writeFileSync(path.join(salida, "cobros.enc.json"), JSON.stringify(cifrar({ actualizado: ahora, contratos, cobros }, claves.cobros)) + "\n");
 
 const sinPersona = contratos.filter((c) => c.ejecutiva === "—").map((c) => c.cliente);

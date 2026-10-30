@@ -36,6 +36,7 @@ function Tarjeta({ c, api, yo }) {
         <div><dt className="text-ink-soft">Fin</dt><dd className="font-semibold text-ink">{fechaCorta(c.fin, false)}</dd></div>
         <div><dt className="text-ink-soft">Cobrado</dt><dd className="font-semibold text-ink">{usd(c.cobrado_usd)}</dd></div>
         <div><dt className="text-ink-soft">Falta</dt><dd className={`font-semibold ${Number(c.falta_usd) ? "text-[#b42318]" : "text-ink"}`}>{Number(c.falta_usd) ? usd(c.falta_usd) : "—"}</dd></div>
+        {c.incluye && <div className="col-span-2 sm:col-span-4"><dt className="text-ink-soft">Incluye</dt><dd className="text-ink">{c.incluye}</dd></div>}
         <div className="col-span-2"><dt className="text-ink-soft">Próximo cobro</dt><dd className="text-ink">{c.proximo_cobro}</dd></div>
         <div><dt className="text-ink-soft">Contrato</dt><dd className={c.sin_copia ? "text-[#b54708] font-semibold" : "text-ink"}>{c.contrato}</dd></div>
         <div><dt className="text-ink-soft">Factura</dt><dd className={c.sin_factura ? "text-[#b54708] font-semibold" : "text-ink"}>{c.factura}</dd></div>
