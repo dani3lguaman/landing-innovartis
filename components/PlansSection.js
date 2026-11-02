@@ -376,20 +376,7 @@ export default function PlansSection() {
         ))}
       </div>
 
-      {/* El gancho de cierre. Octubre 2026: el regalo es la web, NO los 3 posts (no se suman).
-          Cambiar cada día 1 con la oferta vigente (agencia/comercial/proforma/oferta-vigente.md). */}
-      <Reveal delay={80}>
-        <div className="mt-6 rounded-xl border border-accent bg-accent/5 px-7 py-5 flex flex-wrap items-center gap-x-4 gap-y-2">
-          <span className="text-[20px]">🎁</span>
-          <p className="text-[14.5px] leading-[1.7] text-ink flex-1 min-w-[280px]">
-            <strong>Promo de octubre:</strong> con el plan <strong>con grabación</strong>, tu{" "}
-            <strong>página web de regalo</strong> (valor regular USD 120). Se entrega después del primer pago completo.
-          </p>
-          <span className="text-[12.5px] text-ink-soft italic">
-            Válida para quien firma hasta el 31 de octubre de 2026.
-          </span>
-        </div>
-      </Reveal>
+      {/* Aquí va la franja de la oferta del mes (agencia/comercial/proforma/oferta-vigente.md). Sin promo vigente, no se muestra. */}
 
       {/* Alto volumen: una línea por plan, sin robarle aire a los de arriba */}
       <Reveal delay={100}>
