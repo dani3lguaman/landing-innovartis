@@ -10,7 +10,7 @@ const SLIDES = [
   { img: "/portafolio/inyecpro/reel-vasos-1mil.webp", alt: "Reel de InyecPro en Facebook", num: "1.729", txt: "conversaciones para InyecPro, fábrica de plásticos" },
   { img: "/portafolio/webs/gruas-montacargas-escritorio.webp", alt: "Página web de Grúas y Montacargas Joel Trans", num: "11", txt: "páginas en la web de Grúas Joel Trans, con cotizador" },
   { img: "/portafolio/pachy/d-mateo-post-1.webp", alt: "Arte de Pachy Limpieza Profesional", num: "2.508", txt: "conversaciones para Pachy Limpieza en 2026" },
-  { img: "/portafolio/metallum/d-post-propuesta.webp", alt: "Arte para Metallum", num: "452", txt: "clientes potenciales para Metallum en 12 meses" },
+  { img: "/portafolio/metallum/d-post-propuesta.webp", alt: "Arte para Metallum", num: "452", txt: "clientes potenciales para Metallum, may–oct 2026" },
 ];
 
 export default function HomeHero() {

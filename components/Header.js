@@ -35,8 +35,8 @@ export default function Header() {
             <a href="mailto:innuevate@gmail.com" className="hover:text-accent-deep">
               innuevate@gmail.com
             </a>
-            <a href="/planes#oferta" className="bg-navy text-white px-3 h-9 inline-flex items-center font-semibold">
-              Oferta de octubre
+            <a href="/planes" className="bg-navy text-white px-3 h-9 inline-flex items-center font-semibold">
+              Ver planes
             </a>
           </div>
         </div>

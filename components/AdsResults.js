@@ -24,9 +24,9 @@ const CLIENTS = [
     rubro: "Limpieza profesional · Quito",
     resultLabel: "Conversaciones por WhatsApp",
     campaigns: [
-      { name: "Campaña septiembre 2026", value: 2697, cost: 0.69 },
-      { name: "Campaña diciembre 2025", value: 663, cost: 0.75 },
-      { name: "Campaña diciembre 2025 · B", value: 188, cost: 0.44 },
+      { name: "Campaña principal", value: 2697, cost: 0.69 },
+      { name: "Segunda campaña", value: 663, cost: 0.75 },
+      { name: "Tercera campaña", value: 188, cost: 0.44 },
     ],
   },
   {
@@ -67,7 +67,8 @@ const CLIENTS = [
     name: "Metallum",
     rubro: "Estructuras metálicas y pérgolas · Quito",
     resultLabel: "Clientes potenciales (formulario)",
-    campaigns: [{ name: "Campaña septiembre 2026", value: 452, cost: 0.73 }],
+    rango: "may – oct 2026",
+    campaigns: [{ name: "Campaña con formulario", value: 452, cost: 0.73 }],
   },
 ];
 

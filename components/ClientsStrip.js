@@ -3,8 +3,8 @@
 export const CLIENTS = [
   "Remy EC", "Pachy Limpieza", "InyecPro", "Damavid Aqua", "Metallum", "Controlfrío",
   "SERTEC Generación", "Enquality", "KYA Ecuador", "FisioClub Quito", "Deco Mundo",
-  "Auto Spa Ecuador", "Climbing Tours", "Grúas Joel Trans", "Colores y Sabores", "Serenité", "Solugraf",
-  "MedCentral", "Vet. Metrópolis", "Idefix", "Abbysal", "Contaservis", "Hampi Andina",
+  "Climbing Tours", "Grúas Joel Trans", "Colores y Sabores", "Serenité", "Solugraf",
+  "MedCentral", "Idefix", "Abbysal", "Contaservis", "Hampi Andina",
   "Inyecto Bien", "Las Humitas de la Loma", "Emily Garcés · Ikigai",
   // 24-oct-2026: clientes de octubre.
   "Aliatum", "Èclat Ballet Studio", "Home Play", "Centro Psicológico Renacer", "TiaPam",

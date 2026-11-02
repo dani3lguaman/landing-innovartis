@@ -11,13 +11,6 @@ const cases = [
     link: { href: "https://instagram.com/cabelloremyuio", label: "@cabelloremyuio" },
   },
   {
-    img: "/img/caso-metropolis.webp",
-    kicker: "Veterinaria · De cero a redes activas",
-    name: "Clínica Veterinaria Metrópolis",
-    body: "20 años y 5 locales en Quito, sin presencia digital. La construimos desde cero y la hicimos brillar con atención real al cliente.",
-    metric: { value: 78, suffix: "", label: "conversaciones por WhatsApp con su primera campaña" },
-  },
-  {
     img: "/img/caso-idefix.webp",
     kicker: "Plastics Ide · Marca creada desde cero",
     name: "Idefix",
@@ -61,9 +54,8 @@ export default function Cases() {
             <p className="text-[15px] leading-[1.8] text-ink-soft">
               Con <strong className="text-ink">$1.000 de pauta</strong> generamos ≈700 leads y 50
               cierres mensuales, cada contacto con seguimiento ordenado en HubSpot CRM.{" "}
-              <strong className="text-ink">El método no cambia según el rubro:</strong> si tu negocio
-              vive de conseguir clientes —salud, servicios, industria, retail, educación— funciona
-              igual.
+              <strong className="text-ink">El método no cambia según el rubro:</strong> lo aplicamos en salud,
+              servicios, industria, retail y educación.
             </p>
           </div>
           <figure className="plate !border-0 !border-l border-line m-0">
@@ -186,8 +178,8 @@ export default function Cases() {
 
       <Reveal>
         <p className="mt-8 text-[14px] text-ink-soft italic border border-line bg-paper-soft px-6 py-4">
-          Y más casos documentados: Pachy Limpieza, InyecPro, Damavid Aqua, J&amp;C Mudanzas y otros
-          clientes con resultados y evidencia disponibles. Pídenos el portafolio completo por WhatsApp.
+          Y más casos documentados: Pachy Limpieza, InyecPro, Damavid Aqua y otros clientes con
+          resultados y evidencia disponibles.
         </p>
       </Reveal>
     </section>

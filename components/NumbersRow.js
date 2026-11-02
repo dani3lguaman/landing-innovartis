@@ -5,7 +5,7 @@ const NUMS = [
   { value: 9512, label: "conversaciones por WhatsApp", who: "Remy EC · 12 meses" },
   { value: 2508, label: "conversaciones por WhatsApp", who: "Pachy · ene–oct 2026" },
   { value: 1729, label: "conversaciones por WhatsApp", who: "InyecPro · may–oct 2026" },
-  { value: 452, label: "clientes potenciales", who: "Metallum · 12 meses" },
+  { value: 452, label: "clientes potenciales", who: "Metallum · may–oct 2026" },
 ];
 
 export default function NumbersRow() {

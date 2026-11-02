@@ -53,12 +53,6 @@ const reels = [
     metric: "17 veces compartido",
   },
   {
-    id: "1029294356100531",
-    client: "Clínica Veterinaria Metrópolis",
-    rubro: "Veterinaria",
-    metric: "Contenido desde cero",
-  },
-  {
     id: "2479664915872880",
     client: "InyecPro",
     rubro: "Tapas para canecas",
