@@ -15,7 +15,7 @@ export const metadata = {
 export default function ResultadosPage() {
   return (
     <Shell>
-      <PageHero img="/portafolio/ads/pachy-2026.webp" kicker="Resultados reales" title="Resultados reales, con nombre y fecha">
+      <PageHero img="/evidencia/foto-rodaje-local.jpg" kicker="Resultados reales" title="Resultados reales, con nombre y fecha">
         <p>Números tomados del Administrador de anuncios de cada cliente, con fecha. Nada redondeado hacia arriba.</p>
       </PageHero>
       <div className="pt-12">
