@@ -16,7 +16,7 @@ const PLANS = [
     focus: "El punto de partida para una presencia sólida.",
     features: [
       "Asesoría con nuestra estratega: reunión + análisis de mercado + brief",
-      "8 posts + 2 videos cortos (reels) + 1 carrusel: 11 piezas al mes",
+      "6 posts + 2 videos cortos (reels) + 1 carrusel: 9 piezas al mes",
       "2 campañas activas en Meta Ads, directo a tu WhatsApp",
       "Facebook e Instagram",
       "Copys de venta y reporte mensual",

@@ -23,7 +23,7 @@ const SLIDES = [
     kicker: "Plan Básico · Facebook e Instagram",
     titulo: "Estrategia, contenido y campañas desde $130 al mes.",
     texto:
-      "Asesoría con nuestra estratega, 8 posts, 2 reels, 1 carrusel y 2 campañas en Meta Ads que llevan a tu WhatsApp. Con reporte mensual.",
+      "Asesoría con nuestra estratega, 6 posts, 2 reels, 1 carrusel y 2 campañas en Meta Ads que llevan a tu WhatsApp. Con reporte mensual.",
     detalle: "$130/mes con tu material · $160/mes con 1 hora de grabación en tu negocio. La pauta se paga aparte, directo a Meta.",
     precio: { valor: "$130", nota: "al mes, con tu material" },
     secundario: { href: "/planes", label: "Ver qué incluye" },
