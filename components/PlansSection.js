@@ -16,7 +16,7 @@ const PLANS = [
     focus: "El punto de partida para una presencia sólida.",
     features: [
       "Asesoría con nuestra estratega: reunión + análisis de mercado + brief",
-      "2 videos cortos (reels) + 2 posts + 1 carrusel",
+      "8 posts + 2 videos cortos (reels) + 1 carrusel: 11 piezas al mes",
       "2 campañas activas en Meta Ads, directo a tu WhatsApp",
       "Facebook e Instagram",
       "Copys de venta y reporte mensual",
@@ -35,7 +35,7 @@ const PLANS = [
     price: { sin: 160, con: 190 },
     focus: "Presencia completa en las tres redes, con volumen real de contenido.",
     features: [
-      "3 artes estáticos + 3 videos cortos (reels)",
+      "10 artes estáticos + 3 videos cortos (reels)",
       "2 carruseles — o 2 videos más, tú eliges, sin cambio de precio",
       "Redes creadas y gestionadas: Instagram, Facebook y TikTok",
       "Campañas activas en Meta Ads + TikTok Ads",
@@ -52,7 +52,7 @@ const PLANS = [
     price: { sin: 230, con: 260 },
     focus: "Que además te encuentren cuando te buscan en Google.",
     features: [
-      "4 artes estáticos + 4 videos cortos (reels)",
+      "12 artes estáticos + 4 videos cortos (reels)",
       "2 carruseles estratégicos",
       "Campañas en Meta Ads + TikTok Ads + Google Ads",
       "Google Maps: ficha creada, verificada y optimizada",
@@ -69,7 +69,7 @@ const PLANS = [
     price: { sin: 300, con: 330 },
     focus: "Todos los canales activos y ningún cliente perdido en el camino.",
     features: [
-      "5 artes estáticos + 5 videos cortos (reels)",
+      "15 artes estáticos + 5 videos cortos (reels)",
       "3 carruseles estratégicos",
       "Campañas en Meta Ads + TikTok Ads + Google Ads",
       "CRM HubSpot montado: cada lead con seguimiento",

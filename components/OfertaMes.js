@@ -34,7 +34,7 @@ const CARDS = [
   {
     tag: "Plan más pedido",
     title: "Básico: USD 130 / 160",
-    body: "2 reels, 2 posts y 1 carrusel al mes, con 2 campañas en Meta Ads hacia tu WhatsApp.",
+    body: "11 piezas al mes: 8 posts, 2 reels y 1 carrusel, con 2 campañas en Meta Ads hacia tu WhatsApp.",
     img: "/portafolio/medcentral/d-post-1.webp",
     href: "/planes",
   },
