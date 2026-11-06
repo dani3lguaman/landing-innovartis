@@ -6,16 +6,18 @@ import { WA_ASESORIA } from "./constants";
 
 const INTERVALO = 6500;
 
-// Ofertas vigentes (oct-2026). Fuente: agencia/comercial/proforma/oferta-vigente.md.
+// Ofertas vigentes (nov-2026). Fuente: agencia/comercial/proforma/oferta-vigente.md.
+// 5-nov-2026 (Daniel: 8 piezas, 5 posts estáticos). Web de regalo en los dos planes (130 y 160) hasta el vie 27-nov.
+// Ojo: este carrusel hoy no se usa en ninguna página.
 const SLIDES = [
   {
-    id: "promo-octubre",
-    kicker: "Promoción de octubre",
+    id: "promo-noviembre",
+    kicker: "Promoción de noviembre",
     titulo: "Tu página web va de regalo.",
     texto:
-      "Contrata tu plan con grabación y te entregamos una página para tu negocio, lista para recibir clientes por WhatsApp. Valor regular $120.",
-    detalle: "Válida para quienes firman hasta el 31 de octubre de 2026 · se entrega después del primer pago completo.",
-    precio: { valor: "Gratis", nota: "tu página web (valor regular $120) con el plan con grabación" },
+      "Contrata tu Plan Básico, con tu material o con grabación, y te entregamos una página para tu negocio, lista para recibir clientes por WhatsApp. Valor regular $120.",
+    detalle: "Válida para quienes firman hasta el viernes 27 de noviembre de 2026 · se entrega después del primer pago completo.",
+    precio: { valor: "Gratis", nota: "tu página web (valor regular $120) con el plan de $130 o el de $160" },
     secundario: { href: "/planes", label: "Ver los planes" },
   },
   {
@@ -23,7 +25,7 @@ const SLIDES = [
     kicker: "Plan Básico · Facebook e Instagram",
     titulo: "Estrategia, contenido y campañas desde $130 al mes.",
     texto:
-      "Asesoría con nuestra estratega, 6 posts, 2 reels, 1 carrusel y 2 campañas en Meta Ads que llevan a tu WhatsApp. Con reporte mensual.",
+      "Asesoría con nuestra estratega, 5 posts estáticos, 2 reels, 1 carrusel y 2 campañas en Meta Ads que llevan a tu WhatsApp. Con reporte mensual.",
     detalle: "$130/mes con tu material · $160/mes con 1 hora de grabación en tu negocio. La pauta se paga aparte, directo a Meta.",
     precio: { valor: "$130", nota: "al mes, con tu material" },
     secundario: { href: "/planes", label: "Ver qué incluye" },

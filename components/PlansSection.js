@@ -16,7 +16,7 @@ const PLANS = [
     focus: "El punto de partida para una presencia sólida.",
     features: [
       "Asesoría con nuestra estratega: reunión + análisis de mercado + brief",
-      "6 posts + 2 videos cortos (reels) + 1 carrusel: 9 piezas al mes",
+      "5 posts estáticos + 2 videos cortos (reels) + 1 carrusel: 8 piezas al mes",
       "2 campañas activas en Meta Ads, directo a tu WhatsApp",
       "Facebook e Instagram",
       "Copys de venta y reporte mensual",
@@ -24,8 +24,10 @@ const PLANS = [
     // Lo que cambia según haya o no grabación:
     sinGrabacion: "Tú nos envías el material y nosotros lo editamos",
     conGrabacion: "1 hora de grabación en tu negocio — luz, micrófono y movilización incluidos",
-    // Promo octubre 2026 (Daniel, 2-oct): web de regalo SOLO con grabación; reemplaza los 3 posts. Se apaga sola el 1-nov.
-    promo: { until: "2026-10-31", text: "Octubre: tu página web de regalo con el plan con grabación" },
+    // 5-nov-2026 (Daniel: 8 piezas, 5 posts estáticos). Promo de noviembre: web de regalo en los DOS planes
+    // (130 y 160), firmando hasta el vie 27-nov; en el de 160 web y catálogo digital son lo mismo (no se suman).
+    // Se apaga sola el 28-nov. (Octubre era solo con grabación; ya no.)
+    promo: { until: "2026-11-27", text: "Noviembre: tu página web de regalo, firmando hasta el 27 de noviembre" },
     highlight: false,
   },
   {
@@ -240,7 +242,7 @@ export default function PlansSection() {
         <span className="display-num text-navy text-[38px]">${priceOf(p)}</span>
         <span className="text-[13px] text-ink-soft">/mes</span>
       </p>
-      {p.promo && conGrabacion && new Date() <= new Date(`${p.promo.until}T23:59:59-05:00`) && (
+      {p.promo && new Date() <= new Date(`${p.promo.until}T23:59:59-05:00`) && (
         <p className="mb-4 text-[12.5px] font-semibold text-accent-deep border border-accent/50 bg-accent/10 px-3 py-2">
           {p.promo.text}
         </p>

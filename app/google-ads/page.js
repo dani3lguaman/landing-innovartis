@@ -122,7 +122,7 @@ export default function GoogleAdsPage() {
             <p className="kicker mb-3">Cuánto cuesta</p>
             <p className="text-[22px] font-extrabold mb-4">Google Ads y Google Maps vienen incluidos desde el plan Estándar.</p>
             <p className="text-[15px] leading-[1.75] text-white/80 mb-6">
-              Plan Estándar: USD 230 al mes con tu material, o USD 260 con grabación. Incluye 4 artes, 4 videos y 2
+              Plan Estándar: USD 230 al mes con tu material, o USD 260 con grabación. Incluye 12 artes estáticos, 4 videos y 2
               carruseles, Meta Ads, Google Ads y Google Maps. La pauta la pagas tú directo a Google: nunca manejamos tu
               dinero de publicidad.
             </p>

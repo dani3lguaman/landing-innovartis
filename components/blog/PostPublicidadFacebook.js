@@ -100,8 +100,8 @@ export default function PostPublicidadFacebook() {
         <Link href="/planes">Plan Básico</Link> cuesta <strong>$130 al mes</strong> si tú nos
         envías el material, o <strong>$160 al mes</strong> si vamos a tu negocio a grabar una hora
         con cámara, luz y micrófono. Incluye una asesoría con nuestra estratega (reunión, análisis
-        de tu mercado y un brief que tú apruebas), 6 posts, 2 videos cortos, 1 carrusel, 2
-        campañas en Meta Ads que llevan a tu WhatsApp, Facebook e Instagram, textos de venta y un
+        de tu mercado y un brief que tú apruebas), 5 posts estáticos, 2 videos cortos, 1 carrusel,
+        2 campañas en Meta Ads que llevan a tu WhatsApp, Facebook e Instagram, textos de venta y un
         reporte mensual. La pauta va aparte, directo a Meta.
       </p>
 

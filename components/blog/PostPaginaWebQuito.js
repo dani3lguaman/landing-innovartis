@@ -114,9 +114,10 @@ export default function PostPaginaWebQuito() {
         vemos la web como una pieza más de la estrategia, no como un fin.
       </p>
       <p>
-        Este mes, además, tenemos una promoción: si contratas tu plan mensual con grabación hasta
-        el 31 de octubre de 2026, tu página web va de regalo (valor regular $120). Se entrega
-        después del primer pago completo. Mira los <Link href="/planes">planes y condiciones</Link>.
+        Este mes, además, tenemos una promoción: si contratas tu Plan Básico, con tu material o con
+        grabación, hasta el viernes 27 de noviembre de 2026, tu página web va de regalo (valor
+        regular $120). Se entrega después del primer pago completo. Mira los{" "}
+        <Link href="/planes">planes y condiciones</Link>.
       </p>
 
       <h2>En resumen</h2>
