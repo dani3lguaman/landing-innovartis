@@ -16,7 +16,7 @@ const team = [
     name: "Maura",
     role: "Coordinadora de Marketing · Ejecutiva de cuentas",
     body: "Acompaña tu cuenta en el día a día, coordina al equipo y revisa cada pieza y cada campaña antes de que llegue a ti.",
-    img: "/img/equipo-maura-circulo.png",
+    img: "/img/equipo-maura-circulo.webp",
   },
   {
     name: "Pame",
