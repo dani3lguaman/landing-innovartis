@@ -15,8 +15,8 @@ export default function FinalCTA() {
         </Reveal>
         <Reveal delay={160}>
           <p className="text-[17px] leading-[1.8] text-white/75 mb-10">
-            Lo importante es que tengas toda la información para decidir. Empieza con una asesoría
-            gratis de 10 minutos: revisamos tu negocio y te decimos qué haríamos en tu caso.
+            Empieza con una asesoría gratis de 10 minutos: revisamos tu negocio y te decimos qué haríamos
+            en tu caso. Si firmas hasta el viernes 27 de noviembre, tu página web va de regalo.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <a href={WA_ASESORIA} target="_blank" rel="noopener noreferrer" className="btn-solid">
