@@ -51,6 +51,11 @@ export default function HomeHero() {
               Ver resultados reales
             </a>
           </div>
+          <ul className="mt-8 flex flex-wrap gap-x-6 gap-y-2 text-[13.5px] text-white/80">
+            <li>✓ Más de 25 negocios atendidos</li>
+            <li>✓ Sin permanencia</li>
+            <li>✓ Contrato y factura con RUC</li>
+          </ul>
         </div>
 
         <figure

@@ -10,7 +10,7 @@ export default function FinalCTA() {
         </Reveal>
         <Reveal mask delay={80}>
           <h2 className="font-heading text-white text-[40px] md:text-[54px] leading-[1.1] mb-6">
-            Organicemos una reunión y conozcámonos.
+            ¿Listo para que tu negocio reciba más mensajes?
           </h2>
         </Reveal>
         <Reveal delay={160}>

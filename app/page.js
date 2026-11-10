@@ -1,5 +1,4 @@
 import Shell from "@/components/Shell";
-import BrandBanner from "@/components/BrandBanner";
 import HomeHero from "@/components/HomeHero";
 import TrustStrip from "@/components/TrustStrip";
 import OfertaMes from "@/components/OfertaMes";
@@ -8,26 +7,29 @@ import NumbersRow from "@/components/NumbersRow";
 import ClientsStrip from "@/components/ClientsStrip";
 import PortfolioTeaser from "@/components/PortfolioTeaser";
 import Cases from "@/components/Cases";
-import Method from "@/components/Method";
+import ComoEmpezar from "@/components/ComoEmpezar";
+import PreguntasFrecuentes from "@/components/PreguntasFrecuentes";
 import FinalCTA from "@/components/FinalCTA";
 
-// Portada con la estructura de AQUABEC v2: portada navy → franja de garantías → promociones →
-// soluciones → cifras y clientes → portafolio → casos → método → contacto.
+// 10-nov-2026 (Daniel: "más comercial, es nuestra carta de presentación"): orden de venta.
+// Portada con oferta → garantías → prueba (cifras y clientes) → promo → servicios → casos →
+// portafolio → cómo empezamos → objeciones → cierre. Sin el banner de marca arriba: el logo ya
+// está en la cabecera y empujaba la oferta fuera de la primera pantalla.
 export default function Home() {
   return (
     <Shell>
-      <BrandBanner />
       <HomeHero />
       <TrustStrip />
-      <OfertaMes />
-      <ServiceCards />
-      <section className="pt-16">
+      <section className="pt-14">
         <NumbersRow />
       </section>
       <ClientsStrip />
-      <PortfolioTeaser />
+      <OfertaMes />
+      <ServiceCards />
       <Cases />
-      <Method />
+      <PortfolioTeaser />
+      <ComoEmpezar />
+      <PreguntasFrecuentes />
       <FinalCTA />
     </Shell>
   );
