@@ -63,6 +63,18 @@ const CLIENTS = [
     ],
   },
   {
+    id: "deco-mundo",
+    name: "Deco Mundo",
+    rubro: "Pisos, planchas PVC y decoración · Portoviejo y Santo Domingo",
+    resultLabel: "Conversaciones por WhatsApp",
+    rango: "11 oct – 23 nov 2026",
+    fuente: "Fuente: Administrador de anuncios de Meta del cliente, leído el 23 de noviembre de 2026.",
+    campaigns: [
+      { name: "Tienda Portoviejo", value: 1216, cost: 0.18 },
+      { name: "Tienda Santo Domingo", value: 225, cost: 0.5 },
+    ],
+  },
+  {
     id: "metallum",
     name: "Metallum",
     rubro: "Estructuras metálicas y pérgolas · Quito",
