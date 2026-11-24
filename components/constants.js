@@ -1,5 +1,8 @@
-export const WA_NUMBER = "593998620536";
-export const WA_NUMBER_DISPLAY = "+593 99 862 0536";
+// WhatsApp de ventas (orden de Daniel, 24-nov-2026): todos los botones y enlaces de la web van aquí.
+// Antes: 099 862 0536 (chip perdido, nov-2026).
+export const WA_NUMBER = "593963140753";
+export const WA_NUMBER_DISPLAY = "096 314 0753";
+export const WA_TEL_INTL = "+593963140753";
 export const WA_LINK = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(
   "Hola InnovArtis, vi su página web y quiero más información."
 )}`;

@@ -72,7 +72,7 @@ export default function PostPaginaWebQuito() {
         Desde el segundo año, mantener la página al aire cuesta <strong>$100 al año</strong>, con
         hosting, seguridad y dos rondas de cambios. Así no hay sorpresas: sabes lo que pagas hoy y
         lo que pagarás después. Puedes ver todos los detalles en{" "}
-        <Link href="/planes#web">nuestra sección de páginas web</Link>.
+        <Link href="/webs#web">nuestra sección de páginas web</Link>.
       </p>
 
       <h2>¿Cuál te conviene?</h2>

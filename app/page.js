@@ -10,6 +10,15 @@ import PortfolioTeaser from "@/components/PortfolioTeaser";
 import Cases from "@/components/Cases";
 import Method from "@/components/Method";
 import FinalCTA from "@/components/FinalCTA";
+import { pageMeta } from "@/lib/seo";
+
+export const metadata = pageMeta({
+  title: "Agencia de marketing digital en Quito, Ecuador | InnovArtis",
+  description:
+    "Agencia de marketing digital en Quito: publicidad en Facebook e Instagram con Meta Ads, Google Ads, contenido y páginas web para pymes. Casos reales.",
+  path: "/",
+  absolute: true,
+});
 
 // Portada con la estructura de AQUABEC v2: portada navy → franja de garantías → promociones →
 // soluciones → cifras y clientes → portafolio → casos → método → contacto.

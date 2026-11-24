@@ -4,13 +4,14 @@ import PageHero from "@/components/PageHero";
 import Reveal from "@/components/Reveal";
 import AsesoriaCTA from "@/components/AsesoriaCTA";
 import { POSTS, formatDate } from "@/components/blog/posts";
+import { pageMeta } from "@/lib/seo";
 
-export const metadata = {
-  title: "Blog: guías de marketing para negocios en Ecuador",
+export const metadata = pageMeta({
+  title: "Blog de marketing para negocios en Ecuador",
   description:
-    "Guías claras sobre cuánto cuesta la publicidad en Facebook, cuánto cuesta una página web en Quito y cómo conseguir clientes por WhatsApp.",
-  alternates: { canonical: "/blog" },
-};
+    "Guías de marketing para negocios de Ecuador: cuánto cuesta la publicidad en Facebook, una página web en Quito y cómo conseguir clientes por WhatsApp.",
+  path: "/blog",
+});
 
 export default function BlogPage() {
   return (

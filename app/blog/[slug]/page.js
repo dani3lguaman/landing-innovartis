@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import AsesoriaCTA from "@/components/AsesoriaCTA";
 import { POSTS, getPost, formatDate } from "@/components/blog/posts";
 import { SITE_URL } from "@/components/constants";
+import { pageMeta } from "@/lib/seo";
 
 export const dynamicParams = false;
 
@@ -15,19 +16,13 @@ export async function generateMetadata({ params }) {
   const { slug } = await params;
   const post = getPost(slug);
   if (!post) return {};
-  return {
-    title: post.title,
-    description: post.description,
-    alternates: { canonical: `/blog/${post.slug}` },
-    openGraph: {
-      title: post.title,
-      description: post.description,
-      type: "article",
-      publishedTime: post.date,
-      locale: "es_EC",
-      siteName: "InnovArtis",
-    },
-  };
+  return pageMeta({
+    title: post.seoTitle || post.title,
+    description: post.seoDescription || post.description,
+    path: `/blog/${post.slug}`,
+    type: "article",
+    ogExtra: { publishedTime: post.date },
+  });
 }
 
 export default async function PostPage({ params }) {
@@ -47,10 +42,10 @@ export default async function PostPage({ params }) {
     mainEntityOfPage: { "@type": "WebPage", "@id": url },
     url,
     image: `${SITE_URL}/img/hero-produccion.webp`,
-    author: { "@type": "Organization", name: "INNOVARTIS", url: SITE_URL },
+    author: { "@type": "Organization", name: "InnovArtis", url: SITE_URL },
     publisher: {
       "@type": "Organization",
-      name: "INNOVARTIS",
+      name: "InnovArtis",
       logo: { "@type": "ImageObject", url: `${SITE_URL}/logo-innovartis.jpg` },
     },
   };

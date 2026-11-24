@@ -1,6 +1,6 @@
 "use client";
 
-import { WA_NUMBER, WA_ASESORIA } from "./constants";
+import { WA_NUMBER, WA_ASESORIA, WA_NUMBER_DISPLAY } from "./constants";
 
 // La hoja de 1 página del brief, con la marca. Se imprime / guarda en PDF con la hoja de estilos
 // de impresión de globals.css (.print-area): cero dependencias, misma marca.
@@ -161,7 +161,7 @@ export default function BriefDocumento({ id, creado, negocio, nombre, brief, ref
             Nuestro equipo lo revisa, lo ajusta y se lo entrega aprobado. Las cifras de las referencias son de trabajos
             reales, con la fecha en que se leyeron; no son una promesa de resultados.
           </p>
-          <p className="mt-1">InnovArtis · Quito, Ecuador · WhatsApp +593 99 862 0536 · innovartis.lat{id ? ` · Ref. ${id.slice(0, 8)}` : ""}</p>
+          <p className="mt-1">InnovArtis · Quito, Ecuador · WhatsApp {WA_NUMBER_DISPLAY} · innovartis.lat{id ? ` · Ref. ${id.slice(0, 8)}` : ""}</p>
         </footer>
       </article>
 

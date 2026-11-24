@@ -24,6 +24,7 @@ const CARDS = [
     title: "Tu página web de regalo",
     body: "Con el plan Básico de USD 130 o el de USD 160 al mes. Una página con tu material, lista para recibir clientes por WhatsApp.",
     img: "/portafolio/webs/gruas-montacargas-escritorio.webp",
+    alt: "Página web de Grúas y Montacargas Joel Trans hecha por InnovArtis",
     href: wa("Hola InnovArtis, quiero la promo de noviembre: plan Básico + página web de regalo."),
     promo: true,
   },
@@ -32,6 +33,7 @@ const CARDS = [
     title: "Google Ads",
     body: "Aparece cuando te buscan en Google. Campañas de búsqueda que llevan a tu WhatsApp o a una llamada.",
     img: "/portafolio/webs/fisioclub-quito-escritorio.webp",
+    alt: "Página web de FisioClub Quito, cliente de Google Ads",
     href: "/google-ads",
   },
   {
@@ -39,6 +41,7 @@ const CARDS = [
     title: "Básico: USD 130 / 160",
     body: "8 piezas al mes: 5 posts estáticos, 2 reels y 1 carrusel, con 2 campañas en Meta Ads hacia tu WhatsApp.",
     img: "/portafolio/medcentral/d-post-1.webp",
+    alt: "Post para redes de MedCentral del plan Básico",
     href: "/planes",
   },
   {
@@ -46,6 +49,7 @@ const CARDS = [
     title: "Dominio .com a tu nombre",
     body: "¿Quieres tu propio .com? Lo compras a tu nombre y nosotros lo conectamos a tu página. El dominio queda siempre tuyo.",
     img: "/portafolio/webs/pachy-escritorio.webp",
+    alt: "Página web de Pachy Limpieza Profesional con su dominio .com",
     href: "/webs",
     promo: true,
   },
@@ -91,7 +95,7 @@ export default function OfertaMes({ id = "oferta" }) {
             >
               <img
                 src={c.img}
-                alt=""
+                alt={c.alt}
                 loading="lazy"
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
               />

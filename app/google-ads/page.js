@@ -6,13 +6,14 @@ import FinalCTA from "@/components/FinalCTA";
 import FlipCard from "@/components/FlipCard";
 import { Icon } from "@/components/services-data";
 import { WA_NUMBER } from "@/components/constants";
+import { pageMeta } from "@/lib/seo";
 
-export const metadata = {
-  title: "Google Ads en Quito",
+export const metadata = pageMeta({
+  title: "Google Ads en Quito: aparece cuando te buscan",
   description:
-    "Campañas de Google Ads para negocios de Quito y Ecuador: aparece cuando te buscan y recibe clientes por WhatsApp o llamada. Google Maps incluido desde el plan Estándar.",
-  alternates: { canonical: "/google-ads" },
-};
+    "Campañas de Google Ads en Quito y Ecuador: aparece cuando te buscan y recibe clientes por WhatsApp o llamada. Google Maps incluido desde el plan Estándar.",
+  path: "/google-ads",
+});
 
 const wa = (t) => `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(t)}`;
 

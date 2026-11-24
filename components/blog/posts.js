@@ -9,6 +9,10 @@ export const POSTS = [
     title: "¿Cuánto cuesta la publicidad en Facebook en Ecuador?",
     description:
       "Pauta, gestión y costo por cliente: qué compone el precio de anunciar en Facebook e Instagram en Ecuador, rangos reales y de qué depende que tu dinero rinda.",
+    // seoTitle / seoDescription: solo para Google (50-60 y 140-155 caracteres); el título visible no cambia.
+    seoTitle: "¿Cuánto cuesta anunciar en Facebook en Ecuador?",
+    seoDescription:
+      "Pauta, gestión y costo por cliente: qué compone el precio de anunciar en Facebook e Instagram en Ecuador, rangos reales y de qué depende que rinda.",
     kicker: "Publicidad",
     date: "2026-10-06",
     readingMinutes: 6,
@@ -31,6 +35,9 @@ export const POSTS = [
     title: "Cómo conseguir clientes por WhatsApp",
     description:
       "Guía práctica para negocios en Ecuador: WhatsApp Business bien configurado, campañas que llevan a tu chat, respuestas rápidas y seguimiento para no perder a nadie.",
+    seoTitle: "Cómo conseguir clientes por WhatsApp en Ecuador",
+    seoDescription:
+      "Guía para negocios en Ecuador: WhatsApp Business bien configurado, campañas que llevan a tu chat, respuestas rápidas y seguimiento para no perder a nadie.",
     kicker: "Ventas por WhatsApp",
     date: "2026-10-06",
     readingMinutes: 6,

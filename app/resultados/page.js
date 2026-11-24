@@ -4,13 +4,14 @@ import AdsResults from "@/components/AdsResults";
 import Cases from "@/components/Cases";
 import NumbersRow from "@/components/NumbersRow";
 import FinalCTA from "@/components/FinalCTA";
+import { pageMeta } from "@/lib/seo";
 
-export const metadata = {
-  title: "Resultados reales de nuestras campañas",
+export const metadata = pageMeta({
+  title: "Resultados reales de campañas Meta Ads Ecuador",
   description:
-    "Conversaciones por WhatsApp y clientes potenciales reales de Remy, Pachy, Horizonte Andino, Home Play, Deco Mundo, InyecPro, Metallum y más, tomados del Administrador de anuncios de cada cliente.",
-  alternates: { canonical: "/resultados" },
-};
+    "Campañas Meta Ads en Ecuador con resultados reales: conversaciones por WhatsApp de Remy, Pachy, Deco Mundo, Home Play y más, con captura y fecha.",
+  path: "/resultados",
+});
 
 export default function ResultadosPage() {
   return (

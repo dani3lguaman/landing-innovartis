@@ -3,13 +3,14 @@ import PageHero from "@/components/PageHero";
 import WebOffers from "@/components/WebOffers";
 import WebsShowcase from "@/components/WebsShowcase";
 import FinalCTA from "@/components/FinalCTA";
+import { pageMeta } from "@/lib/seo";
 
-export const metadata = {
-  title: "Páginas web en Quito desde USD 60",
+export const metadata = pageMeta({
+  title: "Diseño de páginas web en Quito desde USD 60",
   description:
-    "Páginas web para negocios de Ecuador: Express USD 60, Profesional USD 120 con tu dominio .com a tu nombre, tiendas en línea y asistentes automáticos de WhatsApp.",
-  alternates: { canonical: "/webs" },
-};
+    "Diseño de páginas web en Quito: Express USD 60, Profesional USD 120 con tu .com a tu nombre, tiendas en línea y asistente automático de WhatsApp.",
+  path: "/webs",
+});
 
 export default function WebsPage() {
   return (

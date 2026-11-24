@@ -5,13 +5,14 @@ import EnAccion from "@/components/EnAccion";
 import Method from "@/components/Method";
 import SectionTitle from "@/components/SectionTitle";
 import FinalCTA from "@/components/FinalCTA";
+import { pageMeta } from "@/lib/seo";
 
-export const metadata = {
-  title: "Servicios de marketing digital",
+export const metadata = pageMeta({
+  title: "Servicios de Meta Ads, redes y webs en Quito",
   description:
-    "Meta Ads, Google Ads, producción de contenido, páginas web, asistentes automáticos de WhatsApp, Google Maps y CRM HubSpot para negocios de Quito y Ecuador.",
-  alternates: { canonical: "/servicios" },
-};
+    "Publicidad en Facebook e Instagram, Google Ads, manejo de redes, páginas web y asistente automático de WhatsApp para pymes de Quito y todo Ecuador.",
+  path: "/servicios",
+});
 
 export default function ServiciosPage() {
   return (

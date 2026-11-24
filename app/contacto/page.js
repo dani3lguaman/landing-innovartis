@@ -2,14 +2,15 @@ import Shell from "@/components/Shell";
 import PageHero from "@/components/PageHero";
 import Discovery from "@/components/Discovery";
 import SocialIcon from "@/components/SocialIcon";
-import { SITE_URL, SOCIALS, WA_ASESORIA, WA_LINK, WA_NUMBER_DISPLAY } from "@/components/constants";
+import { SITE_URL, SOCIALS, WA_ASESORIA, WA_LINK, WA_NUMBER_DISPLAY, WA_TEL_INTL } from "@/components/constants";
+import { pageMeta } from "@/lib/seo";
 
-export const metadata = {
-  title: "Contacto",
+export const metadata = pageMeta({
+  title: "Contacto: agencia de marketing digital en Quito",
   description:
-    "Escríbenos por WhatsApp al +593 99 862 0536, agenda tu asesoría gratis de 10 minutos o síguenos en Instagram, TikTok y LinkedIn. InnovArtis, agencia de marketing digital en Quito, Ecuador.",
-  alternates: { canonical: "/contacto" },
-};
+    "Escríbenos al WhatsApp 096 314 0753 o agenda tu asesoría gratis de 10 minutos con InnovArtis, agencia de marketing digital en Quito, Ecuador.",
+  path: "/contacto",
+});
 
 // Datos estructurados de la página de contacto (Google los usa en el resultado de búsqueda).
 const JSON_LD = {
@@ -18,11 +19,12 @@ const JSON_LD = {
   name: "Contacto — InnovArtis",
   url: `${SITE_URL}/contacto`,
   mainEntity: {
-    "@type": "Organization",
+    "@type": "MarketingAgency",
+    "@id": `${SITE_URL}/#agencia`,
     name: "InnovArtis",
     url: SITE_URL,
     email: "innuevate@gmail.com",
-    telephone: "+593-99-862-0536",
+    telephone: WA_TEL_INTL,
     address: { "@type": "PostalAddress", addressLocality: "Quito", addressCountry: "EC" },
     sameAs: SOCIALS.map((s) => s.href),
   },

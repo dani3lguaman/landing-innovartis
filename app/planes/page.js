@@ -4,13 +4,14 @@ import OfertaMes from "@/components/OfertaMes";
 import PlansSection from "@/components/PlansSection";
 import Discovery from "@/components/Discovery";
 import FinalCTA from "@/components/FinalCTA";
+import { pageMeta } from "@/lib/seo";
 
-export const metadata = {
-  title: "Planes y precios",
+export const metadata = pageMeta({
+  title: "Planes y precios de marketing digital en Quito",
   description:
-    "Planes mensuales de marketing desde USD 100: solo publicidad, contenido, Meta Ads, Google Ads y más. Oferta del mes, extras y diagnóstico sin costo.",
-  alternates: { canonical: "/planes" },
-};
+    "Planes mensuales de marketing digital en Quito desde USD 100: publicidad, contenido, Meta Ads y Google Ads. Oferta del mes y diagnóstico sin costo.",
+  path: "/planes",
+});
 
 export default function PlanesPage() {
   return (

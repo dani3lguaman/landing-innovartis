@@ -4,12 +4,14 @@ import WhyUs from "@/components/WhyUs";
 import Team from "@/components/Team";
 import ClientsStrip from "@/components/ClientsStrip";
 import FinalCTA from "@/components/FinalCTA";
+import { pageMeta } from "@/lib/seo";
 
-export const metadata = {
-  title: "Nosotros",
-  description: "Quiénes somos: agencia de marketing estratégico en Quito, Ecuador. El equipo detrás de las campañas.",
-  alternates: { canonical: "/nosotros" },
-};
+export const metadata = pageMeta({
+  title: "Agencia de publicidad para pymes en Quito",
+  description:
+    "Somos InnovArtis, agencia de publicidad para pymes en Quito: estrategia, campañas en Facebook e Instagram y contenido hecho por un equipo de personas.",
+  path: "/nosotros",
+});
 
 export default function NosotrosPage() {
   return (
