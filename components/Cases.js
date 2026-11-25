@@ -104,6 +104,45 @@ export default function Cases() {
         </div>
       </Reveal>
 
+      {/* Caso real con captura del Administrador de anuncios (25-nov-2026). Importe gastado tapado: es dato del cliente. */}
+      <Reveal>
+        <div className="mt-8 border border-accent bg-white grid md:grid-cols-[1fr_1.1fr]">
+          <div className="p-8 md:p-10 flex flex-col justify-center">
+            <p className="kicker mb-4">Caso real · Celulares a crédito en el sur de Quito</p>
+            <h3 className="font-heading text-navy text-[28px] leading-tight mb-4">
+              180 conversaciones por WhatsApp en cinco días
+            </h3>
+            <div className="flex items-baseline gap-6 mb-5">
+              <div>
+                <p className="display-num text-accent-deep text-[52px] leading-none">
+                  <Counter value={180} />
+                </p>
+                <p className="text-[13px] text-ink-soft mt-1">conversaciones por WhatsApp</p>
+              </div>
+              <div>
+                <p className="display-num text-accent-deep text-[52px] leading-none">$0,07</p>
+                <p className="text-[13px] text-ink-soft mt-1">por conversación</p>
+              </div>
+            </div>
+            <p className="text-[15px] leading-[1.8] text-ink-soft">
+              <strong className="text-ink">Créditos Express</strong> vende celulares a crédito en Guamaní, al sur de Quito.
+              Con un reel y una campaña directa a su WhatsApp, del 21 al 25 de noviembre llegaron{" "}
+              <strong className="text-ink">180 conversaciones</strong>, a $0,07 cada una.
+            </p>
+          </div>
+          <figure className="plate !border-0 !border-l border-line m-0 flex flex-col justify-center">
+            <img
+              src="/portafolio/ads/creditos-express-nov.webp"
+              alt="Captura real del Administrador de anuncios: 180 conversaciones a $0,07 entre el 21 y el 25 de noviembre de 2026"
+            />
+            <figcaption className="px-5 py-3 text-[11.5px] leading-relaxed text-ink-soft border-t border-line">
+              Captura del Administrador de anuncios del cliente, del 21 al 25 de noviembre de 2026. Tapamos el importe
+              gastado: es dato del cliente.
+            </figcaption>
+          </figure>
+        </div>
+      </Reveal>
+
       {/* Caso real con captura del Administrador de anuncios (23-nov-2026). Importe gastado tapado: es dato del cliente. */}
       <Reveal>
         <div className="mt-8 border border-accent bg-white grid md:grid-cols-[1fr_1.1fr]">

@@ -75,6 +75,15 @@ const CLIENTS = [
     ],
   },
   {
+    id: "creditos-express",
+    name: "Créditos Express",
+    rubro: "Celulares a crédito · sur de Quito",
+    resultLabel: "Conversaciones por WhatsApp",
+    rango: "21 – 25 nov 2026",
+    fuente: "Fuente: Administrador de anuncios de Meta del cliente, leído el 25 de noviembre de 2026.",
+    campaigns: [{ name: "Celulares a crédito · noviembre 2026", value: 180, cost: 0.07 }],
+  },
+  {
     id: "metallum",
     name: "Metallum",
     rubro: "Estructuras metálicas y pérgolas · Quito",
